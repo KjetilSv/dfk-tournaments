@@ -1,0 +1,532 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DFK Tournaments</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; text-align: center; background-color: #121212; color: #f4f4f4; padding: 20px; }
+        h1 { color: #4CAF50; font-size: 2.5rem; }
+        table { width: 90%; margin: 20px auto; border-collapse: collapse; background: #1e1e1e; box-shadow: 0 0 15px rgba(0,255,0,0.3); border-radius: 10px; overflow: hidden; }
+        th, td { border: 1px solid #2e2e2e; padding: 15px; text-align: center; }
+        th { background-color: #4CAF50; color: white; text-transform: uppercase; font-size: 1rem; }
+        td { font-size: 1rem; color: #ddd; }
+        tr:hover { background-color: rgba(76, 175, 80, 0.2); transition: 0.3s; }
+        .countdown { font-weight: bold; color: #ff4444; font-size: 1.1rem; }
+    </style>
+    <script>
+        function updateCountdowns() {
+            var now = new Date().getTime();
+            document.querySelectorAll(".countdown").forEach(function(el) {
+                var startTime = new Date(el.dataset.start).getTime();
+                var diff = startTime - now;
+
+                if (diff > 0) {
+                    var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                    el.innerHTML = days + "d " + hours + "h " + minutes + "m";
+                } else {
+                    el.innerHTML = "Event Started";
+                }
+            });
+        }
+        setInterval(updateCountdowns, 60000); // Update every minute
+        window.onload = updateCountdowns;
+    </script>
+</head>
+<body>
+    <h1>DFK Tournaments</h1>
+    <table>
+        <tr>
+            <th>Date & Time</th>
+            <th>Event</th>
+            <th>Level</th>
+            <th>Notes</th>
+            <th>Time Left</th>
+        </tr>
+
+        <tr>
+            <td>2025-02-27 03:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>11-15</td>
+            <td>Rare and Below</td>
+            <td class="countdown" data-start="2025-02-27 03:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-02-27 18:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>Regular Summon Only, All Unique Classes</td>
+            <td class="countdown" data-start="2025-02-27 18:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-02-28 01:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>4-6</td>
+            <td>Rare and Below</td>
+            <td class="countdown" data-start="2025-02-28 01:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-02-28 11:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>11-15</td>
+            <td>Dark Summon Only</td>
+            <td class="countdown" data-start="2025-02-28 11:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-02-28 19:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>11-15</td>
+            <td>No Priest or Seer, Must Include Knight</td>
+            <td class="countdown" data-start="2025-02-28 19:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-01 04:00:00</td>
+            <td>GOLD RUSH!</td>
+            <td>16-20</td>
+            <td>Anything Allowed</td>
+            <td class="countdown" data-start="2025-03-01 04:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-01 18:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>Regular Summon Only, Must Include Archer</td>
+            <td class="countdown" data-start="2025-03-01 18:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-01 21:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>7-10</td>
+            <td>Regular Summon Only</td>
+            <td class="countdown" data-start="2025-03-01 21:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-02 00:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>Dark Summon Only, No Triple Classes</td>
+            <td class="countdown" data-start="2025-03-02 00:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-02 10:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>Rare and Below</td>
+            <td class="countdown" data-start="2025-03-02 10:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-02 21:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>7-10</td>
+            <td>Melee Moshpit (Knight, Berserker, Warrior Only)</td>
+            <td class="countdown" data-start="2025-03-02 21:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-03 14:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>16-20 Melee Moshpit</td>
+            <td>No Precision Potion (Knight, Berserker, Warrior Only)</td>
+            <td class="countdown" data-start="2025-03-03 14:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-03 23:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>4-6</td>
+            <td>Rare and Below</td>
+            <td class="countdown" data-start="2025-03-03 23:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-04 15:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>Dark Summon Only</td>
+            <td class="countdown" data-start="2025-03-04 15:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-05 04:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>7-10</td>
+            <td>No Heals (No Priest or Seer, No Health Potions or Vials)</td>
+            <td class="countdown" data-start="2025-03-05 04:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-05 12:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>7-10</td>
+            <td>Regular Summon Only</td>
+            <td class="countdown" data-start="2025-03-05 12:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-05 21:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>11-15</td>
+            <td>Melee Moshpit, Regular Summons Only (Knight, Berserker, Warrior Only)</td>
+            <td class="countdown" data-start="2025-03-05 21:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-06 06:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>11-15</td>
+            <td>Rare and Below, Regular Summon Only</td>
+            <td class="countdown" data-start="2025-03-06 06:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-07 03:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>11-15</td>
+            <td>Dark Summon Only</td>
+            <td class="countdown" data-start="2025-03-07 03:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-07 13:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>7-10</td>
+            <td>Must Include Seer</td>
+            <td class="countdown" data-start="2025-03-07 13:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-07 19:00:00</td>
+            <td>GOLD RUSH!</td>
+            <td>16-20</td>
+            <td>Anything Allowed</td>
+            <td class="countdown" data-start="2025-03-07 19:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-07 22:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>4-6</td>
+            <td>Rare and Below</td>
+            <td class="countdown" data-start="2025-03-07 22:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-08 16:00:00</td>
+            <td>Revengers</td>
+            <td>16-20</td>
+            <td>No Healer, Regular Summon Only (No Priest or Seer)</td>
+            <td class="countdown" data-start="2025-03-08 16:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-09 03:00:00</td>
+            <td>Weekend Warrior</td>
+            <td>16-20</td>
+            <td>Anything Allowed</td>
+            <td class="countdown" data-start="2025-03-09 03:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-09 14:00:00</td>
+            <td>Weekend Warrior</td>
+            <td>7-10</td>
+            <td>Regular Summons Only</td>
+            <td class="countdown" data-start="2025-03-09 14:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-10 03:00:00</td>
+            <td>Revengers</td>
+            <td>7-10</td>
+            <td>Must Include Seer</td>
+            <td class="countdown" data-start="2025-03-10 03:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-10 14:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>7-10</td>
+            <td>No Healer (No Priest or Seer)</td>
+            <td class="countdown" data-start="2025-03-10 14:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-10 21:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>4-6</td>
+            <td>Rare and Below</td>
+            <td class="countdown" data-start="2025-03-10 21:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-11 11:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>Melee Moshpit, Regular Summons Only (Knight, Berserker, Warrior Only)</td>
+            <td class="countdown" data-start="2025-03-11 11:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-11 19:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-03-11 19:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-12 08:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>11-15</td>
+            <td>Dark Summon Only, Must Include Warrior</td>
+            <td class="countdown" data-start="2025-03-12 08:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-13 01:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>7-10</td>
+            <td>Melee Moshpit (Knight, Berserker, Warrior Only)</td>
+            <td class="countdown" data-start="2025-03-13 01:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-13 12:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>11-15</td>
+            <td>Dark Summon Only</td>
+            <td class="countdown" data-start="2025-03-13 12:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-13 18:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>No Healer (No Priest or Seer), Regular Summon Only</td>
+            <td class="countdown" data-start="2025-03-13 18:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-14 16:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>Regular Summon Only, All Unique Classes</td>
+            <td class="countdown" data-start="2025-03-14 16:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-14 21:00:00</td>
+            <td>GOLD RUSH!</td>
+            <td>16-20</td>
+            <td>Anything Allowed</td>
+            <td class="countdown" data-start="2025-03-14 21:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-15 00:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>4-6</td>
+            <td>Rare and Below</td>
+            <td class="countdown" data-start="2025-03-15 00:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-15 06:00:00</td>
+            <td>Revengers</td>
+            <td>11-15</td>
+            <td>Rare and Below</td>
+            <td class="countdown" data-start="2025-03-15 06:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-15 20:00:00</td>
+            <td>Weekend Warrior</td>
+            <td>16-20</td>
+            <td>Regular Summons Only</td>
+            <td class="countdown" data-start="2025-03-15 20:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-16 08:00:00</td>
+            <td>Weekend Warrior</td>
+            <td>7-10</td>
+            <td>Anything Allowed</td>
+            <td class="countdown" data-start="2025-03-16 08:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-16 18:00:00</td>
+            <td>Revengers</td>
+            <td>16-20</td>
+            <td>Regular Summon Only, Must Include Archer</td>
+            <td class="countdown" data-start="2025-03-16 18:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-17 09:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>11-15</td>
+            <td>Rare and Below</td>
+            <td class="countdown" data-start="2025-03-17 09:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-17 20:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-03-17 20:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-18 11:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>7-10</td>
+            <td>Melee Moshpit, Must Include Berserker (Knight, Berserker, Warrior Only)</td>
+            <td class="countdown" data-start="2025-03-18 11:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-19 03:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>4-6</td>
+            <td>Rare and Below</td>
+            <td class="countdown" data-start="2025-03-19 03:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-19 06:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>7-10</td>
+            <td>Must Include Seer</td>
+            <td class="countdown" data-start="2025-03-19 06:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-19 22:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>Dark Summon Only, No Triple Classes</td>
+            <td class="countdown" data-start="2025-03-19 22:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-20 15:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>11-15</td>
+            <td>No Healer, Must Include Knight (No Priest or Seer)</td>
+            <td class="countdown" data-start="2025-03-20 15:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-21 01:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-03-21 01:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-21 13:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>11-15</td>
+            <td>Rare and Below, Regular Summon Only</td>
+            <td class="countdown" data-start="2025-03-21 13:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-21 19:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>7-10</td>
+            <td>Regular Summon Only</td>
+            <td class="countdown" data-start="2025-03-21 19:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-22 00:00:00</td>
+            <td>GOLD RUSH!</td>
+            <td>16-20</td>
+            <td>Anything Allowed</td>
+            <td class="countdown" data-start="2025-03-22 00:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-22 10:00:00</td>
+            <td>Revengers</td>
+            <td>11-15</td>
+            <td>No Healer, Must Include Knight (No Priest or Seer)</td>
+            <td class="countdown" data-start="2025-03-22 10:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-23 00:00:00</td>
+            <td>Weekend Warrior</td>
+            <td>7-10</td>
+            <td>Team Stat Limit</td>
+            <td class="countdown" data-start="2025-03-23 00:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-23 12:00:00</td>
+            <td>Weekend Warrior</td>
+            <td>16-20</td>
+            <td>Regular Summons Only</td>
+            <td class="countdown" data-start="2025-03-23 12:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-23 22:00:00</td>
+            <td>Revengers</td>
+            <td>7-10</td>
+            <td>Melee Moshpit, Must Include Berserker (Knight, Berserker, Warrior Only)</td>
+            <td class="countdown" data-start="2025-03-23 22:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-24 08:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>7-10</td>
+            <td>No Healer, No Health Vials or Potions (No Priest or Seer)</td>
+            <td class="countdown" data-start="2025-03-24 08:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-24 19:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>Regular Summon Only</td>
+            <td class="countdown" data-start="2025-03-24 19:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-25 14:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>7-10</td>
+            <td>Melee Moshpit, Must Include Berserker (Knight, Berserker, Warrior Only)</td>
+            <td class="countdown" data-start="2025-03-25 14:00:00">Calculating...</td>
+        </tr>
+    
+        <tr>
+            <td>2025-03-26 01:00:00</td>
+            <td>Daily Skirmish</td>
+            <td>4-6</td>
+            <td>Rare and Below</td>
+            <td class="countdown" data-start="2025-03-26 01:00:00">Calculating...</td>
+        </tr>
+    
+    </table>
+</body>
+</html>
