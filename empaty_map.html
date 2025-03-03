@@ -216,6 +216,19 @@
             transform: translate(-50%, -50%);
             font-weight: bold;
         }
+
+        .item span {
+            flex-grow: 1;
+            min-width: 0;
+            margin-right: 10px;
+            cursor: text;
+        }
+
+        .item span[contenteditable="true"] {
+            border-bottom: 1px dashed #666;
+            padding: 2px;
+            outline: none;
+        }
     </style>
 </head>
 <body>
@@ -323,6 +336,36 @@
                 
                 const textSpan = document.createElement('span');
                 textSpan.textContent = text;
+                
+                // Make text editable on click
+                textSpan.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    if (!textSpan.isContentEditable) {
+                        textSpan.contentEditable = true;
+                        textSpan.focus();
+                        
+                        // Save the original text in case of cancel
+                        const originalText = textSpan.textContent;
+                        
+                        // Handle Enter key to save
+                        textSpan.addEventListener('keydown', function(e) {
+                            if (e.key === 'Enter') {
+                                e.preventDefault();
+                                textSpan.contentEditable = false;
+                            }
+                        }, { once: true });
+                        
+                        // Handle focus loss to save
+                        textSpan.addEventListener('blur', function() {
+                            textSpan.contentEditable = false;
+                            // If empty, revert to original text
+                            if (textSpan.textContent.trim() === '') {
+                                textSpan.textContent = originalText;
+                            }
+                        }, { once: true });
+                    }
+                });
+                
                 item.appendChild(textSpan);
                 
                 // Container for color buttons
