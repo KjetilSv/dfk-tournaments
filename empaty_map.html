@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empathy Map Creator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Outfit', system-ui, sans-serif;
+            margin: 20px;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+            height: 80vh;
+        }
+        .quadrant {
+            border: 2px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            position: relative;  /* For color button positioning */
+        }
+        .quadrant h2 {
+            margin-top: 0;
+            font-weight: 500;
+            color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            border: 2px solid #666;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 4px;
+            cursor: move;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .item input[type="color"] {
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 25px;
+            height: 25px;
+            padding: 0;
+            border: none;
+            opacity: 0; /* Hide the color picker box */
+        }
+        .item:hover {
+            background-color: #f0f0f0;
+            border-color: #444; /* Darker border on hover */
+        }
+        .add-item {
+            margin-top: 10px;
+        }
+        input[type="text"] {
+            padding: 5px;
+            margin-right: 5px;
+        }
+        button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .color-button {
+            padding: 5px;
+            width: 25px;
+            height: 25px;
+            border: 1px solid #666;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 5px;
+            position: relative;
+        }
+        .text-color-button {
+            position: relative;
+        }
+        .text-color-button::after {
+            content: "T";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: bold;
+        }
+        .bg-color-button::after {
+            content: "B";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: bold;
+        }
+        .export-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .quadrant-color-button {
+            padding: 5px;
+            width: 25px;
+            height: 25px;
+            border: 1px solid #666;
+            border-radius: 4px;
+            cursor: pointer;
+            position: relative;
+        }
+        .quadrant-color-button::after {
+            content: "B";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: bold;
+        }
+        @media print {
+            .add-item, .color-button, .export-button, .quadrant-color-button {
+                display: none;
+            }
+        }
+        .color-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 1000;
+        }
+
+        .color-popup .buttons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        .color-popup button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .color-popup .ok-button {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .color-popup .cancel-button {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 999;
+        }
+
+        .quadrant-buttons {
+            display: flex;
+            gap: 5px;
+        }
+
+        .quadrant-bg-button::after {
+            content: "B";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: bold;
+        }
+
+        .quadrant-text-button::after {
+            content: "T";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Empathy Map Creator</h1>
+    <div class="container">
+        <div class="quadrant" id="thinks">
+            <h2>Thinks</h2>
+            <div class="items-container"></div>
+            <div class="add-item">
+                <input type="text" placeholder="Add new item">
+                <button onclick="addItem(this)">Add</button>
+            </div>
+        </div>
+        <div class="quadrant" id="feels">
+            <h2>Feels</h2>
+            <div class="items-container"></div>
+            <div class="add-item">
+                <input type="text" placeholder="Add new item">
+                <button onclick="addItem(this)">Add</button>
+            </div>
+        </div>
+        <div class="quadrant" id="says">
+            <h2>Says</h2>
+            <div class="items-container"></div>
+            <div class="add-item">
+                <input type="text" placeholder="Add new item">
+                <button onclick="addItem(this)">Add</button>
+            </div>
+        </div>
+        <div class="quadrant" id="does">
+            <h2>Does</h2>
+            <div class="items-container"></div>
+            <div class="add-item">
+                <input type="text" placeholder="Add new item">
+                <button onclick="addItem(this)">Add</button>
+            </div>
+        </div>
+    </div>
+    <button class="export-button" onclick="exportToPDF()">Export to PDF</button>
+
+    <script>
+        function createColorPopup(element, isBackground = true, targetElement = null) {
+            const overlay = document.createElement('div');
+            overlay.className = 'overlay';
+            document.body.appendChild(overlay);
+
+            const popup = document.createElement('div');
+            popup.className = 'color-popup';
+
+            const colorPicker = document.createElement('input');
+            colorPicker.type = 'color';
+            if (isBackground) {
+                colorPicker.value = getComputedStyle(targetElement || element).backgroundColor;
+            } else {
+                colorPicker.value = getComputedStyle(targetElement || element).color;
+            }
+
+            const buttonsDiv = document.createElement('div');
+            buttonsDiv.className = 'buttons';
+
+            const okButton = document.createElement('button');
+            okButton.textContent = 'OK';
+            okButton.className = 'ok-button';
+            
+            const cancelButton = document.createElement('button');
+            cancelButton.textContent = 'Cancel';
+            cancelButton.className = 'cancel-button';
+
+            buttonsDiv.appendChild(cancelButton);
+            buttonsDiv.appendChild(okButton);
+
+            popup.appendChild(colorPicker);
+            popup.appendChild(buttonsDiv);
+            document.body.appendChild(popup);
+
+            return new Promise((resolve, reject) => {
+                okButton.onclick = () => {
+                    resolve(colorPicker.value);
+                    popup.remove();
+                    overlay.remove();
+                };
+
+                cancelButton.onclick = () => {
+                    reject();
+                    popup.remove();
+                    overlay.remove();
+                };
+
+                overlay.onclick = () => {
+                    reject();
+                    popup.remove();
+                    overlay.remove();
+                };
+            });
+        }
+
+        function addItem(button) {
+            const input = button.previousElementSibling;
+            const text = input.value.trim();
+            if (text) {
+                const itemsContainer = button.parentElement.previousElementSibling;
+                const item = document.createElement('div');
+                item.className = 'item';
+                item.draggable = true;
+                
+                const textSpan = document.createElement('span');
+                textSpan.textContent = text;
+                item.appendChild(textSpan);
+                
+                // Container for color buttons
+                const buttonContainer = document.createElement('div');
+                buttonContainer.style.display = 'flex';
+                
+                // Background color button
+                const bgColorButton = document.createElement('button');
+                bgColorButton.className = 'color-button bg-color-button';
+                bgColorButton.onclick = async function(e) {
+                    e.stopPropagation();
+                    try {
+                        const color = await createColorPopup(bgColorButton, true, item);
+                        item.style.backgroundColor = color;
+                        bgColorButton.style.backgroundColor = color;
+                    } catch {
+                        // User cancelled - do nothing
+                    }
+                };
+                
+                // Text color button
+                const textColorButton = document.createElement('button');
+                textColorButton.className = 'color-button text-color-button';
+                textColorButton.onclick = async function(e) {
+                    e.stopPropagation();
+                    try {
+                        const color = await createColorPopup(textColorButton, false, textSpan);
+                        textSpan.style.color = color;
+                        textColorButton.style.backgroundColor = color;
+                    } catch {
+                        // User cancelled - do nothing
+                    }
+                };
+                
+                buttonContainer.appendChild(bgColorButton);
+                buttonContainer.appendChild(textColorButton);
+                item.appendChild(buttonContainer);
+                
+                item.addEventListener('dragstart', handleDragStart);
+                item.addEventListener('dragend', handleDragEnd);
+                
+                itemsContainer.appendChild(item);
+                input.value = '';
+            }
+        }
+
+        let draggedItem = null;
+
+        function handleDragStart(e) {
+            draggedItem = e.target;
+            e.target.style.opacity = '0.4';
+        }
+
+        function handleDragEnd(e) {
+            e.target.style.opacity = '1';
+            draggedItem = null;
+        }
+
+        document.querySelectorAll('.quadrant').forEach(quadrant => {
+            quadrant.addEventListener('dragover', e => {
+                e.preventDefault();
+            });
+
+            quadrant.addEventListener('drop', e => {
+                e.preventDefault();
+                if (draggedItem) {
+                    const itemsContainer = quadrant.querySelector('.items-container');
+                    itemsContainer.appendChild(draggedItem);
+                }
+            });
+        });
+        // Style color pickers to be right-aligned with black/white colors
+        const style = document.createElement('style');
+        style.textContent = `
+            .color-picker {
+                float: right;
+                margin-left: 8px;
+                background: white;
+                border: 1px solid black;
+                opacity: 0; /* Hide the color picker box */
+            }
+            .color-picker::-webkit-color-swatch-wrapper {
+                padding: 0;
+            }
+            .color-picker::-webkit-color-swatch {
+                border: none;
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Add enter key support for inputs
+        document.querySelectorAll('.add-item input').forEach(input => {
+            input.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    input.nextElementSibling.click();
+                }
+            });
+        });
+
+        function exportToPDF() {
+            const elementsToHide = document.querySelectorAll('.add-item, .color-button, .export-button');
+            elementsToHide.forEach(el => el.style.display = 'none');
+            window.print();
+            elementsToHide.forEach(el => el.style.display = '');
+        }
+
+        function addQuadrantColorButtons(quadrant) {
+            const heading = quadrant.querySelector('h2');
+            const buttonContainer = document.createElement('div');
+            buttonContainer.className = 'quadrant-buttons';
+
+            // Background color button
+            const bgColorButton = document.createElement('button');
+            bgColorButton.className = 'quadrant-color-button quadrant-bg-button';
+            bgColorButton.onclick = async function(e) {
+                e.stopPropagation();
+                try {
+                    const color = await createColorPopup(bgColorButton, true, quadrant);
+                    quadrant.style.backgroundColor = color;
+                    bgColorButton.style.backgroundColor = color;
+                } catch {
+                    // User cancelled - do nothing
+                }
+            };
+
+            // Text color button
+            const textColorButton = document.createElement('button');
+            textColorButton.className = 'quadrant-color-button quadrant-text-button';
+            textColorButton.onclick = async function(e) {
+                e.stopPropagation();
+                try {
+                    const color = await createColorPopup(textColorButton, false, heading);
+                    heading.style.color = color;
+                    textColorButton.style.backgroundColor = color;
+                } catch {
+                    // User cancelled - do nothing
+                }
+            };
+
+            buttonContainer.appendChild(bgColorButton);
+            buttonContainer.appendChild(textColorButton);
+            heading.appendChild(buttonContainer);
+        }
+
+        // Update the initialization to use the new function
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.quadrant').forEach(quadrant => {
+                addQuadrantColorButtons(quadrant);
+            });
+        });
+    </script>
+</body>
+</html>
