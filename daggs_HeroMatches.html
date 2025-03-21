@@ -296,7 +296,7 @@
             
         <script>
             // Set the generation time
-            const generationTime = new Date("2025-03-21 10:28:05");
+            const generationTime = new Date("2025-03-21 11:38:41");
             
             // Update the timer every second
             setInterval(function() {
@@ -333,6 +333,7 @@
 <div class="nav-links">
 <a href="#heropriceratio-section">HeroPriceRatio</a> | 
 <a href="#tavern-10-10-section">Tavern-10-10</a> | 
+<a href="#rentals-potensial-inhouse-section">Rentals-potensial-Inhouse</a> | 
 <a href="#walletstotavern-summon-section">WalletsToTavern-Summon</a> | 
 <a href="#walletstotavern-ds-section">WalletsToTavern-DS</a> | 
 <a href="#walletstotavern-1-10-section">WalletsToTavern-1-10</a> | 
@@ -4197,6 +4198,7 @@
 <div class="nav-links">
 <a href="#dstavernbelow40-section">DsTavernBelow40</a> | 
 <a href="#tavern-10-10-section">Tavern-10-10</a> | 
+<a href="#rentals-potensial-inhouse-section">Rentals-potensial-Inhouse</a> | 
 <a href="#walletstotavern-summon-section">WalletsToTavern-Summon</a> | 
 <a href="#walletstotavern-ds-section">WalletsToTavern-DS</a> | 
 <a href="#walletstotavern-1-10-section">WalletsToTavern-1-10</a> | 
@@ -5635,6 +5637,7 @@
 <div class="nav-links">
 <a href="#dstavernbelow40-section">DsTavernBelow40</a> | 
 <a href="#heropriceratio-section">HeroPriceRatio</a> | 
+<a href="#rentals-potensial-inhouse-section">Rentals-potensial-Inhouse</a> | 
 <a href="#walletstotavern-summon-section">WalletsToTavern-Summon</a> | 
 <a href="#walletstotavern-ds-section">WalletsToTavern-DS</a> | 
 <a href="#walletstotavern-1-10-section">WalletsToTavern-1-10</a> | 
@@ -5931,11 +5934,142 @@
 </table></div>
 </div>
 <div class="card">
+<h2 id="rentals-potensial-inhouse-section">Rentals-potensial-Inhouse</h2>
+<div class="nav-links">
+<a href="#dstavernbelow40-section">DsTavernBelow40</a> | 
+<a href="#heropriceratio-section">HeroPriceRatio</a> | 
+<a href="#tavern-10-10-section">Tavern-10-10</a> | 
+<a href="#walletstotavern-summon-section">WalletsToTavern-Summon</a> | 
+<a href="#walletstotavern-ds-section">WalletsToTavern-DS</a> | 
+<a href="#walletstotavern-1-10-section">WalletsToTavern-1-10</a> | 
+<a href="#rentals-section">Rentals</a> | 
+<a href="#wallettowallets-summons-section">WalletToWallets-Summons</a> | 
+<a href="#wallettowallets-ds-section">WalletToWallets-DS</a> | 
+<a href="#wallettowallets-10-10-section">WalletToWallets-10-10</a> | 
+</div>
+<div class="card-body">
+<div class="table-controls">
+<button class="clear-table-btn" onclick="clearTable(this)">Clear Table</button>
+</div>
+<table>
+<thead>
+<tr>
+<th style="width: 60px">Hide</th>
+<th>Hero1ID</th>
+<th>Hero2ID</th>
+<th>URL</th>
+<th>TotalScore</th>
+<th>Summons1</th>
+<th>Summons2</th>
+<th>Hero1WalletID</th>
+<th>Hero2WalletID</th>
+<th>Hero1Network</th>
+<th>Hero2Network</th>
+<th>Owner1Name</th>
+<th>Owner2Name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000379564')">2000000379564</td>
+<td class="clickable" onclick="copyToClipboard('2000000445967')">2000000445967</td>
+<td><a href="https://www.adfk.app/heroes/2000000379564/2000000445967/" class="herolink" target="_blank">View Hero</a></td>
+<td>125</td>
+<td>1</td>
+<td>4</td>
+<td>...0F16</td>
+<td>...FE44</td>
+<td>dfk</td>
+<td>dfk</td>
+<td>kjetil</td>
+<td>daggs</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('1000000711392')">1000000711392</td>
+<td class="clickable" onclick="copyToClipboard('2000000603164')">2000000603164</td>
+<td><a href="https://www.adfk.app/heroes/1000000711392/2000000603164/" class="herolink" target="_blank">View Hero</a></td>
+<td>120</td>
+<td>2</td>
+<td>3</td>
+<td>...7c9b</td>
+<td>...0F16</td>
+<td>dfk</td>
+<td>kla</td>
+<td>theat</td>
+<td>kjetil</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('1000000711500')">1000000711500</td>
+<td class="clickable" onclick="copyToClipboard('2000000649375')">2000000649375</td>
+<td><a href="https://www.adfk.app/heroes/1000000711500/2000000649375/" class="herolink" target="_blank">View Hero</a></td>
+<td>120</td>
+<td>1</td>
+<td>2</td>
+<td>...7c9b</td>
+<td>...975A</td>
+<td>dfk</td>
+<td>dfk</td>
+<td>theat</td>
+<td>kjetil</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('1000000711500')">1000000711500</td>
+<td class="clickable" onclick="copyToClipboard('2000000639614')">2000000639614</td>
+<td><a href="https://www.adfk.app/heroes/1000000711500/2000000639614/" class="herolink" target="_blank">View Hero</a></td>
+<td>120</td>
+<td>1</td>
+<td>3</td>
+<td>...7c9b</td>
+<td>...975A</td>
+<td>dfk</td>
+<td>dfk</td>
+<td>theat</td>
+<td>kjetil</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('1000000712252')">1000000712252</td>
+<td class="clickable" onclick="copyToClipboard('2000001010406')">2000001010406</td>
+<td><a href="https://www.adfk.app/heroes/1000000712252/2000001010406/" class="herolink" target="_blank">View Hero</a></td>
+<td>115</td>
+<td>2</td>
+<td>1</td>
+<td>...7c9b</td>
+<td>...0F16</td>
+<td>dfk</td>
+<td>kla</td>
+<td>theat</td>
+<td>kjetil</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('1000000711392')">1000000711392</td>
+<td class="clickable" onclick="copyToClipboard('2000001031313')">2000001031313</td>
+<td><a href="https://www.adfk.app/heroes/1000000711392/2000001031313/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>2</td>
+<td>8</td>
+<td>...7c9b</td>
+<td>...0F16</td>
+<td>dfk</td>
+<td>kla</td>
+<td>theat</td>
+<td>kjetil</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="card">
 <h2 id="walletstotavern-summon-section">WalletsToTavern-Summon</h2>
 <div class="nav-links">
 <a href="#dstavernbelow40-section">DsTavernBelow40</a> | 
 <a href="#heropriceratio-section">HeroPriceRatio</a> | 
 <a href="#tavern-10-10-section">Tavern-10-10</a> | 
+<a href="#rentals-potensial-inhouse-section">Rentals-potensial-Inhouse</a> | 
 <a href="#walletstotavern-ds-section">WalletsToTavern-DS</a> | 
 <a href="#walletstotavern-1-10-section">WalletsToTavern-1-10</a> | 
 <a href="#rentals-section">Rentals</a> | 
@@ -6130,6 +6264,7 @@
 <a href="#dstavernbelow40-section">DsTavernBelow40</a> | 
 <a href="#heropriceratio-section">HeroPriceRatio</a> | 
 <a href="#tavern-10-10-section">Tavern-10-10</a> | 
+<a href="#rentals-potensial-inhouse-section">Rentals-potensial-Inhouse</a> | 
 <a href="#walletstotavern-summon-section">WalletsToTavern-Summon</a> | 
 <a href="#walletstotavern-1-10-section">WalletsToTavern-1-10</a> | 
 <a href="#rentals-section">Rentals</a> | 
@@ -6174,6 +6309,7 @@
 <a href="#dstavernbelow40-section">DsTavernBelow40</a> | 
 <a href="#heropriceratio-section">HeroPriceRatio</a> | 
 <a href="#tavern-10-10-section">Tavern-10-10</a> | 
+<a href="#rentals-potensial-inhouse-section">Rentals-potensial-Inhouse</a> | 
 <a href="#walletstotavern-summon-section">WalletsToTavern-Summon</a> | 
 <a href="#walletstotavern-ds-section">WalletsToTavern-DS</a> | 
 <a href="#rentals-section">Rentals</a> | 
@@ -6201,6 +6337,7 @@
 <a href="#dstavernbelow40-section">DsTavernBelow40</a> | 
 <a href="#heropriceratio-section">HeroPriceRatio</a> | 
 <a href="#tavern-10-10-section">Tavern-10-10</a> | 
+<a href="#rentals-potensial-inhouse-section">Rentals-potensial-Inhouse</a> | 
 <a href="#walletstotavern-summon-section">WalletsToTavern-Summon</a> | 
 <a href="#walletstotavern-ds-section">WalletsToTavern-DS</a> | 
 <a href="#walletstotavern-1-10-section">WalletsToTavern-1-10</a> | 
@@ -6245,6 +6382,7 @@
 <a href="#dstavernbelow40-section">DsTavernBelow40</a> | 
 <a href="#heropriceratio-section">HeroPriceRatio</a> | 
 <a href="#tavern-10-10-section">Tavern-10-10</a> | 
+<a href="#rentals-potensial-inhouse-section">Rentals-potensial-Inhouse</a> | 
 <a href="#walletstotavern-summon-section">WalletsToTavern-Summon</a> | 
 <a href="#walletstotavern-ds-section">WalletsToTavern-DS</a> | 
 <a href="#walletstotavern-1-10-section">WalletsToTavern-1-10</a> | 
@@ -7114,6 +7252,7 @@
 <a href="#dstavernbelow40-section">DsTavernBelow40</a> | 
 <a href="#heropriceratio-section">HeroPriceRatio</a> | 
 <a href="#tavern-10-10-section">Tavern-10-10</a> | 
+<a href="#rentals-potensial-inhouse-section">Rentals-potensial-Inhouse</a> | 
 <a href="#walletstotavern-summon-section">WalletsToTavern-Summon</a> | 
 <a href="#walletstotavern-ds-section">WalletsToTavern-DS</a> | 
 <a href="#walletstotavern-1-10-section">WalletsToTavern-1-10</a> | 
@@ -7411,6 +7550,7 @@
 <a href="#dstavernbelow40-section">DsTavernBelow40</a> | 
 <a href="#heropriceratio-section">HeroPriceRatio</a> | 
 <a href="#tavern-10-10-section">Tavern-10-10</a> | 
+<a href="#rentals-potensial-inhouse-section">Rentals-potensial-Inhouse</a> | 
 <a href="#walletstotavern-summon-section">WalletsToTavern-Summon</a> | 
 <a href="#walletstotavern-ds-section">WalletsToTavern-DS</a> | 
 <a href="#walletstotavern-1-10-section">WalletsToTavern-1-10</a> | 
@@ -7453,7 +7593,7 @@
             </div> <!-- End container -->
             
             <footer>
-                Generated on 2025-03-21 at 10:45:44
+                Generated on 2025-03-21 at 11:58:20
             </footer>
             
             <script>
