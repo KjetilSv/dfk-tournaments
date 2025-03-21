@@ -293,6 +293,32 @@
             </style>
         </head>
         <body>
+            
+        <script>
+            // Set the generation time
+            const generationTime = new Date("2025-03-21 10:28:05");
+            
+            // Update the timer every second
+            setInterval(function() {
+                const now = new Date();
+                const diff = now - generationTime;
+                
+                // Calculate hours, minutes, seconds
+                const hours = Math.floor(diff / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+                
+                // Format the time string
+                const timeString = `Generated ${hours}h ${minutes}m ${seconds}s ago`;
+                
+                // Update the timer element
+                document.getElementById('generation-timer').textContent = timeString;
+            }, 1000);
+        </script>
+        <div id="generation-timer" style="position: fixed; top: 10px; right: 10px; background: rgba(0,0,0,0.7); padding: 8px; border-radius: 4px; z-index: 1000; color: white;">
+            Generated just now
+        </div>
+
             <header>
                 <div class="header-content">
                     <h1>Hero Matches</h1>
@@ -349,75 +375,27 @@
 <tbody>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000845471')">2000000845471</td>
-<td class="clickable" onclick="copyToClipboard('2000001006639')">2000001006639</td>
-<td><a href="https://www.adfk.app/heroes/2000000845471/2000001006639/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000001025673')">2000001025673</td>
+<td class="clickable" onclick="copyToClipboard('2000001030374')">2000001030374</td>
+<td><a href="https://www.adfk.app/heroes/2000001025673/2000001030374/" class="herolink" target="_blank">View Hero</a></td>
 <td>145</td>
-<td>65.0</td>
-<td>0</td>
-<td>0</td>
-<td>6</td>
-<td>4</td>
-<td>7</td>
-<td>5</td>
-<td>4</td>
-<td>3</td>
-<td>5</td>
-<td>0</td>
-<td>4</td>
-<td>18</td>
-<td>5</td>
-<td>19</td>
-<td>39.0</td>
-<td>26.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000955382')">2000000955382</td>
-<td class="clickable" onclick="copyToClipboard('2000001032162')">2000001032162</td>
-<td><a href="https://www.adfk.app/heroes/2000000955382/2000001032162/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>39.0</td>
-<td>0</td>
-<td>0</td>
-<td>11</td>
-<td>7</td>
-<td>10</td>
-<td>6</td>
-<td>17</td>
-<td>2</td>
-<td>16</td>
-<td>6</td>
-<td>6</td>
-<td>7</td>
-<td>7</td>
-<td>6</td>
-<td>27.0</td>
-<td>12.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000345026')">2000000345026</td>
-<td class="clickable" onclick="copyToClipboard('2000000788358')">2000000788358</td>
-<td><a href="https://www.adfk.app/heroes/2000000345026/2000000788358/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
 <td>56.0</td>
 <td>0</td>
 <td>0</td>
-<td>6</td>
-<td>6</td>
-<td>6</td>
-<td>8</td>
-<td>5</td>
-<td>7</td>
 <td>4</td>
-<td>6</td>
-<td>1</td>
-<td>19</td>
 <td>0</td>
+<td>5</td>
+<td>1</td>
+<td>4</td>
+<td>3</td>
+<td>5</td>
+<td>4</td>
 <td>18</td>
-<td>17.0</td>
-<td>39.0</td>
+<td>5</td>
+<td>19</td>
+<td>4</td>
+<td>38.0</td>
+<td>18.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -445,26 +423,26 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000748786')">2000000748786</td>
-<td class="clickable" onclick="copyToClipboard('2000001025185')">2000001025185</td>
-<td><a href="https://www.adfk.app/heroes/2000000748786/2000001025185/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('1000000595824')">1000000595824</td>
+<td class="clickable" onclick="copyToClipboard('2000000958985')">2000000958985</td>
+<td><a href="https://www.adfk.app/heroes/1000000595824/2000000958985/" class="herolink" target="_blank">View Hero</a></td>
 <td>125</td>
-<td>47.0</td>
+<td>40.0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
+<td>4</td>
+<td>11</td>
 <td>5</td>
-<td>1</td>
-<td>1</td>
-<td>17</td>
 <td>2</td>
-<td>16</td>
+<td>7</td>
+<td>5</td>
+<td>6</td>
+<td>4</td>
+<td>6</td>
 <td>6</td>
 <td>7</td>
 <td>7</td>
-<td>6</td>
-<td>6</td>
-<td>35.0</td>
+<td>28.0</td>
 <td>12.0</td>
 </tr>
 <tr class="score-100-1000">
@@ -541,6 +519,30 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000875846')">2000000875846</td>
+<td class="clickable" onclick="copyToClipboard('2000001032782')">2000001032782</td>
+<td><a href="https://www.adfk.app/heroes/2000000875846/2000001032782/" class="herolink" target="_blank">View Hero</a></td>
+<td>125</td>
+<td>54.0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>6</td>
+<td>5</td>
+<td>7</td>
+<td>6</td>
+<td>1</td>
+<td>7</td>
+<td>0</td>
+<td>18.0</td>
+<td>36.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000770195')">2000000770195</td>
 <td class="clickable" onclick="copyToClipboard('2000000948216')">2000000948216</td>
 <td><a href="https://www.adfk.app/heroes/2000000770195/2000000948216/" class="herolink" target="_blank">View Hero</a></td>
@@ -562,6 +564,30 @@
 <td>2</td>
 <td>28.0</td>
 <td>26.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000617572')">2000000617572</td>
+<td class="clickable" onclick="copyToClipboard('2000001029798')">2000001029798</td>
+<td><a href="https://www.adfk.app/heroes/2000000617572/2000001029798/" class="herolink" target="_blank">View Hero</a></td>
+<td>125</td>
+<td>55.0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+<td>9</td>
+<td>5</td>
+<td>11</td>
+<td>5</td>
+<td>2</td>
+<td>4</td>
+<td>3</td>
+<td>0</td>
+<td>6</td>
+<td>1</td>
+<td>7</td>
+<td>33.0</td>
+<td>22.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -709,54 +735,6 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000756431')">2000000756431</td>
-<td class="clickable" onclick="copyToClipboard('2000000863960')">2000000863960</td>
-<td><a href="https://www.adfk.app/heroes/2000000756431/2000000863960/" class="herolink" target="_blank">View Hero</a></td>
-<td>125</td>
-<td>60.0</td>
-<td>0</td>
-<td>0</td>
-<td>4</td>
-<td>9</td>
-<td>5</td>
-<td>1</td>
-<td>2</td>
-<td>5</td>
-<td>3</td>
-<td>4</td>
-<td>2</td>
-<td>4</td>
-<td>3</td>
-<td>5</td>
-<td>28.0</td>
-<td>32.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000802165')">2000000802165</td>
-<td class="clickable" onclick="copyToClipboard('2000000920729')">2000000920729</td>
-<td><a href="https://www.adfk.app/heroes/2000000802165/2000000920729/" class="herolink" target="_blank">View Hero</a></td>
-<td>125</td>
-<td>60.0</td>
-<td>0</td>
-<td>0</td>
-<td>4</td>
-<td>0</td>
-<td>5</td>
-<td>6</td>
-<td>5</td>
-<td>7</td>
-<td>4</td>
-<td>6</td>
-<td>6</td>
-<td>2</td>
-<td>7</td>
-<td>3</td>
-<td>35.0</td>
-<td>25.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('1000000688129')">1000000688129</td>
 <td class="clickable" onclick="copyToClipboard('2000001026346')">2000001026346</td>
 <td><a href="https://www.adfk.app/heroes/1000000688129/2000001026346/" class="herolink" target="_blank">View Hero</a></td>
@@ -778,6 +756,30 @@
 <td>2</td>
 <td>22.0</td>
 <td>38.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000756431')">2000000756431</td>
+<td class="clickable" onclick="copyToClipboard('2000000863960')">2000000863960</td>
+<td><a href="https://www.adfk.app/heroes/2000000756431/2000000863960/" class="herolink" target="_blank">View Hero</a></td>
+<td>125</td>
+<td>60.0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+<td>9</td>
+<td>5</td>
+<td>1</td>
+<td>2</td>
+<td>5</td>
+<td>3</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>3</td>
+<td>5</td>
+<td>28.0</td>
+<td>32.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -826,30 +828,6 @@
 <td>6</td>
 <td>38.0</td>
 <td>28.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000411284')">2000000411284</td>
-<td class="clickable" onclick="copyToClipboard('2000001027970')">2000001027970</td>
-<td><a href="https://www.adfk.app/heroes/2000000411284/2000001027970/" class="herolink" target="_blank">View Hero</a></td>
-<td>125</td>
-<td>67.0</td>
-<td>0</td>
-<td>0</td>
-<td>10</td>
-<td>7</td>
-<td>1</td>
-<td>11</td>
-<td>16</td>
-<td>0</td>
-<td>17</td>
-<td>1</td>
-<td>0</td>
-<td>7</td>
-<td>1</td>
-<td>6</td>
-<td>38.0</td>
-<td>29.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -973,30 +951,6 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000468573')">2000000468573</td>
-<td class="clickable" onclick="copyToClipboard('2000000874809')">2000000874809</td>
-<td><a href="https://www.adfk.app/heroes/2000000468573/2000000874809/" class="herolink" target="_blank">View Hero</a></td>
-<td>125</td>
-<td>71.0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>9</td>
-<td>2</td>
-<td>7</td>
-<td>3</td>
-<td>6</td>
-<td>3</td>
-<td>3</td>
-<td>2</td>
-<td>2</td>
-<td>39.0</td>
-<td>32.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000861267')">2000000861267</td>
 <td class="clickable" onclick="copyToClipboard('2000000861271')">2000000861271</td>
 <td><a href="https://www.adfk.app/heroes/2000000861267/2000000861271/" class="herolink" target="_blank">View Hero</a></td>
@@ -1021,6 +975,30 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000468573')">2000000468573</td>
+<td class="clickable" onclick="copyToClipboard('2000000874809')">2000000874809</td>
+<td><a href="https://www.adfk.app/heroes/2000000468573/2000000874809/" class="herolink" target="_blank">View Hero</a></td>
+<td>125</td>
+<td>71.0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>9</td>
+<td>2</td>
+<td>7</td>
+<td>3</td>
+<td>6</td>
+<td>3</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+<td>39.0</td>
+<td>32.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('1000000645840')">1000000645840</td>
 <td class="clickable" onclick="copyToClipboard('2000001030849')">2000001030849</td>
 <td><a href="https://www.adfk.app/heroes/1000000645840/2000001030849/" class="herolink" target="_blank">View Hero</a></td>
@@ -1042,30 +1020,6 @@
 <td>4</td>
 <td>39.99</td>
 <td>36.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000760011')">2000000760011</td>
-<td class="clickable" onclick="copyToClipboard('2000001005820')">2000001005820</td>
-<td><a href="https://www.adfk.app/heroes/2000000760011/2000001005820/" class="herolink" target="_blank">View Hero</a></td>
-<td>120</td>
-<td>63.0</td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>7</td>
-<td>0</td>
-<td>6</td>
-<td>3</td>
-<td>1</td>
-<td>2</td>
-<td>2</td>
-<td>19</td>
-<td>1</td>
-<td>18</td>
-<td>0</td>
-<td>39.0</td>
-<td>24.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -1141,6 +1095,30 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000755400')">2000000755400</td>
+<td class="clickable" onclick="copyToClipboard('2000000836471')">2000000836471</td>
+<td><a href="https://www.adfk.app/heroes/2000000755400/2000000836471/" class="herolink" target="_blank">View Hero</a></td>
+<td>115</td>
+<td>80.0</td>
+<td>0</td>
+<td>0</td>
+<td>16</td>
+<td>2</td>
+<td>17</td>
+<td>4</td>
+<td>5</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>6</td>
+<td>5</td>
+<td>7</td>
+<td>40.0</td>
+<td>40.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000632302')">2000000632302</td>
 <td class="clickable" onclick="copyToClipboard('2000000995306')">2000000995306</td>
 <td><a href="https://www.adfk.app/heroes/2000000632302/2000000995306/" class="herolink" target="_blank">View Hero</a></td>
@@ -1165,30 +1143,6 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000345026')">2000000345026</td>
-<td class="clickable" onclick="copyToClipboard('2000000896817')">2000000896817</td>
-<td><a href="https://www.adfk.app/heroes/2000000345026/2000000896817/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>35.0</td>
-<td>0</td>
-<td>0</td>
-<td>6</td>
-<td>6</td>
-<td>6</td>
-<td>1</td>
-<td>5</td>
-<td>7</td>
-<td>4</td>
-<td>6</td>
-<td>1</td>
-<td>19</td>
-<td>5</td>
-<td>18</td>
-<td>17.0</td>
-<td>18.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000991063')">2000000991063</td>
 <td class="clickable" onclick="copyToClipboard('2000000997115')">2000000997115</td>
 <td><a href="https://www.adfk.app/heroes/2000000991063/2000000997115/" class="herolink" target="_blank">View Hero</a></td>
@@ -1210,6 +1164,30 @@
 <td>7</td>
 <td>22.0</td>
 <td>13.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000980260')">2000000980260</td>
+<td class="clickable" onclick="copyToClipboard('2000001026416')">2000001026416</td>
+<td><a href="https://www.adfk.app/heroes/2000000980260/2000001026416/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>39.0</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+<td>11</td>
+<td>1</td>
+<td>5</td>
+<td>4</td>
+<td>1</td>
+<td>5</td>
+<td>0</td>
+<td>1</td>
+<td>19</td>
+<td>4</td>
+<td>18</td>
+<td>24.0</td>
+<td>15.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -1258,54 +1236,6 @@
 <td>19</td>
 <td>13.0</td>
 <td>28.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000636560')">2000000636560</td>
-<td class="clickable" onclick="copyToClipboard('2000000896817')">2000000896817</td>
-<td><a href="https://www.adfk.app/heroes/2000000636560/2000000896817/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>42.0</td>
-<td>0</td>
-<td>0</td>
-<td>6</td>
-<td>11</td>
-<td>6</td>
-<td>1</td>
-<td>5</td>
-<td>7</td>
-<td>4</td>
-<td>6</td>
-<td>1</td>
-<td>19</td>
-<td>5</td>
-<td>18</td>
-<td>24.0</td>
-<td>18.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000896817')">2000000896817</td>
-<td class="clickable" onclick="copyToClipboard('2000001006639')">2000001006639</td>
-<td><a href="https://www.adfk.app/heroes/2000000896817/2000001006639/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>44.0</td>
-<td>0</td>
-<td>0</td>
-<td>6</td>
-<td>1</td>
-<td>7</td>
-<td>5</td>
-<td>4</td>
-<td>6</td>
-<td>5</td>
-<td>0</td>
-<td>5</td>
-<td>18</td>
-<td>5</td>
-<td>19</td>
-<td>18.0</td>
-<td>26.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -1477,6 +1407,30 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000869432')">2000000869432</td>
+<td class="clickable" onclick="copyToClipboard('2000000899702')">2000000899702</td>
+<td><a href="https://www.adfk.app/heroes/2000000869432/2000000899702/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>49.0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>5</td>
+<td>11</td>
+<td>2</td>
+<td>2</td>
+<td>7</td>
+<td>3</td>
+<td>0</td>
+<td>18</td>
+<td>1</td>
+<td>19</td>
+<td>21.0</td>
+<td>28.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000642378')">2000000642378</td>
 <td class="clickable" onclick="copyToClipboard('2000001030425')">2000001030425</td>
 <td><a href="https://www.adfk.app/heroes/2000000642378/2000001030425/" class="herolink" target="_blank">View Hero</a></td>
@@ -1498,30 +1452,6 @@
 <td>2</td>
 <td>26.0</td>
 <td>23.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000641371')">1000000641371</td>
-<td class="clickable" onclick="copyToClipboard('2000001022217')">2000001022217</td>
-<td><a href="https://www.adfk.app/heroes/1000000641371/2000001022217/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>49.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>6</td>
-<td>3</td>
-<td>2</td>
-<td>3</td>
-<td>3</td>
-<td>2</td>
-<td>6</td>
-<td>4</td>
-<td>7</td>
-<td>5</td>
-<td>36.0</td>
-<td>13.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -1597,6 +1527,30 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000719409')">2000000719409</td>
+<td class="clickable" onclick="copyToClipboard('2000001030979')">2000001030979</td>
+<td><a href="https://www.adfk.app/heroes/2000000719409/2000001030979/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>50.0</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>3</td>
+<td>11</td>
+<td>2</td>
+<td>5</td>
+<td>1</td>
+<td>4</td>
+<td>0</td>
+<td>7</td>
+<td>0</td>
+<td>6</td>
+<td>1</td>
+<td>28.0</td>
+<td>22.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000754114')">2000000754114</td>
 <td class="clickable" onclick="copyToClipboard('2000001021689')">2000001021689</td>
 <td><a href="https://www.adfk.app/heroes/2000000754114/2000001021689/" class="herolink" target="_blank">View Hero</a></td>
@@ -1618,102 +1572,6 @@
 <td>5</td>
 <td>35.0</td>
 <td>16.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000662597')">2000000662597</td>
-<td class="clickable" onclick="copyToClipboard('2000001032162')">2000001032162</td>
-<td><a href="https://www.adfk.app/heroes/2000000662597/2000001032162/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>51.0</td>
-<td>0</td>
-<td>0</td>
-<td>6</td>
-<td>7</td>
-<td>10</td>
-<td>6</td>
-<td>17</td>
-<td>7</td>
-<td>16</td>
-<td>6</td>
-<td>6</td>
-<td>4</td>
-<td>7</td>
-<td>6</td>
-<td>39.0</td>
-<td>12.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000631128')">1000000631128</td>
-<td class="clickable" onclick="copyToClipboard('2000000758378')">2000000758378</td>
-<td><a href="https://www.adfk.app/heroes/1000000631128/2000000758378/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>52.0</td>
-<td>0</td>
-<td>0</td>
-<td>5</td>
-<td>6</td>
-<td>4</td>
-<td>7</td>
-<td>2</td>
-<td>2</td>
-<td>3</td>
-<td>3</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
-<td>24.0</td>
-<td>28.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000573539')">1000000573539</td>
-<td class="clickable" onclick="copyToClipboard('2000000981468')">2000000981468</td>
-<td><a href="https://www.adfk.app/heroes/1000000573539/2000000981468/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>52.0</td>
-<td>0</td>
-<td>0</td>
-<td>6</td>
-<td>5</td>
-<td>7</td>
-<td>4</td>
-<td>0</td>
-<td>5</td>
-<td>1</td>
-<td>4</td>
-<td>3</td>
-<td>7</td>
-<td>2</td>
-<td>7</td>
-<td>39.0</td>
-<td>13.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000623817')">1000000623817</td>
-<td class="clickable" onclick="copyToClipboard('2000001026343')">2000001026343</td>
-<td><a href="https://www.adfk.app/heroes/1000000623817/2000001026343/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>52.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>4</td>
-<td>1</td>
-<td>4</td>
-<td>2</td>
-<td>5</td>
-<td>3</td>
-<td>3</td>
-<td>3</td>
-<td>2</td>
-<td>2</td>
-<td>32.0</td>
-<td>20.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -1741,6 +1599,78 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('1000000631128')">1000000631128</td>
+<td class="clickable" onclick="copyToClipboard('2000000758378')">2000000758378</td>
+<td><a href="https://www.adfk.app/heroes/1000000631128/2000000758378/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>52.0</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>6</td>
+<td>4</td>
+<td>7</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>24.0</td>
+<td>28.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('1000000623817')">1000000623817</td>
+<td class="clickable" onclick="copyToClipboard('2000001026343')">2000001026343</td>
+<td><a href="https://www.adfk.app/heroes/1000000623817/2000001026343/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>52.0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>5</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+<td>32.0</td>
+<td>20.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('1000000573539')">1000000573539</td>
+<td class="clickable" onclick="copyToClipboard('2000000981468')">2000000981468</td>
+<td><a href="https://www.adfk.app/heroes/1000000573539/2000000981468/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>52.0</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+<td>5</td>
+<td>7</td>
+<td>4</td>
+<td>0</td>
+<td>5</td>
+<td>1</td>
+<td>4</td>
+<td>3</td>
+<td>7</td>
+<td>2</td>
+<td>7</td>
+<td>39.0</td>
+<td>13.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000940291')">2000000940291</td>
 <td class="clickable" onclick="copyToClipboard('2000000994949')">2000000994949</td>
 <td><a href="https://www.adfk.app/heroes/2000000940291/2000000994949/" class="herolink" target="_blank">View Hero</a></td>
@@ -1762,54 +1692,6 @@
 <td>6</td>
 <td>39.0</td>
 <td>13.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000001005820')">2000001005820</td>
-<td class="clickable" onclick="copyToClipboard('2000001018616')">2000001018616</td>
-<td><a href="https://www.adfk.app/heroes/2000001005820/2000001018616/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>53.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>6</td>
-<td>1</td>
-<td>4</td>
-<td>2</td>
-<td>2</td>
-<td>3</td>
-<td>1</td>
-<td>18</td>
-<td>0</td>
-<td>19</td>
-<td>0</td>
-<td>24.0</td>
-<td>29.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000459993')">2000000459993</td>
-<td class="clickable" onclick="copyToClipboard('2000000990513')">2000000990513</td>
-<td><a href="https://www.adfk.app/heroes/2000000459993/2000000990513/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>53.0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>9</td>
-<td>0</td>
-<td>8</td>
-<td>0</td>
-<td>5</td>
-<td>1</td>
-<td>4</td>
-<td>0</td>
-<td>5</td>
-<td>6</td>
-<td>4</td>
-<td>29.0</td>
-<td>24.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -1837,27 +1719,27 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000798441')">2000000798441</td>
-<td class="clickable" onclick="copyToClipboard('2000000994147')">2000000994147</td>
-<td><a href="https://www.adfk.app/heroes/2000000798441/2000000994147/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000000459993')">2000000459993</td>
+<td class="clickable" onclick="copyToClipboard('2000000990513')">2000000990513</td>
+<td><a href="https://www.adfk.app/heroes/2000000459993/2000000990513/" class="herolink" target="_blank">View Hero</a></td>
 <td>110</td>
-<td>54.0</td>
+<td>53.0</td>
 <td>0</td>
 <td>0</td>
+<td>1</td>
+<td>9</td>
+<td>0</td>
+<td>8</td>
+<td>0</td>
+<td>5</td>
+<td>1</td>
+<td>4</td>
+<td>0</td>
+<td>5</td>
 <td>6</td>
 <td>4</td>
-<td>7</td>
-<td>7</td>
-<td>5</td>
-<td>7</td>
-<td>4</td>
-<td>5</td>
-<td>19</td>
-<td>5</td>
-<td>18</td>
-<td>0</td>
-<td>32.0</td>
-<td>22.0</td>
+<td>29.0</td>
+<td>24.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -1882,6 +1764,54 @@
 <td>0</td>
 <td>22.0</td>
 <td>32.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000798441')">2000000798441</td>
+<td class="clickable" onclick="copyToClipboard('2000000994147')">2000000994147</td>
+<td><a href="https://www.adfk.app/heroes/2000000798441/2000000994147/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>54.0</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+<td>4</td>
+<td>7</td>
+<td>7</td>
+<td>5</td>
+<td>7</td>
+<td>4</td>
+<td>5</td>
+<td>19</td>
+<td>5</td>
+<td>18</td>
+<td>0</td>
+<td>32.0</td>
+<td>22.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000878596')">2000000878596</td>
+<td class="clickable" onclick="copyToClipboard('2000001026416')">2000001026416</td>
+<td><a href="https://www.adfk.app/heroes/2000000878596/2000001026416/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>54.0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+<td>1</td>
+<td>5</td>
+<td>4</td>
+<td>7</td>
+<td>5</td>
+<td>0</td>
+<td>3</td>
+<td>19</td>
+<td>4</td>
+<td>18</td>
+<td>39.0</td>
+<td>15.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -2005,6 +1935,30 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000635018')">2000000635018</td>
+<td class="clickable" onclick="copyToClipboard('2000000875705')">2000000875705</td>
+<td><a href="https://www.adfk.app/heroes/2000000635018/2000000875705/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>56.0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+<td>7</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>2</td>
+<td>6</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>6</td>
+<td>0</td>
+<td>32.0</td>
+<td>24.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000339348')">2000000339348</td>
 <td class="clickable" onclick="copyToClipboard('2000000970821')">2000000970821</td>
 <td><a href="https://www.adfk.app/heroes/2000000339348/2000000970821/" class="herolink" target="_blank">View Hero</a></td>
@@ -2029,75 +1983,27 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000706899')">1000000706899</td>
-<td class="clickable" onclick="copyToClipboard('2000000803878')">2000000803878</td>
-<td><a href="https://www.adfk.app/heroes/1000000706899/2000000803878/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('1000000550249')">1000000550249</td>
+<td class="clickable" onclick="copyToClipboard('2000001032795')">2000001032795</td>
+<td><a href="https://www.adfk.app/heroes/1000000550249/2000001032795/" class="herolink" target="_blank">View Hero</a></td>
 <td>110</td>
 <td>56.0</td>
 <td>0</td>
 <td>0</td>
-<td>11</td>
-<td>2</td>
-<td>10</td>
-<td>3</td>
-<td>3</td>
 <td>1</td>
-<td>2</td>
-<td>6</td>
-<td>2</td>
-<td>7</td>
-<td>3</td>
-<td>6</td>
-<td>27.0</td>
-<td>29.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000711797')">1000000711797</td>
-<td class="clickable" onclick="copyToClipboard('2000000896817')">2000000896817</td>
-<td><a href="https://www.adfk.app/heroes/1000000711797/2000000896817/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>56.0</td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>9</td>
-<td>6</td>
-<td>1</td>
-<td>5</td>
-<td>7</td>
 <td>4</td>
-<td>6</td>
-<td>7</td>
-<td>19</td>
-<td>5</td>
-<td>18</td>
-<td>38.0</td>
-<td>18.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000635018')">2000000635018</td>
-<td class="clickable" onclick="copyToClipboard('2000000875705')">2000000875705</td>
-<td><a href="https://www.adfk.app/heroes/2000000635018/2000000875705/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>56.0</td>
-<td>0</td>
-<td>0</td>
-<td>4</td>
-<td>7</td>
-<td>5</td>
-<td>6</td>
-<td>7</td>
-<td>2</td>
-<td>6</td>
-<td>3</td>
-<td>2</td>
 <td>1</td>
+<td>5</td>
+<td>2</td>
+<td>7</td>
+<td>3</td>
 <td>6</td>
+<td>1</td>
+<td>4</td>
 <td>0</td>
-<td>32.0</td>
-<td>24.0</td>
+<td>5</td>
+<td>33.0</td>
+<td>23.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -2245,54 +2151,6 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000745026')">2000000745026</td>
-<td class="clickable" onclick="copyToClipboard('2000000988155')">2000000988155</td>
-<td><a href="https://www.adfk.app/heroes/2000000745026/2000000988155/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>58.0</td>
-<td>0</td>
-<td>0</td>
-<td>10</td>
-<td>7</td>
-<td>11</td>
-<td>6</td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
-<td>0</td>
-<td>5</td>
-<td>4</td>
-<td>4</td>
-<td>5</td>
-<td>32.0</td>
-<td>26.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000721511')">2000000721511</td>
-<td class="clickable" onclick="copyToClipboard('2000000805888')">2000000805888</td>
-<td><a href="https://www.adfk.app/heroes/2000000721511/2000000805888/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>58.0</td>
-<td>0</td>
-<td>0</td>
-<td>8</td>
-<td>8</td>
-<td>5</td>
-<td>9</td>
-<td>16</td>
-<td>0</td>
-<td>17</td>
-<td>2</td>
-<td>2</td>
-<td>0</td>
-<td>3</td>
-<td>1</td>
-<td>23.0</td>
-<td>35.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000825014')">2000000825014</td>
 <td class="clickable" onclick="copyToClipboard('2000000991063')">2000000991063</td>
 <td><a href="https://www.adfk.app/heroes/2000000825014/2000000991063/" class="herolink" target="_blank">View Hero</a></td>
@@ -2306,30 +2164,6 @@
 <td>11</td>
 <td>4</td>
 <td>3</td>
-<td>7</td>
-<td>2</td>
-<td>19</td>
-<td>7</td>
-<td>18</td>
-<td>6</td>
-<td>37.0</td>
-<td>22.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000311636')">2000000311636</td>
-<td class="clickable" onclick="copyToClipboard('2000000991063')">2000000991063</td>
-<td><a href="https://www.adfk.app/heroes/2000000311636/2000000991063/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>59.0</td>
-<td>0</td>
-<td>0</td>
-<td>6</td>
-<td>1</td>
-<td>7</td>
-<td>11</td>
-<td>3</td>
-<td>2</td>
 <td>7</td>
 <td>2</td>
 <td>19</td>
@@ -2365,27 +2199,27 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000897236')">2000000897236</td>
-<td class="clickable" onclick="copyToClipboard('2000000963446')">2000000963446</td>
-<td><a href="https://www.adfk.app/heroes/2000000897236/2000000963446/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000000311636')">2000000311636</td>
+<td class="clickable" onclick="copyToClipboard('2000000991063')">2000000991063</td>
+<td><a href="https://www.adfk.app/heroes/2000000311636/2000000991063/" class="herolink" target="_blank">View Hero</a></td>
 <td>110</td>
-<td>60.0</td>
+<td>59.0</td>
 <td>0</td>
 <td>0</td>
-<td>3</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>18</td>
-<td>1</td>
-<td>19</td>
 <td>6</td>
-<td>2</td>
-<td>5</td>
+<td>1</td>
+<td>7</td>
+<td>11</td>
 <td>3</td>
-<td>4</td>
+<td>2</td>
+<td>7</td>
+<td>2</td>
+<td>19</td>
+<td>7</td>
+<td>18</td>
+<td>6</td>
 <td>37.0</td>
-<td>23.0</td>
+<td>22.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -2410,6 +2244,30 @@
 <td>1</td>
 <td>28.0</td>
 <td>32.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000842953')">2000000842953</td>
+<td class="clickable" onclick="copyToClipboard('2000000869432')">2000000869432</td>
+<td><a href="https://www.adfk.app/heroes/2000000842953/2000000869432/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>60.0</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+<td>19</td>
+<td>0</td>
+<td>18</td>
+<td>39.0</td>
+<td>21.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -2482,6 +2340,30 @@
 <td>2</td>
 <td>28.0</td>
 <td>32.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000897236')">2000000897236</td>
+<td class="clickable" onclick="copyToClipboard('2000000963446')">2000000963446</td>
+<td><a href="https://www.adfk.app/heroes/2000000897236/2000000963446/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>60.0</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>18</td>
+<td>1</td>
+<td>19</td>
+<td>6</td>
+<td>2</td>
+<td>5</td>
+<td>3</td>
+<td>4</td>
+<td>37.0</td>
+<td>23.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -2629,54 +2511,6 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000721874')">2000000721874</td>
-<td class="clickable" onclick="copyToClipboard('2000001005820')">2000001005820</td>
-<td><a href="https://www.adfk.app/heroes/2000000721874/2000001005820/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>61.0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>5</td>
-<td>0</td>
-<td>6</td>
-<td>3</td>
-<td>1</td>
-<td>2</td>
-<td>2</td>
-<td>19</td>
-<td>3</td>
-<td>18</td>
-<td>0</td>
-<td>37.0</td>
-<td>24.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000825014')">2000000825014</td>
-<td class="clickable" onclick="copyToClipboard('2000001005820')">2000001005820</td>
-<td><a href="https://www.adfk.app/heroes/2000000825014/2000001005820/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>61.0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-<td>0</td>
-<td>6</td>
-<td>4</td>
-<td>3</td>
-<td>2</td>
-<td>2</td>
-<td>19</td>
-<td>7</td>
-<td>18</td>
-<td>0</td>
-<td>37.0</td>
-<td>24.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000551497')">2000000551497</td>
 <td class="clickable" onclick="copyToClipboard('2000001030357')">2000001030357</td>
 <td><a href="https://www.adfk.app/heroes/2000000551497/2000001030357/" class="herolink" target="_blank">View Hero</a></td>
@@ -2698,30 +2532,6 @@
 <td>2</td>
 <td>39.99</td>
 <td>22.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000600673')">2000000600673</td>
-<td class="clickable" onclick="copyToClipboard('2000000941346')">2000000941346</td>
-<td><a href="https://www.adfk.app/heroes/2000000600673/2000000941346/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>62.0</td>
-<td>0</td>
-<td>0</td>
-<td>5</td>
-<td>10</td>
-<td>4</td>
-<td>11</td>
-<td>5</td>
-<td>3</td>
-<td>4</td>
-<td>2</td>
-<td>2</td>
-<td>6</td>
-<td>2</td>
-<td>7</td>
-<td>32.0</td>
-<td>30.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -2749,6 +2559,30 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000600673')">2000000600673</td>
+<td class="clickable" onclick="copyToClipboard('2000000941346')">2000000941346</td>
+<td><a href="https://www.adfk.app/heroes/2000000600673/2000000941346/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>62.0</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>10</td>
+<td>4</td>
+<td>11</td>
+<td>5</td>
+<td>3</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>6</td>
+<td>2</td>
+<td>7</td>
+<td>32.0</td>
+<td>30.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('1000000631128')">1000000631128</td>
 <td class="clickable" onclick="copyToClipboard('2000000668566')">2000000668566</td>
 <td><a href="https://www.adfk.app/heroes/1000000631128/2000000668566/" class="herolink" target="_blank">View Hero</a></td>
@@ -2770,30 +2604,6 @@
 <td>0</td>
 <td>24.0</td>
 <td>39.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000771264')">2000000771264</td>
-<td class="clickable" onclick="copyToClipboard('2000000801792')">2000000801792</td>
-<td><a href="https://www.adfk.app/heroes/2000000771264/2000000801792/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>63.0</td>
-<td>0</td>
-<td>0</td>
-<td>5</td>
-<td>0</td>
-<td>4</td>
-<td>1</td>
-<td>7</td>
-<td>4</td>
-<td>6</td>
-<td>5</td>
-<td>3</td>
-<td>0</td>
-<td>2</td>
-<td>7</td>
-<td>28.0</td>
-<td>35.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -2869,145 +2679,49 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000869886')">2000000869886</td>
-<td class="clickable" onclick="copyToClipboard('2000001006639')">2000001006639</td>
-<td><a href="https://www.adfk.app/heroes/2000000869886/2000001006639/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000000771264')">2000000771264</td>
+<td class="clickable" onclick="copyToClipboard('2000000801792')">2000000801792</td>
+<td><a href="https://www.adfk.app/heroes/2000000771264/2000000801792/" class="herolink" target="_blank">View Hero</a></td>
 <td>110</td>
 <td>63.0</td>
 <td>0</td>
 <td>0</td>
+<td>5</td>
+<td>0</td>
+<td>4</td>
 <td>1</td>
+<td>7</td>
+<td>4</td>
+<td>6</td>
+<td>5</td>
 <td>3</td>
-<td>7</td>
-<td>5</td>
-<td>6</td>
-<td>1</td>
-<td>5</td>
 <td>0</td>
-<td>4</td>
-<td>18</td>
-<td>5</td>
-<td>19</td>
-<td>37.0</td>
-<td>26.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000390631')">2000000390631</td>
-<td class="clickable" onclick="copyToClipboard('2000000786270')">2000000786270</td>
-<td><a href="https://www.adfk.app/heroes/2000000390631/2000000786270/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>63.91</td>
-<td>0</td>
-<td>0</td>
-<td>5</td>
-<td>7</td>
-<td>4</td>
-<td>6</td>
 <td>2</td>
-<td>5</td>
-<td>1</td>
-<td>4</td>
-<td>4</td>
-<td>6</td>
-<td>5</td>
 <td>7</td>
-<td>35.91</td>
 <td>28.0</td>
+<td>35.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000150898')">2000000150898</td>
-<td class="clickable" onclick="copyToClipboard('2000000779359')">2000000779359</td>
-<td><a href="https://www.adfk.app/heroes/2000000150898/2000000779359/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000000744920')">2000000744920</td>
+<td class="clickable" onclick="copyToClipboard('2000000785938')">2000000785938</td>
+<td><a href="https://www.adfk.app/heroes/2000000744920/2000000785938/" class="herolink" target="_blank">View Hero</a></td>
 <td>110</td>
 <td>64.0</td>
 <td>0</td>
 <td>0</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
-<td>1</td>
-<td>4</td>
-<td>3</td>
-<td>5</td>
 <td>6</td>
-<td>3</td>
-<td>1</td>
-<td>2</td>
-<td>0</td>
-<td>32.0</td>
-<td>32.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000442194')">2000000442194</td>
-<td class="clickable" onclick="copyToClipboard('2000000980260')">2000000980260</td>
-<td><a href="https://www.adfk.app/heroes/2000000442194/2000000980260/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>64.0</td>
-<td>0</td>
-<td>0</td>
 <td>2</td>
 <td>7</td>
-<td>6</td>
-<td>11</td>
-<td>5</td>
-<td>0</td>
+<td>1</td>
+<td>2</td>
 <td>4</td>
-<td>1</td>
-<td>6</td>
-<td>18</td>
-<td>1</td>
-<td>19</td>
-<td>40.0</td>
-<td>24.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000622927')">2000000622927</td>
-<td class="clickable" onclick="copyToClipboard('2000000759835')">2000000759835</td>
-<td><a href="https://www.adfk.app/heroes/2000000622927/2000000759835/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>64.0</td>
-<td>0</td>
-<td>0</td>
-<td>4</td>
-<td>8</td>
+<td>3</td>
 <td>5</td>
-<td>9</td>
-<td>2</td>
-<td>3</td>
-<td>3</td>
-<td>2</td>
-<td>3</td>
-<td>2</td>
-<td>2</td>
-<td>2</td>
-<td>32.0</td>
-<td>32.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000598370')">2000000598370</td>
-<td class="clickable" onclick="copyToClipboard('2000000874872')">2000000874872</td>
-<td><a href="https://www.adfk.app/heroes/2000000598370/2000000874872/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>64.0</td>
-<td>0</td>
-<td>0</td>
-<td>4</td>
-<td>7</td>
-<td>5</td>
-<td>6</td>
-<td>7</td>
-<td>1</td>
-<td>6</td>
-<td>0</td>
-<td>3</td>
-<td>1</td>
-<td>5</td>
-<td>0</td>
 <td>32.0</td>
 <td>32.0</td>
 </tr>
@@ -3037,51 +2751,99 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000744920')">2000000744920</td>
-<td class="clickable" onclick="copyToClipboard('2000000785938')">2000000785938</td>
-<td><a href="https://www.adfk.app/heroes/2000000744920/2000000785938/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000000150898')">2000000150898</td>
+<td class="clickable" onclick="copyToClipboard('2000000779359')">2000000779359</td>
+<td><a href="https://www.adfk.app/heroes/2000000150898/2000000779359/" class="herolink" target="_blank">View Hero</a></td>
 <td>110</td>
 <td>64.0</td>
 <td>0</td>
 <td>0</td>
-<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
-<td>6</td>
-<td>2</td>
-<td>7</td>
 <td>1</td>
-<td>2</td>
 <td>4</td>
 <td>3</td>
 <td>5</td>
+<td>6</td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
 <td>32.0</td>
 <td>32.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000788358')">2000000788358</td>
-<td class="clickable" onclick="copyToClipboard('2000001006639')">2000001006639</td>
-<td><a href="https://www.adfk.app/heroes/2000000788358/2000001006639/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000000598370')">2000000598370</td>
+<td class="clickable" onclick="copyToClipboard('2000000874872')">2000000874872</td>
+<td><a href="https://www.adfk.app/heroes/2000000598370/2000000874872/" class="herolink" target="_blank">View Hero</a></td>
 <td>110</td>
-<td>65.0</td>
+<td>64.0</td>
 <td>0</td>
 <td>0</td>
-<td>6</td>
-<td>8</td>
+<td>4</td>
 <td>7</td>
 <td>5</td>
-<td>4</td>
 <td>6</td>
+<td>7</td>
+<td>1</td>
+<td>6</td>
+<td>0</td>
+<td>3</td>
+<td>1</td>
 <td>5</td>
 <td>0</td>
+<td>32.0</td>
+<td>32.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000622927')">2000000622927</td>
+<td class="clickable" onclick="copyToClipboard('2000000759835')">2000000759835</td>
+<td><a href="https://www.adfk.app/heroes/2000000622927/2000000759835/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>64.0</td>
 <td>0</td>
+<td>0</td>
+<td>4</td>
+<td>8</td>
+<td>5</td>
+<td>9</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>2</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>32.0</td>
+<td>32.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000442194')">2000000442194</td>
+<td class="clickable" onclick="copyToClipboard('2000000980260')">2000000980260</td>
+<td><a href="https://www.adfk.app/heroes/2000000442194/2000000980260/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>64.0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>7</td>
+<td>6</td>
+<td>11</td>
+<td>5</td>
+<td>0</td>
+<td>4</td>
+<td>1</td>
+<td>6</td>
 <td>18</td>
-<td>5</td>
+<td>1</td>
 <td>19</td>
-<td>39.0</td>
-<td>26.0</td>
+<td>40.0</td>
+<td>24.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -3157,30 +2919,6 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000710393')">2000000710393</td>
-<td class="clickable" onclick="copyToClipboard('2000000729988')">2000000729988</td>
-<td><a href="https://www.adfk.app/heroes/2000000710393/2000000729988/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>67.0</td>
-<td>0</td>
-<td>0</td>
-<td>6</td>
-<td>5</td>
-<td>4</td>
-<td>4</td>
-<td>5</td>
-<td>1</td>
-<td>4</td>
-<td>0</td>
-<td>7</td>
-<td>0</td>
-<td>6</td>
-<td>1</td>
-<td>39.0</td>
-<td>28.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000697092')">2000000697092</td>
 <td class="clickable" onclick="copyToClipboard('2000000798441')">2000000798441</td>
 <td><a href="https://www.adfk.app/heroes/2000000697092/2000000798441/" class="herolink" target="_blank">View Hero</a></td>
@@ -3202,6 +2940,30 @@
 <td>5</td>
 <td>35.0</td>
 <td>32.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000710393')">2000000710393</td>
+<td class="clickable" onclick="copyToClipboard('2000000729988')">2000000729988</td>
+<td><a href="https://www.adfk.app/heroes/2000000710393/2000000729988/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>67.0</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+<td>1</td>
+<td>4</td>
+<td>0</td>
+<td>7</td>
+<td>0</td>
+<td>6</td>
+<td>1</td>
+<td>39.0</td>
+<td>28.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -3301,30 +3063,6 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000570199')">2000000570199</td>
-<td class="clickable" onclick="copyToClipboard('2000000774267')">2000000774267</td>
-<td><a href="https://www.adfk.app/heroes/2000000570199/2000000774267/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>68.0</td>
-<td>0</td>
-<td>0</td>
-<td>5</td>
-<td>1</td>
-<td>4</td>
-<td>0</td>
-<td>4</td>
-<td>6</td>
-<td>3</td>
-<td>7</td>
-<td>7</td>
-<td>7</td>
-<td>6</td>
-<td>6</td>
-<td>40.0</td>
-<td>28.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000418878')">2000000418878</td>
 <td class="clickable" onclick="copyToClipboard('2000001030362')">2000001030362</td>
 <td><a href="https://www.adfk.app/heroes/2000000418878/2000001030362/" class="herolink" target="_blank">View Hero</a></td>
@@ -3349,6 +3087,30 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000570199')">2000000570199</td>
+<td class="clickable" onclick="copyToClipboard('2000000774267')">2000000774267</td>
+<td><a href="https://www.adfk.app/heroes/2000000570199/2000000774267/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>68.0</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>1</td>
+<td>4</td>
+<td>0</td>
+<td>4</td>
+<td>6</td>
+<td>3</td>
+<td>7</td>
+<td>7</td>
+<td>7</td>
+<td>6</td>
+<td>6</td>
+<td>40.0</td>
+<td>28.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000760011')">2000000760011</td>
 <td class="clickable" onclick="copyToClipboard('2000000955809')">2000000955809</td>
 <td><a href="https://www.adfk.app/heroes/2000000760011/2000000955809/" class="herolink" target="_blank">View Hero</a></td>
@@ -3370,6 +3132,30 @@
 <td>0</td>
 <td>39.0</td>
 <td>29.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000793070')">2000000793070</td>
+<td class="clickable" onclick="copyToClipboard('2000001025673')">2000001025673</td>
+<td><a href="https://www.adfk.app/heroes/2000000793070/2000001025673/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>68.0</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>7</td>
+<td>4</td>
+<td>0</td>
+<td>6</td>
+<td>6</td>
+<td>4</td>
+<td>3</td>
+<td>19</td>
+<td>4</td>
+<td>18</td>
+<td>5</td>
+<td>30.0</td>
+<td>38.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -3421,6 +3207,30 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('58747')">58747</td>
+<td class="clickable" onclick="copyToClipboard('2000000535724')">2000000535724</td>
+<td><a href="https://www.adfk.app/heroes/58747/2000000535724/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>69.0</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+<td>1</td>
+<td>7</td>
+<td>0</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td>0</td>
+<td>7</td>
+<td>1</td>
+<td>2</td>
+<td>30.0</td>
+<td>39.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000917579')">2000000917579</td>
 <td class="clickable" onclick="copyToClipboard('2000000940132')">2000000940132</td>
 <td><a href="https://www.adfk.app/heroes/2000000917579/2000000940132/" class="herolink" target="_blank">View Hero</a></td>
@@ -3442,78 +3252,6 @@
 <td>18</td>
 <td>39.0</td>
 <td>30.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000674483')">2000000674483</td>
-<td class="clickable" onclick="copyToClipboard('2000000696757')">2000000696757</td>
-<td><a href="https://www.adfk.app/heroes/2000000674483/2000000696757/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>70.0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>8</td>
-<td>6</td>
-<td>9</td>
-<td>2</td>
-<td>7</td>
-<td>3</td>
-<td>6</td>
-<td>4</td>
-<td>5</td>
-<td>5</td>
-<td>4</td>
-<td>32.0</td>
-<td>38.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000697092')">2000000697092</td>
-<td class="clickable" onclick="copyToClipboard('2000000726127')">2000000726127</td>
-<td><a href="https://www.adfk.app/heroes/2000000697092/2000000726127/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>70.0</td>
-<td>0</td>
-<td>0</td>
-<td>5</td>
-<td>4</td>
-<td>4</td>
-<td>11</td>
-<td>5</td>
-<td>6</td>
-<td>6</td>
-<td>7</td>
-<td>18</td>
-<td>4</td>
-<td>19</td>
-<td>6</td>
-<td>35.0</td>
-<td>35.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000628458')">2000000628458</td>
-<td class="clickable" onclick="copyToClipboard('2000000795608')">2000000795608</td>
-<td><a href="https://www.adfk.app/heroes/2000000628458/2000000795608/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>70.0</td>
-<td>0</td>
-<td>0</td>
-<td>4</td>
-<td>6</td>
-<td>9</td>
-<td>7</td>
-<td>5</td>
-<td>2</td>
-<td>4</td>
-<td>3</td>
-<td>5</td>
-<td>4</td>
-<td>4</td>
-<td>5</td>
-<td>32.0</td>
-<td>38.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -3565,6 +3303,150 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000628458')">2000000628458</td>
+<td class="clickable" onclick="copyToClipboard('2000000795608')">2000000795608</td>
+<td><a href="https://www.adfk.app/heroes/2000000628458/2000000795608/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>70.0</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+<td>6</td>
+<td>9</td>
+<td>7</td>
+<td>5</td>
+<td>2</td>
+<td>4</td>
+<td>3</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+<td>32.0</td>
+<td>38.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000697092')">2000000697092</td>
+<td class="clickable" onclick="copyToClipboard('2000000726127')">2000000726127</td>
+<td><a href="https://www.adfk.app/heroes/2000000697092/2000000726127/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>70.0</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>11</td>
+<td>5</td>
+<td>6</td>
+<td>6</td>
+<td>7</td>
+<td>18</td>
+<td>4</td>
+<td>19</td>
+<td>6</td>
+<td>35.0</td>
+<td>35.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000674483')">2000000674483</td>
+<td class="clickable" onclick="copyToClipboard('2000000696757')">2000000696757</td>
+<td><a href="https://www.adfk.app/heroes/2000000674483/2000000696757/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>70.0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>8</td>
+<td>6</td>
+<td>9</td>
+<td>2</td>
+<td>7</td>
+<td>3</td>
+<td>6</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>32.0</td>
+<td>38.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000758998')">2000000758998</td>
+<td class="clickable" onclick="copyToClipboard('2000001025673')">2000001025673</td>
+<td><a href="https://www.adfk.app/heroes/2000000758998/2000001025673/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>70.0</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>1</td>
+<td>4</td>
+<td>0</td>
+<td>5</td>
+<td>2</td>
+<td>4</td>
+<td>3</td>
+<td>1</td>
+<td>4</td>
+<td>18</td>
+<td>5</td>
+<td>32.0</td>
+<td>38.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000829213')">2000000829213</td>
+<td class="clickable" onclick="copyToClipboard('2000000933216')">2000000933216</td>
+<td><a href="https://www.adfk.app/heroes/2000000829213/2000000933216/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>71.0</td>
+<td>0</td>
+<td>0</td>
+<td>11</td>
+<td>7</td>
+<td>1</td>
+<td>7</td>
+<td>2</td>
+<td>4</td>
+<td>7</td>
+<td>5</td>
+<td>7</td>
+<td>17</td>
+<td>6</td>
+<td>16</td>
+<td>39.0</td>
+<td>32.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000802170')">2000000802170</td>
+<td class="clickable" onclick="copyToClipboard('2000001018445')">2000001018445</td>
+<td><a href="https://www.adfk.app/heroes/2000000802170/2000001018445/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>71.0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>1</td>
+<td>4</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>5</td>
+<td>7</td>
+<td>4</td>
+<td>1</td>
+<td>32.0</td>
+<td>39.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000544037')">2000000544037</td>
 <td class="clickable" onclick="copyToClipboard('2000000798424')">2000000798424</td>
 <td><a href="https://www.adfk.app/heroes/2000000544037/2000000798424/" class="herolink" target="_blank">View Hero</a></td>
@@ -3613,51 +3495,51 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000802170')">2000000802170</td>
-<td class="clickable" onclick="copyToClipboard('2000001018445')">2000001018445</td>
-<td><a href="https://www.adfk.app/heroes/2000000802170/2000001018445/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000000570199')">2000000570199</td>
+<td class="clickable" onclick="copyToClipboard('2000000782768')">2000000782768</td>
+<td><a href="https://www.adfk.app/heroes/2000000570199/2000000782768/" class="herolink" target="_blank">View Hero</a></td>
 <td>110</td>
-<td>71.0</td>
-<td>0</td>
+<td>72.0</td>
 <td>0</td>
 <td>0</td>
 <td>5</td>
 <td>1</td>
 <td>4</td>
 <td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
+<td>4</td>
+<td>6</td>
 <td>5</td>
 <td>7</td>
-<td>4</td>
-<td>1</td>
+<td>7</td>
+<td>7</td>
+<td>6</td>
+<td>3</td>
+<td>40.0</td>
 <td>32.0</td>
-<td>39.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000829213')">2000000829213</td>
-<td class="clickable" onclick="copyToClipboard('2000000933216')">2000000933216</td>
-<td><a href="https://www.adfk.app/heroes/2000000829213/2000000933216/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000000345003')">2000000345003</td>
+<td class="clickable" onclick="copyToClipboard('2000000825014')">2000000825014</td>
+<td><a href="https://www.adfk.app/heroes/2000000345003/2000000825014/" class="herolink" target="_blank">View Hero</a></td>
 <td>110</td>
-<td>71.0</td>
+<td>72.0</td>
 <td>0</td>
 <td>0</td>
-<td>11</td>
-<td>7</td>
-<td>1</td>
-<td>7</td>
-<td>2</td>
-<td>4</td>
-<td>7</td>
-<td>5</td>
-<td>7</td>
-<td>17</td>
 <td>6</td>
-<td>16</td>
-<td>39.0</td>
-<td>32.0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>5</td>
+<td>6</td>
+<td>4</td>
+<td>3</td>
+<td>18</td>
+<td>6</td>
+<td>19</td>
+<td>7</td>
+<td>35.0</td>
+<td>37.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -3709,99 +3591,51 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000345003')">2000000345003</td>
-<td class="clickable" onclick="copyToClipboard('2000000825014')">2000000825014</td>
-<td><a href="https://www.adfk.app/heroes/2000000345003/2000000825014/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000000697092')">2000000697092</td>
+<td class="clickable" onclick="copyToClipboard('2000001018934')">2000001018934</td>
+<td><a href="https://www.adfk.app/heroes/2000000697092/2000001018934/" class="herolink" target="_blank">View Hero</a></td>
 <td>110</td>
-<td>72.0</td>
+<td>73.0</td>
 <td>0</td>
 <td>0</td>
-<td>6</td>
-<td>1</td>
-<td>1</td>
+<td>5</td>
+<td>4</td>
 <td>2</td>
+<td>7</td>
 <td>5</td>
 <td>6</td>
-<td>4</td>
-<td>3</td>
+<td>2</td>
+<td>7</td>
 <td>18</td>
-<td>6</td>
+<td>4</td>
 <td>19</td>
-<td>7</td>
+<td>5</td>
 <td>35.0</td>
-<td>37.0</td>
+<td>38.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000570199')">2000000570199</td>
-<td class="clickable" onclick="copyToClipboard('2000000782768')">2000000782768</td>
-<td><a href="https://www.adfk.app/heroes/2000000570199/2000000782768/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>72.0</td>
-<td>0</td>
-<td>0</td>
-<td>5</td>
-<td>1</td>
-<td>4</td>
-<td>0</td>
-<td>4</td>
-<td>6</td>
-<td>5</td>
-<td>7</td>
-<td>7</td>
-<td>7</td>
-<td>6</td>
-<td>3</td>
-<td>40.0</td>
-<td>32.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000149904')">2000000149904</td>
-<td class="clickable" onclick="copyToClipboard('2000000878596')">2000000878596</td>
-<td><a href="https://www.adfk.app/heroes/2000000149904/2000000878596/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000000726127')">2000000726127</td>
+<td class="clickable" onclick="copyToClipboard('2000000859326')">2000000859326</td>
+<td><a href="https://www.adfk.app/heroes/2000000726127/2000000859326/" class="herolink" target="_blank">View Hero</a></td>
 <td>110</td>
 <td>74.0</td>
 <td>0</td>
 <td>0</td>
+<td>4</td>
+<td>11</td>
 <td>5</td>
-<td>1</td>
-<td>0</td>
+<td>2</td>
 <td>6</td>
-<td>5</td>
-<td>2</td>
-<td>4</td>
 <td>7</td>
-<td>2</td>
-<td>18</td>
-<td>3</td>
+<td>1</td>
+<td>6</td>
 <td>19</td>
+<td>6</td>
+<td>18</td>
+<td>5</td>
 <td>35.0</td>
 <td>39.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000670018')">1000000670018</td>
-<td class="clickable" onclick="copyToClipboard('2000000866117')">2000000866117</td>
-<td><a href="https://www.adfk.app/heroes/1000000670018/2000000866117/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>74.0</td>
-<td>0</td>
-<td>0</td>
-<td>5</td>
-<td>4</td>
-<td>5</td>
-<td>9</td>
-<td>1</td>
-<td>2</td>
-<td>0</td>
-<td>1</td>
-<td>18</td>
-<td>4</td>
-<td>19</td>
-<td>5</td>
-<td>39.0</td>
-<td>35.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -3925,25 +3759,49 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000726127')">2000000726127</td>
-<td class="clickable" onclick="copyToClipboard('2000000859326')">2000000859326</td>
-<td><a href="https://www.adfk.app/heroes/2000000726127/2000000859326/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('1000000670018')">1000000670018</td>
+<td class="clickable" onclick="copyToClipboard('2000000866117')">2000000866117</td>
+<td><a href="https://www.adfk.app/heroes/1000000670018/2000000866117/" class="herolink" target="_blank">View Hero</a></td>
 <td>110</td>
 <td>74.0</td>
 <td>0</td>
 <td>0</td>
+<td>5</td>
 <td>4</td>
-<td>11</td>
+<td>5</td>
+<td>9</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>18</td>
+<td>4</td>
+<td>19</td>
+<td>5</td>
+<td>39.0</td>
+<td>35.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000149904')">2000000149904</td>
+<td class="clickable" onclick="copyToClipboard('2000000878596')">2000000878596</td>
+<td><a href="https://www.adfk.app/heroes/2000000149904/2000000878596/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>74.0</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>6</td>
 <td>5</td>
 <td>2</td>
-<td>6</td>
+<td>4</td>
 <td>7</td>
-<td>1</td>
-<td>6</td>
-<td>19</td>
-<td>6</td>
+<td>2</td>
 <td>18</td>
-<td>5</td>
+<td>3</td>
+<td>19</td>
 <td>35.0</td>
 <td>39.0</td>
 </tr>
@@ -4021,6 +3879,30 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000820220')">2000000820220</td>
+<td class="clickable" onclick="copyToClipboard('2000001025673')">2000001025673</td>
+<td><a href="https://www.adfk.app/heroes/2000000820220/2000001025673/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>75.0</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>5</td>
+<td>6</td>
+<td>4</td>
+<td>3</td>
+<td>19</td>
+<td>0</td>
+<td>18</td>
+<td>5</td>
+<td>37.0</td>
+<td>38.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000372272')">2000000372272</td>
 <td class="clickable" onclick="copyToClipboard('2000000401714')">2000000401714</td>
 <td><a href="https://www.adfk.app/heroes/2000000372272/2000000401714/" class="herolink" target="_blank">View Hero</a></td>
@@ -4069,6 +3951,30 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000845743')">2000000845743</td>
+<td class="clickable" onclick="copyToClipboard('2000000860646')">2000000860646</td>
+<td><a href="https://www.adfk.app/heroes/2000000845743/2000000860646/" class="herolink" target="_blank">View Hero</a></td>
+<td>110</td>
+<td>76.0</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+<td>0</td>
+<td>8</td>
+<td>1</td>
+<td>2</td>
+<td>18</td>
+<td>3</td>
+<td>19</td>
+<td>0</td>
+<td>7</td>
+<td>6</td>
+<td>6</td>
+<td>39.0</td>
+<td>37.0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000798088')">2000000798088</td>
 <td class="clickable" onclick="copyToClipboard('2000000825014')">2000000825014</td>
 <td><a href="https://www.adfk.app/heroes/2000000798088/2000000825014/" class="herolink" target="_blank">View Hero</a></td>
@@ -4114,30 +4020,6 @@
 <td>5</td>
 <td>37.0</td>
 <td>39.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000845743')">2000000845743</td>
-<td class="clickable" onclick="copyToClipboard('2000000860646')">2000000860646</td>
-<td><a href="https://www.adfk.app/heroes/2000000845743/2000000860646/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>76.0</td>
-<td>0</td>
-<td>0</td>
-<td>6</td>
-<td>0</td>
-<td>8</td>
-<td>1</td>
-<td>2</td>
-<td>18</td>
-<td>3</td>
-<td>19</td>
-<td>0</td>
-<td>7</td>
-<td>6</td>
-<td>6</td>
-<td>39.0</td>
-<td>37.0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -4237,30 +4119,6 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000811240')">2000000811240</td>
-<td class="clickable" onclick="copyToClipboard('2000000877573')">2000000877573</td>
-<td><a href="https://www.adfk.app/heroes/2000000811240/2000000877573/" class="herolink" target="_blank">View Hero</a></td>
-<td>110</td>
-<td>78.0</td>
-<td>0</td>
-<td>0</td>
-<td>6</td>
-<td>6</td>
-<td>6</td>
-<td>7</td>
-<td>2</td>
-<td>19</td>
-<td>3</td>
-<td>18</td>
-<td>1</td>
-<td>6</td>
-<td>0</td>
-<td>1</td>
-<td>39.0</td>
-<td>39.0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000845743')">2000000845743</td>
 <td class="clickable" onclick="copyToClipboard('2000000915758')">2000000915758</td>
 <td><a href="https://www.adfk.app/heroes/2000000845743/2000000915758/" class="herolink" target="_blank">View Hero</a></td>
@@ -4285,26 +4143,26 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000696845')">2000000696845</td>
-<td class="clickable" onclick="copyToClipboard('2000000845471')">2000000845471</td>
-<td><a href="https://www.adfk.app/heroes/2000000696845/2000000845471/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000000811240')">2000000811240</td>
+<td class="clickable" onclick="copyToClipboard('2000000877573')">2000000877573</td>
+<td><a href="https://www.adfk.app/heroes/2000000811240/2000000877573/" class="herolink" target="_blank">View Hero</a></td>
 <td>110</td>
-<td>79.0</td>
+<td>78.0</td>
 <td>0</td>
 <td>0</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>7</td>
 <td>2</td>
+<td>19</td>
+<td>3</td>
+<td>18</td>
 <td>1</td>
 <td>6</td>
-<td>4</td>
-<td>5</td>
 <td>0</td>
-<td>4</td>
-<td>3</td>
-<td>5</td>
-<td>19</td>
-<td>4</td>
-<td>18</td>
-<td>40.0</td>
+<td>1</td>
+<td>39.0</td>
 <td>39.0</td>
 </tr>
 <tr class="score-100-1000">
@@ -4371,6 +4229,20 @@
 <tbody>
 <tr class="score-3001-4000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001029319')">2000001029319</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Rare</td>
+<td>False</td>
+<td>DarkKnight</td>
+<td>Warrior</td>
+<td>110.0</td>
+<td>0.1</td>
+<td>9984.62</td>
+<td>90.77</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('213167')">213167</td>
 <td class="clickable" onclick="copyToClipboard('12')">12</td>
 <td>0</td>
@@ -4399,6 +4271,104 @@
 </tr>
 <tr class="score-3001-4000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001021207')">2000001021207</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Uncommon</td>
+<td>False</td>
+<td>Summoner</td>
+<td>Legionnaire</td>
+<td>62.0</td>
+<td>0.1</td>
+<td>5393.99</td>
+<td>87.0</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001031518')">2000001031518</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Uncommon</td>
+<td>False</td>
+<td>Summoner</td>
+<td>Pirate</td>
+<td>62.0</td>
+<td>0.1</td>
+<td>5393.99</td>
+<td>87.0</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001031545')">2000001031545</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Uncommon</td>
+<td>False</td>
+<td>DarkKnight</td>
+<td>Berserker</td>
+<td>62.0</td>
+<td>0.1</td>
+<td>5393.99</td>
+<td>87.0</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001027988')">2000001027988</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Common</td>
+<td>False</td>
+<td>Paladin</td>
+<td>Archer</td>
+<td>36.0</td>
+<td>0.1</td>
+<td>3098.68</td>
+<td>86.07</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001030894')">2000001030894</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Common</td>
+<td>False</td>
+<td>Paladin</td>
+<td>Knight</td>
+<td>36.0</td>
+<td>0.1</td>
+<td>3098.68</td>
+<td>86.07</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001032744')">2000001032744</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Common</td>
+<td>False</td>
+<td>DarkKnight</td>
+<td>Legionnaire</td>
+<td>36.0</td>
+<td>0.1</td>
+<td>3098.68</td>
+<td>86.07</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001032748')">2000001032748</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Common</td>
+<td>False</td>
+<td>Paladin</td>
+<td>Knight</td>
+<td>36.0</td>
+<td>0.1</td>
+<td>3098.68</td>
+<td>86.07</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('254998')">254998</td>
 <td class="clickable" onclick="copyToClipboard('11')">11</td>
 <td>0</td>
@@ -4413,6 +4383,34 @@
 </tr>
 <tr class="score-3001-4000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000975494')">2000000975494</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Rare</td>
+<td>False</td>
+<td>Wizard</td>
+<td>Seer</td>
+<td>47.0</td>
+<td>0.1</td>
+<td>4016.8</td>
+<td>85.46</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001016080')">2000001016080</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Rare</td>
+<td>False</td>
+<td>Wizard</td>
+<td>Pirate</td>
+<td>47.0</td>
+<td>0.1</td>
+<td>4016.8</td>
+<td>85.46</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('1000000710350')">1000000710350</td>
 <td class="clickable" onclick="copyToClipboard('1')">1</td>
 <td>0</td>
@@ -4424,6 +4422,90 @@
 <td>0.1</td>
 <td>9984.62</td>
 <td>83.9</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001003868')">2000001003868</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Common</td>
+<td>False</td>
+<td>Ninja</td>
+<td>Priest</td>
+<td>37.0</td>
+<td>0.1</td>
+<td>3098.68</td>
+<td>83.75</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001029281')">2000001029281</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Common</td>
+<td>False</td>
+<td>Summoner</td>
+<td>Legionnaire</td>
+<td>37.0</td>
+<td>0.1</td>
+<td>3098.68</td>
+<td>83.75</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001031547')">2000001031547</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Common</td>
+<td>False</td>
+<td>DarkKnight</td>
+<td>Wizard</td>
+<td>37.0</td>
+<td>0.1</td>
+<td>3098.68</td>
+<td>83.75</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001032738')">2000001032738</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Common</td>
+<td>False</td>
+<td>Summoner</td>
+<td>Legionnaire</td>
+<td>37.0</td>
+<td>0.1</td>
+<td>3098.68</td>
+<td>83.75</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001021166')">2000001021166</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Rare</td>
+<td>False</td>
+<td>Ninja</td>
+<td>Wizard</td>
+<td>120.0</td>
+<td>0.1</td>
+<td>9984.62</td>
+<td>83.21</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001029799')">2000001029799</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Legendary</td>
+<td>False</td>
+<td>Monk</td>
+<td>Warrior</td>
+<td>125.0</td>
+<td>0.1</td>
+<td>10392.68</td>
+<td>83.14</td>
 </tr>
 <tr class="score-3001-4000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -4452,20 +4534,6 @@
 <td>0.1</td>
 <td>6375.88</td>
 <td>80.71</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000684487')">1000000684487</td>
-<td class="clickable" onclick="copyToClipboard('7')">7</td>
-<td>0</td>
-<td>Rare</td>
-<td>False</td>
-<td>Legionnaire</td>
-<td>Warrior</td>
-<td>54.0</td>
-<td>2.8</td>
-<td>4350.54</td>
-<td>80.57</td>
 </tr>
 <tr class="score-3001-4000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -4553,20 +4621,6 @@
 </tr>
 <tr class="score-3001-4000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000687742')">1000000687742</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Rare</td>
-<td>True</td>
-<td>Thief</td>
-<td>Priest</td>
-<td>50.0</td>
-<td>0.1</td>
-<td>4016.8</td>
-<td>80.34</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('1000000691282')">1000000691282</td>
 <td class="clickable" onclick="copyToClipboard('1')">1</td>
 <td>0</td>
@@ -4574,34 +4628,6 @@
 <td>True</td>
 <td>Legionnaire</td>
 <td>Wizard</td>
-<td>50.0</td>
-<td>0.1</td>
-<td>4016.8</td>
-<td>80.34</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000710469')">1000000710469</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Rare</td>
-<td>True</td>
-<td>Legionnaire</td>
-<td>Priest</td>
-<td>50.0</td>
-<td>0.1</td>
-<td>4016.8</td>
-<td>80.34</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000711869')">1000000711869</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Rare</td>
-<td>True</td>
-<td>Berserker</td>
-<td>Monk</td>
 <td>50.0</td>
 <td>0.1</td>
 <td>4016.8</td>
@@ -4623,118 +4649,6 @@
 </tr>
 <tr class="score-3001-4000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000958925')">2000000958925</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Rare</td>
-<td>False</td>
-<td>Monk</td>
-<td>Warrior</td>
-<td>50.0</td>
-<td>0.1</td>
-<td>4016.8</td>
-<td>80.34</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000984611')">2000000984611</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Rare</td>
-<td>False</td>
-<td>Pirate</td>
-<td>Scholar</td>
-<td>50.0</td>
-<td>0.1</td>
-<td>4016.8</td>
-<td>80.34</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000997511')">2000000997511</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Rare</td>
-<td>False</td>
-<td>Thief</td>
-<td>Pirate</td>
-<td>50.0</td>
-<td>0.1</td>
-<td>4016.8</td>
-<td>80.34</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000001008305')">2000001008305</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Rare</td>
-<td>False</td>
-<td>Pirate</td>
-<td>Seer</td>
-<td>50.0</td>
-<td>0.1</td>
-<td>4016.8</td>
-<td>80.34</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000001008375')">2000001008375</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Rare</td>
-<td>False</td>
-<td>Pirate</td>
-<td>Warrior</td>
-<td>50.0</td>
-<td>0.1</td>
-<td>4016.8</td>
-<td>80.34</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000001008403')">2000001008403</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Rare</td>
-<td>False</td>
-<td>Pirate</td>
-<td>Legionnaire</td>
-<td>50.0</td>
-<td>0.1</td>
-<td>4016.8</td>
-<td>80.34</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000001008459')">2000001008459</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Rare</td>
-<td>False</td>
-<td>Pirate</td>
-<td>Archer</td>
-<td>50.0</td>
-<td>0.1</td>
-<td>4016.8</td>
-<td>80.34</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000001008487')">2000001008487</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Rare</td>
-<td>False</td>
-<td>Pirate</td>
-<td>Seer</td>
-<td>50.0</td>
-<td>0.1</td>
-<td>4016.8</td>
-<td>80.34</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000001008498')">2000001008498</td>
 <td class="clickable" onclick="copyToClipboard('1')">1</td>
 <td>0</td>
@@ -4749,59 +4663,17 @@
 </tr>
 <tr class="score-3001-4000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000001009933')">2000001009933</td>
+<td class="clickable" onclick="copyToClipboard('2000001026414')">2000001026414</td>
 <td class="clickable" onclick="copyToClipboard('1')">1</td>
 <td>0</td>
-<td>Rare</td>
+<td>Legendary</td>
 <td>False</td>
-<td>Knight</td>
 <td>Warrior</td>
-<td>50.0</td>
+<td>Wizard</td>
+<td>130.0</td>
 <td>0.1</td>
-<td>4016.8</td>
-<td>80.34</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000001010027')">2000001010027</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Rare</td>
-<td>False</td>
-<td>Knight</td>
-<td>Archer</td>
-<td>50.0</td>
-<td>0.1</td>
-<td>4016.8</td>
-<td>80.34</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000001010039')">2000001010039</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Rare</td>
-<td>False</td>
-<td>Knight</td>
-<td>Warrior</td>
-<td>50.0</td>
-<td>0.1</td>
-<td>4016.8</td>
-<td>80.34</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000001020188')">2000001020188</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Rare</td>
-<td>False</td>
-<td>Pirate</td>
-<td>Berserker</td>
-<td>50.0</td>
-<td>0.1</td>
-<td>4016.8</td>
-<td>80.34</td>
+<td>10392.68</td>
+<td>79.94</td>
 </tr>
 <tr class="score-3001-4000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -5211,20 +5083,6 @@
 </tr>
 <tr class="score-3001-4000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000927239')">2000000927239</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Uncommon</td>
-<td>False</td>
-<td>Summoner</td>
-<td>Priest</td>
-<td>69.0</td>
-<td>0.1</td>
-<td>5393.99</td>
-<td>78.17</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000927620')">2000000927620</td>
 <td class="clickable" onclick="copyToClipboard('1')">1</td>
 <td>0</td>
@@ -5365,20 +5223,6 @@
 </tr>
 <tr class="score-3001-4000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000958677')">2000000958677</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Uncommon</td>
-<td>False</td>
-<td>Ninja</td>
-<td>Pirate</td>
-<td>69.0</td>
-<td>0.1</td>
-<td>5393.99</td>
-<td>78.17</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000961022')">2000000961022</td>
 <td class="clickable" onclick="copyToClipboard('1')">1</td>
 <td>0</td>
@@ -5449,6 +5293,48 @@
 </tr>
 <tr class="score-3001-4000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001030853')">2000001030853</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Uncommon</td>
+<td>False</td>
+<td>Ninja</td>
+<td>Legionnaire</td>
+<td>69.0</td>
+<td>0.1</td>
+<td>5393.99</td>
+<td>78.17</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001032739')">2000001032739</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Uncommon</td>
+<td>False</td>
+<td>Ninja</td>
+<td>Wizard</td>
+<td>69.0</td>
+<td>0.1</td>
+<td>5393.99</td>
+<td>78.17</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001032740')">2000001032740</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Uncommon</td>
+<td>False</td>
+<td>Ninja</td>
+<td>Priest</td>
+<td>69.0</td>
+<td>0.1</td>
+<td>5393.99</td>
+<td>78.17</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('157617')">157617</td>
 <td class="clickable" onclick="copyToClipboard('4')">4</td>
 <td>0</td>
@@ -5463,311 +5349,283 @@
 </tr>
 <tr class="score-3001-4000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000691291')">1000000691291</td>
+<td class="clickable" onclick="copyToClipboard('2000000673195')">2000000673195</td>
 <td class="clickable" onclick="copyToClipboard('1')">1</td>
 <td>0</td>
-<td>Rare</td>
-<td>True</td>
-<td>Wizard</td>
-<td>Seer</td>
-<td>52.0</td>
-<td>0.1</td>
-<td>4016.8</td>
-<td>77.25</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000709822')">1000000709822</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Rare</td>
-<td>True</td>
-<td>Scholar</td>
-<td>Thief</td>
-<td>52.0</td>
-<td>0.1</td>
-<td>4016.8</td>
-<td>77.25</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000710275')">1000000710275</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Rare</td>
-<td>True</td>
-<td>Pirate</td>
-<td>Archer</td>
-<td>52.0</td>
-<td>0.1</td>
-<td>4016.8</td>
-<td>77.25</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000959058')">2000000959058</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Rare</td>
-<td>False</td>
-<td>Legionnaire</td>
-<td>Thief</td>
-<td>52.0</td>
-<td>0.1</td>
-<td>4016.8</td>
-<td>77.25</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000675750')">1000000675750</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Uncommon</td>
-<td>True</td>
-<td>Summoner</td>
-<td>Scholar</td>
-<td>70.0</td>
-<td>0.1</td>
-<td>5393.99</td>
-<td>77.06</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000726781')">2000000726781</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Uncommon</td>
+<td>Common</td>
 <td>False</td>
 <td>Paladin</td>
-<td>Seer</td>
-<td>70.0</td>
+<td>Knight</td>
+<td>40.0</td>
 <td>0.1</td>
-<td>5393.99</td>
-<td>77.06</td>
+<td>3098.68</td>
+<td>77.47</td>
 </tr>
 <tr class="score-3001-4000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000786259')">2000000786259</td>
+<td class="clickable" onclick="copyToClipboard('2000000693085')">2000000693085</td>
 <td class="clickable" onclick="copyToClipboard('1')">1</td>
 <td>0</td>
-<td>Uncommon</td>
+<td>Common</td>
 <td>False</td>
-<td>Summoner</td>
+<td>DarkKnight</td>
+<td>Scholar</td>
+<td>40.0</td>
+<td>0.1</td>
+<td>3098.68</td>
+<td>77.47</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000695334')">2000000695334</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Common</td>
+<td>False</td>
+<td>Paladin</td>
+<td>Wizard</td>
+<td>40.0</td>
+<td>0.1</td>
+<td>3098.68</td>
+<td>77.47</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000702600')">2000000702600</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Common</td>
+<td>False</td>
+<td>DarkKnight</td>
+<td>Priest</td>
+<td>40.0</td>
+<td>0.1</td>
+<td>3098.68</td>
+<td>77.47</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000727774')">2000000727774</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Common</td>
+<td>False</td>
+<td>Paladin</td>
 <td>Thief</td>
-<td>70.0</td>
+<td>40.0</td>
 <td>0.1</td>
-<td>5393.99</td>
-<td>77.06</td>
+<td>3098.68</td>
+<td>77.47</td>
 </tr>
 <tr class="score-3001-4000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000787754')">2000000787754</td>
+<td class="clickable" onclick="copyToClipboard('2000000748749')">2000000748749</td>
 <td class="clickable" onclick="copyToClipboard('1')">1</td>
 <td>0</td>
-<td>Uncommon</td>
-<td>False</td>
-<td>Summoner</td>
-<td>Thief</td>
-<td>70.0</td>
-<td>0.1</td>
-<td>5393.99</td>
-<td>77.06</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000789503')">2000000789503</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Uncommon</td>
-<td>False</td>
-<td>Summoner</td>
-<td>Pirate</td>
-<td>70.0</td>
-<td>0.1</td>
-<td>5393.99</td>
-<td>77.06</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000790640')">2000000790640</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Uncommon</td>
-<td>False</td>
-<td>Summoner</td>
-<td>Warrior</td>
-<td>70.0</td>
-<td>0.1</td>
-<td>5393.99</td>
-<td>77.06</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000794964')">2000000794964</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Uncommon</td>
+<td>Common</td>
 <td>False</td>
 <td>Paladin</td>
 <td>Warrior</td>
-<td>70.0</td>
+<td>40.0</td>
 <td>0.1</td>
-<td>5393.99</td>
-<td>77.06</td>
+<td>3098.68</td>
+<td>77.47</td>
 </tr>
 <tr class="score-3001-4000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000795422')">2000000795422</td>
+<td class="clickable" onclick="copyToClipboard('2000000749058')">2000000749058</td>
 <td class="clickable" onclick="copyToClipboard('1')">1</td>
 <td>0</td>
-<td>Uncommon</td>
+<td>Common</td>
 <td>False</td>
 <td>Paladin</td>
-<td>Seer</td>
-<td>70.0</td>
+<td>Thief</td>
+<td>40.0</td>
 <td>0.1</td>
-<td>5393.99</td>
-<td>77.06</td>
+<td>3098.68</td>
+<td>77.47</td>
 </tr>
 <tr class="score-3001-4000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000795655')">2000000795655</td>
+<td class="clickable" onclick="copyToClipboard('2000000752473')">2000000752473</td>
 <td class="clickable" onclick="copyToClipboard('1')">1</td>
 <td>0</td>
-<td>Uncommon</td>
-<td>False</td>
-<td>Summoner</td>
-<td>Archer</td>
-<td>70.0</td>
-<td>0.1</td>
-<td>5393.99</td>
-<td>77.06</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000795667')">2000000795667</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Uncommon</td>
-<td>False</td>
-<td>Summoner</td>
-<td>Knight</td>
-<td>70.0</td>
-<td>0.1</td>
-<td>5393.99</td>
-<td>77.06</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000800779')">2000000800779</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Uncommon</td>
+<td>Common</td>
 <td>False</td>
 <td>DarkKnight</td>
 <td>Pirate</td>
-<td>70.0</td>
+<td>40.0</td>
 <td>0.1</td>
-<td>5393.99</td>
-<td>77.06</td>
+<td>3098.68</td>
+<td>77.47</td>
 </tr>
 <tr class="score-3001-4000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000802547')">2000000802547</td>
+<td class="clickable" onclick="copyToClipboard('2000000755400')">2000000755400</td>
 <td class="clickable" onclick="copyToClipboard('1')">1</td>
 <td>0</td>
-<td>Uncommon</td>
+<td>Common</td>
+<td>False</td>
+<td>Paladin</td>
+<td>Thief</td>
+<td>40.0</td>
+<td>0.1</td>
+<td>3098.68</td>
+<td>77.47</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000755402')">2000000755402</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Common</td>
+<td>False</td>
+<td>Paladin</td>
+<td>Monk</td>
+<td>40.0</td>
+<td>0.1</td>
+<td>3098.68</td>
+<td>77.47</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000765844')">2000000765844</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Common</td>
 <td>False</td>
 <td>DarkKnight</td>
-<td>Seer</td>
-<td>70.0</td>
-<td>0.1</td>
-<td>5393.99</td>
-<td>77.06</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000861938')">2000000861938</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Uncommon</td>
-<td>False</td>
-<td>Ninja</td>
-<td>Priest</td>
-<td>70.0</td>
-<td>0.1</td>
-<td>5393.99</td>
-<td>77.06</td>
-</tr>
-<tr class="score-3001-4000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000870524')">2000000870524</td>
-<td class="clickable" onclick="copyToClipboard('1')">1</td>
-<td>0</td>
-<td>Uncommon</td>
-<td>False</td>
-<td>Summoner</td>
 <td>Wizard</td>
-<td>70.0</td>
+<td>40.0</td>
 <td>0.1</td>
-<td>5393.99</td>
-<td>77.06</td>
+<td>3098.68</td>
+<td>77.47</td>
 </tr>
 <tr class="score-3001-4000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000913793')">2000000913793</td>
+<td class="clickable" onclick="copyToClipboard('2000000766918')">2000000766918</td>
 <td class="clickable" onclick="copyToClipboard('1')">1</td>
 <td>0</td>
-<td>Uncommon</td>
+<td>Common</td>
 <td>False</td>
-<td>Summoner</td>
+<td>DarkKnight</td>
 <td>Thief</td>
-<td>70.0</td>
+<td>40.0</td>
 <td>0.1</td>
-<td>5393.99</td>
-<td>77.06</td>
+<td>3098.68</td>
+<td>77.47</td>
 </tr>
 <tr class="score-3001-4000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000916825')">2000000916825</td>
+<td class="clickable" onclick="copyToClipboard('2000000773262')">2000000773262</td>
 <td class="clickable" onclick="copyToClipboard('1')">1</td>
 <td>0</td>
-<td>Uncommon</td>
+<td>Common</td>
 <td>False</td>
-<td>Summoner</td>
+<td>Paladin</td>
+<td>Berserker</td>
+<td>40.0</td>
+<td>0.1</td>
+<td>3098.68</td>
+<td>77.47</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000780943')">2000000780943</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Common</td>
+<td>False</td>
+<td>Paladin</td>
 <td>Priest</td>
-<td>70.0</td>
+<td>40.0</td>
 <td>0.1</td>
-<td>5393.99</td>
-<td>77.06</td>
+<td>3098.68</td>
+<td>77.47</td>
 </tr>
 <tr class="score-3001-4000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000952019')">2000000952019</td>
+<td class="clickable" onclick="copyToClipboard('2000000780957')">2000000780957</td>
 <td class="clickable" onclick="copyToClipboard('1')">1</td>
 <td>0</td>
-<td>Uncommon</td>
+<td>Common</td>
 <td>False</td>
-<td>Summoner</td>
+<td>DarkKnight</td>
 <td>Knight</td>
-<td>70.0</td>
+<td>40.0</td>
 <td>0.1</td>
-<td>5393.99</td>
-<td>77.06</td>
+<td>3098.68</td>
+<td>77.47</td>
 </tr>
 <tr class="score-3001-4000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000952044')">2000000952044</td>
+<td class="clickable" onclick="copyToClipboard('2000000780965')">2000000780965</td>
 <td class="clickable" onclick="copyToClipboard('1')">1</td>
 <td>0</td>
-<td>Uncommon</td>
+<td>Common</td>
 <td>False</td>
-<td>Summoner</td>
-<td>Seer</td>
-<td>70.0</td>
+<td>DarkKnight</td>
+<td>Priest</td>
+<td>40.0</td>
 <td>0.1</td>
-<td>5393.99</td>
-<td>77.06</td>
+<td>3098.68</td>
+<td>77.47</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000784063')">2000000784063</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Common</td>
+<td>False</td>
+<td>Paladin</td>
+<td>Warrior</td>
+<td>40.0</td>
+<td>0.1</td>
+<td>3098.68</td>
+<td>77.47</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000785184')">2000000785184</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Common</td>
+<td>False</td>
+<td>Paladin</td>
+<td>Pirate</td>
+<td>40.0</td>
+<td>0.1</td>
+<td>3098.68</td>
+<td>77.47</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000785345')">2000000785345</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Common</td>
+<td>False</td>
+<td>DarkKnight</td>
+<td>Monk</td>
+<td>40.0</td>
+<td>0.1</td>
+<td>3098.68</td>
+<td>77.47</td>
+</tr>
+<tr class="score-3001-4000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000788453')">2000000788453</td>
+<td class="clickable" onclick="copyToClipboard('1')">1</td>
+<td>0</td>
+<td>Common</td>
+<td>False</td>
+<td>Paladin</td>
+<td>Pirate</td>
+<td>40.0</td>
+<td>0.1</td>
+<td>3098.68</td>
+<td>77.47</td>
 </tr>
 </tbody>
 </table></div>
@@ -5879,14 +5737,14 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000606812')">1000000606812</td>
+<td class="clickable" onclick="copyToClipboard('1000000504461')">1000000504461</td>
 <td class="clickable" onclick="copyToClipboard('2000000976632')">2000000976632</td>
-<td><a href="https://www.adfk.app/heroes/1000000606812/2000000976632/" class="herolink" target="_blank">View Hero</a></td>
-<td>280</td>
-<td>16.07142857142</td>
-<td>2000.0</td>
-<td>2500.0</td>
-<td>4500.0</td>
+<td><a href="https://www.adfk.app/heroes/1000000504461/2000000976632/" class="herolink" target="_blank">View Hero</a></td>
+<td>250</td>
+<td>16.8</td>
+<td>1200.0</td>
+<td>3000.0</td>
+<td>4200.0</td>
 <td>10</td>
 </tr>
 <tr class="score-100-1000">
@@ -5899,18 +5757,6 @@
 <td>2900.0</td>
 <td>1000.0</td>
 <td>3900.0</td>
-<td>10</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000504461')">1000000504461</td>
-<td class="clickable" onclick="copyToClipboard('2000000976632')">2000000976632</td>
-<td><a href="https://www.adfk.app/heroes/1000000504461/2000000976632/" class="herolink" target="_blank">View Hero</a></td>
-<td>250</td>
-<td>14.8</td>
-<td>1200.0</td>
-<td>2500.0</td>
-<td>3700.0</td>
 <td>10</td>
 </tr>
 <tr class="score-100-1000">
@@ -6023,30 +5869,6 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000694130')">1000000694130</td>
-<td class="clickable" onclick="copyToClipboard('2000000068821')">2000000068821</td>
-<td><a href="https://www.adfk.app/heroes/1000000694130/2000000068821/" class="herolink" target="_blank">View Hero</a></td>
-<td>220</td>
-<td>10.0</td>
-<td>700.0</td>
-<td>1500.0</td>
-<td>2200.0</td>
-<td>10</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000675349')">1000000675349</td>
-<td class="clickable" onclick="copyToClipboard('2000000772701')">2000000772701</td>
-<td><a href="https://www.adfk.app/heroes/1000000675349/2000000772701/" class="herolink" target="_blank">View Hero</a></td>
-<td>220</td>
-<td>10.0</td>
-<td>700.0</td>
-<td>1500.0</td>
-<td>2200.0</td>
-<td>10</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('76207')">76207</td>
 <td class="clickable" onclick="copyToClipboard('1000000645691')">1000000645691</td>
 <td><a href="https://www.adfk.app/heroes/76207/1000000645691/" class="herolink" target="_blank">View Hero</a></td>
@@ -6083,14 +5905,26 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000583048')">1000000583048</td>
-<td class="clickable" onclick="copyToClipboard('2000000223726')">2000000223726</td>
-<td><a href="https://www.adfk.app/heroes/1000000583048/2000000223726/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('1000000543484')">1000000543484</td>
+<td class="clickable" onclick="copyToClipboard('2000000587037')">2000000587037</td>
+<td><a href="https://www.adfk.app/heroes/1000000543484/2000000587037/" class="herolink" target="_blank">View Hero</a></td>
 <td>220</td>
-<td>7.78181818181</td>
-<td>722.0</td>
-<td>990.0</td>
-<td>1712.0</td>
+<td>7.5</td>
+<td>750.0</td>
+<td>900.0</td>
+<td>1650.0</td>
+<td>10</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('1000000497728')">1000000497728</td>
+<td class="clickable" onclick="copyToClipboard('2000000537556')">2000000537556</td>
+<td><a href="https://www.adfk.app/heroes/1000000497728/2000000537556/" class="herolink" target="_blank">View Hero</a></td>
+<td>220</td>
+<td>7.28181818181</td>
+<td>652.0</td>
+<td>950.0</td>
+<td>1602.0</td>
 <td>10</td>
 </tr>
 </tbody>
@@ -6170,8 +6004,8 @@
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('1000000709908')">1000000709908</td>
-<td class="clickable" onclick="copyToClipboard('2000000844892')">2000000844892</td>
-<td><a href="https://www.adfk.app/heroes/1000000709908/2000000844892/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000001028334')">2000001028334</td>
+<td><a href="https://www.adfk.app/heroes/1000000709908/2000001028334/" class="herolink" target="_blank">View Hero</a></td>
 <td>190</td>
 <td>1200.0</td>
 <td>0</td>
@@ -6180,8 +6014,8 @@
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('1000000709908')">1000000709908</td>
-<td class="clickable" onclick="copyToClipboard('2000001028334')">2000001028334</td>
-<td><a href="https://www.adfk.app/heroes/1000000709908/2000001028334/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000000844892')">2000000844892</td>
+<td><a href="https://www.adfk.app/heroes/1000000709908/2000000844892/" class="herolink" target="_blank">View Hero</a></td>
 <td>190</td>
 <td>1200.0</td>
 <td>0</td>
@@ -6349,9 +6183,9 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000578161')">2000000578161</td>
-<td class="clickable" onclick="copyToClipboard('2000000514771')">2000000514771</td>
-<td><a href="https://www.adfk.app/heroes/2000000578161/2000000514771/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000000768353')">2000000768353</td>
+<td class="clickable" onclick="copyToClipboard('2000000876387')">2000000876387</td>
+<td><a href="https://www.adfk.app/heroes/2000000768353/2000000876387/" class="herolink" target="_blank">View Hero</a></td>
 <td>170</td>
 <td>60.0</td>
 <td>0</td>
@@ -6359,9 +6193,9 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000768353')">2000000768353</td>
-<td class="clickable" onclick="copyToClipboard('2000000876387')">2000000876387</td>
-<td><a href="https://www.adfk.app/heroes/2000000768353/2000000876387/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000000578161')">2000000578161</td>
+<td class="clickable" onclick="copyToClipboard('2000000514771')">2000000514771</td>
+<td><a href="https://www.adfk.app/heroes/2000000578161/2000000514771/" class="herolink" target="_blank">View Hero</a></td>
 <td>170</td>
 <td>60.0</td>
 <td>0</td>
@@ -6519,9 +6353,9 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000159489')">1000000159489</td>
-<td class="clickable" onclick="copyToClipboard('2000000999909')">2000000999909</td>
-<td><a href="https://www.adfk.app/heroes/1000000159489/2000000999909/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('1000000624438')">1000000624438</td>
+<td class="clickable" onclick="copyToClipboard('2000001013307')">2000001013307</td>
+<td><a href="https://www.adfk.app/heroes/1000000624438/2000001013307/" class="herolink" target="_blank">View Hero</a></td>
 <td>165</td>
 <td>259.0</td>
 <td>0</td>
@@ -6529,9 +6363,9 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000624438')">1000000624438</td>
-<td class="clickable" onclick="copyToClipboard('2000001013307')">2000001013307</td>
-<td><a href="https://www.adfk.app/heroes/1000000624438/2000001013307/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('1000000159489')">1000000159489</td>
+<td class="clickable" onclick="copyToClipboard('2000000999909')">2000000999909</td>
+<td><a href="https://www.adfk.app/heroes/1000000159489/2000000999909/" class="herolink" target="_blank">View Hero</a></td>
 <td>165</td>
 <td>259.0</td>
 <td>0</td>
@@ -6739,6 +6573,16 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('1000000709908')">1000000709908</td>
+<td class="clickable" onclick="copyToClipboard('2000000562647')">2000000562647</td>
+<td><a href="https://www.adfk.app/heroes/1000000709908/2000000562647/" class="herolink" target="_blank">View Hero</a></td>
+<td>165</td>
+<td>1200.0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('1000000624438')">1000000624438</td>
 <td class="clickable" onclick="copyToClipboard('2000000976134')">2000000976134</td>
 <td><a href="https://www.adfk.app/heroes/1000000624438/2000000976134/" class="herolink" target="_blank">View Hero</a></td>
@@ -6752,16 +6596,6 @@
 <td class="clickable" onclick="copyToClipboard('2000000757606')">2000000757606</td>
 <td class="clickable" onclick="copyToClipboard('2000000954614')">2000000954614</td>
 <td><a href="https://www.adfk.app/heroes/2000000757606/2000000954614/" class="herolink" target="_blank">View Hero</a></td>
-<td>165</td>
-<td>1200.0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000709908')">1000000709908</td>
-<td class="clickable" onclick="copyToClipboard('2000000562647')">2000000562647</td>
-<td><a href="https://www.adfk.app/heroes/1000000709908/2000000562647/" class="herolink" target="_blank">View Hero</a></td>
 <td>165</td>
 <td>1200.0</td>
 <td>0</td>
@@ -6799,9 +6633,9 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000024732')">1000000024732</td>
-<td class="clickable" onclick="copyToClipboard('1000000696298')">1000000696298</td>
-<td><a href="https://www.adfk.app/heroes/1000000024732/1000000696298/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('1000000700042')">1000000700042</td>
+<td class="clickable" onclick="copyToClipboard('2000000315574')">2000000315574</td>
+<td><a href="https://www.adfk.app/heroes/1000000700042/2000000315574/" class="herolink" target="_blank">View Hero</a></td>
 <td>165</td>
 <td>1480.0</td>
 <td>0</td>
@@ -6809,9 +6643,9 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000700042')">1000000700042</td>
-<td class="clickable" onclick="copyToClipboard('2000000315574')">2000000315574</td>
-<td><a href="https://www.adfk.app/heroes/1000000700042/2000000315574/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('1000000024732')">1000000024732</td>
+<td class="clickable" onclick="copyToClipboard('1000000696298')">1000000696298</td>
+<td><a href="https://www.adfk.app/heroes/1000000024732/1000000696298/" class="herolink" target="_blank">View Hero</a></td>
 <td>165</td>
 <td>1480.0</td>
 <td>0</td>
@@ -6939,9 +6773,9 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000887250')">2000000887250</td>
-<td class="clickable" onclick="copyToClipboard('1000000686114')">1000000686114</td>
-<td><a href="https://www.adfk.app/heroes/2000000887250/1000000686114/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000000644152')">2000000644152</td>
+<td class="clickable" onclick="copyToClipboard('2000000971562')">2000000971562</td>
+<td><a href="https://www.adfk.app/heroes/2000000644152/2000000971562/" class="herolink" target="_blank">View Hero</a></td>
 <td>160</td>
 <td>80.0</td>
 <td>0</td>
@@ -6949,9 +6783,9 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000644152')">2000000644152</td>
-<td class="clickable" onclick="copyToClipboard('2000000971562')">2000000971562</td>
-<td><a href="https://www.adfk.app/heroes/2000000644152/2000000971562/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000000887250')">2000000887250</td>
+<td class="clickable" onclick="copyToClipboard('1000000686114')">1000000686114</td>
+<td><a href="https://www.adfk.app/heroes/2000000887250/1000000686114/" class="herolink" target="_blank">View Hero</a></td>
 <td>160</td>
 <td>80.0</td>
 <td>0</td>
@@ -6979,9 +6813,9 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000644152')">2000000644152</td>
-<td class="clickable" onclick="copyToClipboard('1000000652604')">1000000652604</td>
-<td><a href="https://www.adfk.app/heroes/2000000644152/1000000652604/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('1000000712122')">1000000712122</td>
+<td class="clickable" onclick="copyToClipboard('2000000965488')">2000000965488</td>
+<td><a href="https://www.adfk.app/heroes/1000000712122/2000000965488/" class="herolink" target="_blank">View Hero</a></td>
 <td>160</td>
 <td>98.0</td>
 <td>0</td>
@@ -6989,11 +6823,11 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000709598')">1000000709598</td>
-<td class="clickable" onclick="copyToClipboard('1000000665088')">1000000665088</td>
-<td><a href="https://www.adfk.app/heroes/1000000709598/1000000665088/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000000644152')">2000000644152</td>
+<td class="clickable" onclick="copyToClipboard('1000000652604')">1000000652604</td>
+<td><a href="https://www.adfk.app/heroes/2000000644152/1000000652604/" class="herolink" target="_blank">View Hero</a></td>
 <td>160</td>
-<td>137.0</td>
+<td>98.0</td>
 <td>0</td>
 <td>0</td>
 </tr>
@@ -7099,9 +6933,9 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000709902')">1000000709902</td>
+<td class="clickable" onclick="copyToClipboard('2000000973745')">2000000973745</td>
 <td class="clickable" onclick="copyToClipboard('2000000449243')">2000000449243</td>
-<td><a href="https://www.adfk.app/heroes/1000000709902/2000000449243/" class="herolink" target="_blank">View Hero</a></td>
+<td><a href="https://www.adfk.app/heroes/2000000973745/2000000449243/" class="herolink" target="_blank">View Hero</a></td>
 <td>160</td>
 <td>420.0</td>
 <td>0</td>
@@ -7109,9 +6943,9 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000973745')">2000000973745</td>
+<td class="clickable" onclick="copyToClipboard('1000000709902')">1000000709902</td>
 <td class="clickable" onclick="copyToClipboard('2000000449243')">2000000449243</td>
-<td><a href="https://www.adfk.app/heroes/2000000973745/2000000449243/" class="herolink" target="_blank">View Hero</a></td>
+<td><a href="https://www.adfk.app/heroes/1000000709902/2000000449243/" class="herolink" target="_blank">View Hero</a></td>
 <td>160</td>
 <td>420.0</td>
 <td>0</td>
@@ -7169,9 +7003,9 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000709903')">1000000709903</td>
-<td class="clickable" onclick="copyToClipboard('2000001021998')">2000001021998</td>
-<td><a href="https://www.adfk.app/heroes/1000000709903/2000001021998/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('1000000705581')">1000000705581</td>
+<td class="clickable" onclick="copyToClipboard('1000000636918')">1000000636918</td>
+<td><a href="https://www.adfk.app/heroes/1000000705581/1000000636918/" class="herolink" target="_blank">View Hero</a></td>
 <td>160</td>
 <td>580.0</td>
 <td>0</td>
@@ -7179,9 +7013,9 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000705581')">1000000705581</td>
-<td class="clickable" onclick="copyToClipboard('1000000636918')">1000000636918</td>
-<td><a href="https://www.adfk.app/heroes/1000000705581/1000000636918/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('1000000709903')">1000000709903</td>
+<td class="clickable" onclick="copyToClipboard('2000001021998')">2000001021998</td>
+<td><a href="https://www.adfk.app/heroes/1000000709903/2000001021998/" class="herolink" target="_blank">View Hero</a></td>
 <td>160</td>
 <td>580.0</td>
 <td>0</td>
@@ -7279,16 +7113,6 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000709908')">1000000709908</td>
-<td class="clickable" onclick="copyToClipboard('2000000954037')">2000000954037</td>
-<td><a href="https://www.adfk.app/heroes/1000000709908/2000000954037/" class="herolink" target="_blank">View Hero</a></td>
-<td>160</td>
-<td>1280.0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('1000000709904')">1000000709904</td>
 <td class="clickable" onclick="copyToClipboard('2000000791300')">2000000791300</td>
 <td><a href="https://www.adfk.app/heroes/1000000709904/2000000791300/" class="herolink" target="_blank">View Hero</a></td>
@@ -7319,21 +7143,21 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000703440')">1000000703440</td>
-<td class="clickable" onclick="copyToClipboard('2000000079507')">2000000079507</td>
-<td><a href="https://www.adfk.app/heroes/1000000703440/2000000079507/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('1000000709908')">1000000709908</td>
+<td class="clickable" onclick="copyToClipboard('2000000954037')">2000000954037</td>
+<td><a href="https://www.adfk.app/heroes/1000000709908/2000000954037/" class="herolink" target="_blank">View Hero</a></td>
 <td>160</td>
-<td>1300.0</td>
+<td>1280.0</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000001016529')">2000001016529</td>
-<td class="clickable" onclick="copyToClipboard('1000000458939')">1000000458939</td>
-<td><a href="https://www.adfk.app/heroes/2000001016529/1000000458939/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('1000000703440')">1000000703440</td>
+<td class="clickable" onclick="copyToClipboard('2000000079507')">2000000079507</td>
+<td><a href="https://www.adfk.app/heroes/1000000703440/2000000079507/" class="herolink" target="_blank">View Hero</a></td>
 <td>160</td>
-<td>1480.0</td>
+<td>1300.0</td>
 <td>0</td>
 <td>0</td>
 </tr>
@@ -7352,6 +7176,16 @@
 <td class="clickable" onclick="copyToClipboard('2000000989591')">2000000989591</td>
 <td class="clickable" onclick="copyToClipboard('2000000953921')">2000000953921</td>
 <td><a href="https://www.adfk.app/heroes/2000000989591/2000000953921/" class="herolink" target="_blank">View Hero</a></td>
+<td>160</td>
+<td>1480.0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001016529')">2000001016529</td>
+<td class="clickable" onclick="copyToClipboard('1000000458939')">1000000458939</td>
+<td><a href="https://www.adfk.app/heroes/2000001016529/1000000458939/" class="herolink" target="_blank">View Hero</a></td>
 <td>160</td>
 <td>1480.0</td>
 <td>0</td>
@@ -7450,8 +7284,8 @@
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000001021095')">2000001021095</td>
-<td class="clickable" onclick="copyToClipboard('2000000995108')">2000000995108</td>
-<td><a href="https://www.adfk.app/heroes/2000001021095/2000000995108/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000000985899')">2000000985899</td>
+<td><a href="https://www.adfk.app/heroes/2000001021095/2000000985899/" class="herolink" target="_blank">View Hero</a></td>
 <td>155</td>
 <td>360.0</td>
 <td>0</td>
@@ -7460,8 +7294,8 @@
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000001021095')">2000001021095</td>
-<td class="clickable" onclick="copyToClipboard('2000000985899')">2000000985899</td>
-<td><a href="https://www.adfk.app/heroes/2000001021095/2000000985899/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000000995108')">2000000995108</td>
+<td><a href="https://www.adfk.app/heroes/2000001021095/2000000995108/" class="herolink" target="_blank">View Hero</a></td>
 <td>155</td>
 <td>360.0</td>
 <td>0</td>
@@ -7578,7 +7412,7 @@
 <td><a href="https://www.adfk.app/heroes/2000000914614/2000000581503/" class="herolink" target="_blank">View Hero</a></td>
 <td>175</td>
 <td>1295.0</td>
-<td>2</td>
+<td>1</td>
 <td>3</td>
 </tr>
 <tr class="score-100-1000">
@@ -7630,6 +7464,16 @@
 <td>650.0</td>
 <td>1</td>
 <td>1</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001033103')">2000001033103</td>
+<td class="clickable" onclick="copyToClipboard('1000000707774')">1000000707774</td>
+<td><a href="https://www.adfk.app/heroes/2000001033103/1000000707774/" class="herolink" target="_blank">View Hero</a></td>
+<td>165</td>
+<td>1100.0</td>
+<td>1</td>
+<td>3</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -7730,6 +7574,16 @@
 <td>2200.0</td>
 <td>1</td>
 <td>2</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000698064')">2000000698064</td>
+<td class="clickable" onclick="copyToClipboard('2000000270275')">2000000270275</td>
+<td><a href="https://www.adfk.app/heroes/2000000698064/2000000270275/" class="herolink" target="_blank">View Hero</a></td>
+<td>160</td>
+<td>2400.0</td>
+<td>2</td>
+<td>5</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -7857,61 +7711,11 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000897810')">2000000897810</td>
-<td class="clickable" onclick="copyToClipboard('2000001026526')">2000001026526</td>
-<td><a href="https://www.adfk.app/heroes/2000000897810/2000001026526/" class="herolink" target="_blank">View Hero</a></td>
-<td>100</td>
-<td>450.0</td>
-<td>10</td>
-<td>10</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000897810')">2000000897810</td>
-<td class="clickable" onclick="copyToClipboard('2000000680566')">2000000680566</td>
-<td><a href="https://www.adfk.app/heroes/2000000897810/2000000680566/" class="herolink" target="_blank">View Hero</a></td>
-<td>100</td>
-<td>750.0</td>
-<td>10</td>
-<td>10</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000897810')">2000000897810</td>
-<td class="clickable" onclick="copyToClipboard('2000000961799')">2000000961799</td>
-<td><a href="https://www.adfk.app/heroes/2000000897810/2000000961799/" class="herolink" target="_blank">View Hero</a></td>
-<td>100</td>
-<td>950.0</td>
-<td>10</td>
-<td>10</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('1000000599900')">1000000599900</td>
 <td class="clickable" onclick="copyToClipboard('1000000096883')">1000000096883</td>
 <td><a href="https://www.adfk.app/heroes/1000000599900/1000000096883/" class="herolink" target="_blank">View Hero</a></td>
 <td>100</td>
 <td>1700.0</td>
-<td>10</td>
-<td>10</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000001004435')">2000001004435</td>
-<td class="clickable" onclick="copyToClipboard('1000000711932')">1000000711932</td>
-<td><a href="https://www.adfk.app/heroes/2000001004435/1000000711932/" class="herolink" target="_blank">View Hero</a></td>
-<td>85</td>
-<td>399.0</td>
-<td>10</td>
-<td>10</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000506921')">1000000506921</td>
-<td class="clickable" onclick="copyToClipboard('2000000974210')">2000000974210</td>
-<td><a href="https://www.adfk.app/heroes/1000000506921/2000000974210/" class="herolink" target="_blank">View Hero</a></td>
-<td>85</td>
-<td>500.0</td>
 <td>10</td>
 <td>10</td>
 </tr>
@@ -7932,16 +7736,6 @@
 <td><a href="https://www.adfk.app/heroes/1000000591164/1000000632387/" class="herolink" target="_blank">View Hero</a></td>
 <td>85</td>
 <td>599.0</td>
-<td>10</td>
-<td>10</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000506921')">1000000506921</td>
-<td class="clickable" onclick="copyToClipboard('1000000540940')">1000000540940</td>
-<td><a href="https://www.adfk.app/heroes/1000000506921/1000000540940/" class="herolink" target="_blank">View Hero</a></td>
-<td>85</td>
-<td>696.0</td>
 <td>10</td>
 <td>10</td>
 </tr>
@@ -8141,23 +7935,13 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000914614')">2000000914614</td>
-<td class="clickable" onclick="copyToClipboard('2000000627545')">2000000627545</td>
-<td><a href="https://www.adfk.app/heroes/2000000914614/2000000627545/" class="herolink" target="_blank">View Hero</a></td>
-<td>165</td>
-<td>320.2</td>
-<td>2</td>
-<td>1</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000714823')">2000000714823</td>
-<td class="clickable" onclick="copyToClipboard('2000000552755')">2000000552755</td>
-<td><a href="https://www.adfk.app/heroes/2000000714823/2000000552755/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000000603164')">2000000603164</td>
+<td class="clickable" onclick="copyToClipboard('2000001017588')">2000001017588</td>
+<td><a href="https://www.adfk.app/heroes/2000000603164/2000001017588/" class="herolink" target="_blank">View Hero</a></td>
 <td>160</td>
-<td>35.0</td>
-<td>1</td>
-<td>1</td>
+<td>38.2</td>
+<td>3</td>
+<td>3</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -8237,6 +8021,16 @@
 <td>150</td>
 <td>97.2</td>
 <td>2</td>
+<td>2</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001033103')">2000001033103</td>
+<td class="clickable" onclick="copyToClipboard('2000000632860')">2000000632860</td>
+<td><a href="https://www.adfk.app/heroes/2000001033103/2000000632860/" class="herolink" target="_blank">View Hero</a></td>
+<td>150</td>
+<td>736.2</td>
+<td>1</td>
 <td>2</td>
 </tr>
 <tr class="score-100-1000">
@@ -8531,6 +8325,16 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000679903')">2000000679903</td>
+<td class="clickable" onclick="copyToClipboard('2000000709993')">2000000709993</td>
+<td><a href="https://www.adfk.app/heroes/2000000679903/2000000709993/" class="herolink" target="_blank">View Hero</a></td>
+<td>145</td>
+<td>170.2</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000638256')">2000000638256</td>
 <td class="clickable" onclick="copyToClipboard('2000000665166')">2000000665166</td>
 <td><a href="https://www.adfk.app/heroes/2000000638256/2000000665166/" class="herolink" target="_blank">View Hero</a></td>
@@ -8558,16 +8362,6 @@
 <td>170.2</td>
 <td>2</td>
 <td>3</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000679903')">2000000679903</td>
-<td class="clickable" onclick="copyToClipboard('2000000709993')">2000000709993</td>
-<td><a href="https://www.adfk.app/heroes/2000000679903/2000000709993/" class="herolink" target="_blank">View Hero</a></td>
-<td>145</td>
-<td>170.2</td>
-<td>2</td>
-<td>1</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -8741,12 +8535,22 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001033103')">2000001033103</td>
+<td class="clickable" onclick="copyToClipboard('2000000635942')">2000000635942</td>
+<td><a href="https://www.adfk.app/heroes/2000001033103/2000000635942/" class="herolink" target="_blank">View Hero</a></td>
+<td>140</td>
+<td>441.2</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000914614')">2000000914614</td>
 <td class="clickable" onclick="copyToClipboard('2000000634968')">2000000634968</td>
 <td><a href="https://www.adfk.app/heroes/2000000914614/2000000634968/" class="herolink" target="_blank">View Hero</a></td>
 <td>140</td>
 <td>441.2</td>
-<td>2</td>
+<td>1</td>
 <td>1</td>
 </tr>
 <tr class="score-100-1000">
@@ -8771,12 +8575,32 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001033103')">2000001033103</td>
+<td class="clickable" onclick="copyToClipboard('2000000939896')">2000000939896</td>
+<td><a href="https://www.adfk.app/heroes/2000001033103/2000000939896/" class="herolink" target="_blank">View Hero</a></td>
+<td>140</td>
+<td>568.2</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000001000759')">2000001000759</td>
 <td class="clickable" onclick="copyToClipboard('2000000562092')">2000000562092</td>
 <td><a href="https://www.adfk.app/heroes/2000001000759/2000000562092/" class="herolink" target="_blank">View Hero</a></td>
 <td>140</td>
 <td>650.0</td>
 <td>2</td>
+<td>1</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001033103')">2000001033103</td>
+<td class="clickable" onclick="copyToClipboard('2000000861888')">2000000861888</td>
+<td><a href="https://www.adfk.app/heroes/2000001033103/2000000861888/" class="herolink" target="_blank">View Hero</a></td>
+<td>140</td>
+<td>688.5</td>
+<td>1</td>
 <td>1</td>
 </tr>
 <tr class="score-100-1000">
@@ -8811,22 +8635,22 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000638375')">1000000638375</td>
-<td class="clickable" onclick="copyToClipboard('1000000143540')">1000000143540</td>
-<td><a href="https://www.adfk.app/heroes/1000000638375/1000000143540/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>2.0</td>
-<td>8</td>
-<td>1</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('293314')">293314</td>
 <td class="clickable" onclick="copyToClipboard('1000000490725')">1000000490725</td>
 <td><a href="https://www.adfk.app/heroes/293314/1000000490725/" class="herolink" target="_blank">View Hero</a></td>
 <td>135</td>
 <td>2.0</td>
 <td>2</td>
+<td>1</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('1000000638375')">1000000638375</td>
+<td class="clickable" onclick="copyToClipboard('1000000143540')">1000000143540</td>
+<td><a href="https://www.adfk.app/heroes/1000000638375/1000000143540/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>2.0</td>
+<td>8</td>
 <td>1</td>
 </tr>
 <tr class="score-100-1000">
@@ -8981,16 +8805,6 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000608910')">1000000608910</td>
-<td class="clickable" onclick="copyToClipboard('2000000560648')">2000000560648</td>
-<td><a href="https://www.adfk.app/heroes/1000000608910/2000000560648/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>15.99</td>
-<td>1</td>
-<td>4</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000697536')">2000000697536</td>
 <td class="clickable" onclick="copyToClipboard('2000000529807')">2000000529807</td>
 <td><a href="https://www.adfk.app/heroes/2000000697536/2000000529807/" class="herolink" target="_blank">View Hero</a></td>
@@ -8998,6 +8812,16 @@
 <td>15.99</td>
 <td>2</td>
 <td>1</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('1000000608910')">1000000608910</td>
+<td class="clickable" onclick="copyToClipboard('2000000560648')">2000000560648</td>
+<td><a href="https://www.adfk.app/heroes/1000000608910/2000000560648/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>15.99</td>
+<td>1</td>
+<td>4</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -9131,22 +8955,22 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000698065')">2000000698065</td>
-<td class="clickable" onclick="copyToClipboard('1000000424021')">1000000424021</td>
-<td><a href="https://www.adfk.app/heroes/2000000698065/1000000424021/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>29.99</td>
-<td>3</td>
-<td>1</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('1000000424519')">1000000424519</td>
 <td class="clickable" onclick="copyToClipboard('1000000349824')">1000000349824</td>
 <td><a href="https://www.adfk.app/heroes/1000000424519/1000000349824/" class="herolink" target="_blank">View Hero</a></td>
 <td>135</td>
 <td>29.99</td>
 <td>2</td>
+<td>1</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000698065')">2000000698065</td>
+<td class="clickable" onclick="copyToClipboard('1000000424021')">1000000424021</td>
+<td><a href="https://www.adfk.app/heroes/2000000698065/1000000424021/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>29.99</td>
+<td>3</td>
 <td>1</td>
 </tr>
 <tr class="score-100-1000">
@@ -9161,16 +8985,6 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000626134')">1000000626134</td>
-<td class="clickable" onclick="copyToClipboard('1000000096273')">1000000096273</td>
-<td><a href="https://www.adfk.app/heroes/1000000626134/1000000096273/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>30.0</td>
-<td>2</td>
-<td>4</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('142883')">142883</td>
 <td class="clickable" onclick="copyToClipboard('1000000161475')">1000000161475</td>
 <td><a href="https://www.adfk.app/heroes/142883/1000000161475/" class="herolink" target="_blank">View Hero</a></td>
@@ -9178,6 +8992,16 @@
 <td>30.0</td>
 <td>5</td>
 <td>1</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('1000000626134')">1000000626134</td>
+<td class="clickable" onclick="copyToClipboard('1000000096273')">1000000096273</td>
+<td><a href="https://www.adfk.app/heroes/1000000626134/1000000096273/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>30.0</td>
+<td>2</td>
+<td>4</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -9231,39 +9055,9 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000675965')">1000000675965</td>
-<td class="clickable" onclick="copyToClipboard('2000000387169')">2000000387169</td>
-<td><a href="https://www.adfk.app/heroes/1000000675965/2000000387169/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>34.99</td>
-<td>5</td>
-<td>2</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000652503')">2000000652503</td>
-<td class="clickable" onclick="copyToClipboard('2000000295558')">2000000295558</td>
-<td><a href="https://www.adfk.app/heroes/2000000652503/2000000295558/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>34.99</td>
-<td>2</td>
-<td>2</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000680612')">2000000680612</td>
-<td class="clickable" onclick="copyToClipboard('2000000295558')">2000000295558</td>
-<td><a href="https://www.adfk.app/heroes/2000000680612/2000000295558/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>34.99</td>
-<td>4</td>
-<td>2</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000001015321')">2000001015321</td>
-<td class="clickable" onclick="copyToClipboard('2000000494159')">2000000494159</td>
-<td><a href="https://www.adfk.app/heroes/2000001015321/2000000494159/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000000664710')">2000000664710</td>
+<td class="clickable" onclick="copyToClipboard('2000000369989')">2000000369989</td>
+<td><a href="https://www.adfk.app/heroes/2000000664710/2000000369989/" class="herolink" target="_blank">View Hero</a></td>
 <td>135</td>
 <td>34.99</td>
 <td>1</td>
@@ -9271,22 +9065,12 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000646890')">1000000646890</td>
-<td class="clickable" onclick="copyToClipboard('2000000293234')">2000000293234</td>
-<td><a href="https://www.adfk.app/heroes/1000000646890/2000000293234/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000000640711')">2000000640711</td>
+<td class="clickable" onclick="copyToClipboard('1000000251990')">1000000251990</td>
+<td><a href="https://www.adfk.app/heroes/2000000640711/1000000251990/" class="herolink" target="_blank">View Hero</a></td>
 <td>135</td>
 <td>34.99</td>
-<td>3</td>
-<td>2</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000698065')">2000000698065</td>
-<td class="clickable" onclick="copyToClipboard('2000000499834')">2000000499834</td>
-<td><a href="https://www.adfk.app/heroes/2000000698065/2000000499834/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>34.99</td>
-<td>3</td>
+<td>1</td>
 <td>2</td>
 </tr>
 <tr class="score-100-1000">
@@ -9301,12 +9085,42 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000640711')">2000000640711</td>
-<td class="clickable" onclick="copyToClipboard('1000000251990')">1000000251990</td>
-<td><a href="https://www.adfk.app/heroes/2000000640711/1000000251990/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000001015321')">2000001015321</td>
+<td class="clickable" onclick="copyToClipboard('2000000494159')">2000000494159</td>
+<td><a href="https://www.adfk.app/heroes/2000001015321/2000000494159/" class="herolink" target="_blank">View Hero</a></td>
 <td>135</td>
 <td>34.99</td>
 <td>1</td>
+<td>2</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000698065')">2000000698065</td>
+<td class="clickable" onclick="copyToClipboard('2000000499834')">2000000499834</td>
+<td><a href="https://www.adfk.app/heroes/2000000698065/2000000499834/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>34.99</td>
+<td>3</td>
+<td>2</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('1000000675965')">1000000675965</td>
+<td class="clickable" onclick="copyToClipboard('2000000387169')">2000000387169</td>
+<td><a href="https://www.adfk.app/heroes/1000000675965/2000000387169/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>34.99</td>
+<td>5</td>
+<td>2</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('1000000646890')">1000000646890</td>
+<td class="clickable" onclick="copyToClipboard('2000000293234')">2000000293234</td>
+<td><a href="https://www.adfk.app/heroes/1000000646890/2000000293234/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>34.99</td>
+<td>3</td>
 <td>2</td>
 </tr>
 <tr class="score-100-1000">
@@ -9341,12 +9155,22 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000664710')">2000000664710</td>
-<td class="clickable" onclick="copyToClipboard('2000000369989')">2000000369989</td>
-<td><a href="https://www.adfk.app/heroes/2000000664710/2000000369989/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000000652503')">2000000652503</td>
+<td class="clickable" onclick="copyToClipboard('2000000295558')">2000000295558</td>
+<td><a href="https://www.adfk.app/heroes/2000000652503/2000000295558/" class="herolink" target="_blank">View Hero</a></td>
 <td>135</td>
 <td>34.99</td>
-<td>1</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000680612')">2000000680612</td>
+<td class="clickable" onclick="copyToClipboard('2000000295558')">2000000295558</td>
+<td><a href="https://www.adfk.app/heroes/2000000680612/2000000295558/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>34.99</td>
+<td>4</td>
 <td>2</td>
 </tr>
 <tr class="score-100-1000">
@@ -9491,16 +9315,6 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000607101')">1000000607101</td>
-<td class="clickable" onclick="copyToClipboard('2000000614105')">2000000614105</td>
-<td><a href="https://www.adfk.app/heroes/1000000607101/2000000614105/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>43.2</td>
-<td>5</td>
-<td>8</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('293314')">293314</td>
 <td class="clickable" onclick="copyToClipboard('2000000714280')">2000000714280</td>
 <td><a href="https://www.adfk.app/heroes/293314/2000000714280/" class="herolink" target="_blank">View Hero</a></td>
@@ -9511,12 +9325,32 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('1000000607101')">1000000607101</td>
+<td class="clickable" onclick="copyToClipboard('2000000614105')">2000000614105</td>
+<td><a href="https://www.adfk.app/heroes/1000000607101/2000000614105/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>43.2</td>
+<td>5</td>
+<td>8</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000352068')">2000000352068</td>
 <td class="clickable" onclick="copyToClipboard('1000000325866')">1000000325866</td>
 <td><a href="https://www.adfk.app/heroes/2000000352068/1000000325866/" class="herolink" target="_blank">View Hero</a></td>
 <td>135</td>
 <td>44.3</td>
 <td>3</td>
+<td>1</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001031316')">2000001031316</td>
+<td class="clickable" onclick="copyToClipboard('1000000378541')">1000000378541</td>
+<td><a href="https://www.adfk.app/heroes/2000001031316/1000000378541/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>44.99</td>
+<td>4</td>
 <td>1</td>
 </tr>
 <tr class="score-100-1000">
@@ -9551,16 +9385,6 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000001031316')">2000001031316</td>
-<td class="clickable" onclick="copyToClipboard('1000000378541')">1000000378541</td>
-<td><a href="https://www.adfk.app/heroes/2000001031316/1000000378541/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>44.99</td>
-<td>4</td>
-<td>1</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000724591')">2000000724591</td>
 <td class="clickable" onclick="copyToClipboard('1000000316012')">1000000316012</td>
 <td><a href="https://www.adfk.app/heroes/2000000724591/1000000316012/" class="herolink" target="_blank">View Hero</a></td>
@@ -9591,16 +9415,6 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000142600')">1000000142600</td>
-<td class="clickable" onclick="copyToClipboard('1000000486589')">1000000486589</td>
-<td><a href="https://www.adfk.app/heroes/1000000142600/1000000486589/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>49.99</td>
-<td>2</td>
-<td>2</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000644115')">2000000644115</td>
 <td class="clickable" onclick="copyToClipboard('1000000423024')">1000000423024</td>
 <td><a href="https://www.adfk.app/heroes/2000000644115/1000000423024/" class="herolink" target="_blank">View Hero</a></td>
@@ -9621,6 +9435,16 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('1000000142600')">1000000142600</td>
+<td class="clickable" onclick="copyToClipboard('1000000486589')">1000000486589</td>
+<td><a href="https://www.adfk.app/heroes/1000000142600/1000000486589/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>49.99</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000585065')">2000000585065</td>
 <td class="clickable" onclick="copyToClipboard('1000000425438')">1000000425438</td>
 <td><a href="https://www.adfk.app/heroes/2000000585065/1000000425438/" class="herolink" target="_blank">View Hero</a></td>
@@ -9628,26 +9452,6 @@
 <td>49.99</td>
 <td>1</td>
 <td>1</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000525455')">1000000525455</td>
-<td class="clickable" onclick="copyToClipboard('2000001005872')">2000001005872</td>
-<td><a href="https://www.adfk.app/heroes/1000000525455/2000001005872/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>50.0</td>
-<td>4</td>
-<td>5</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000611880')">2000000611880</td>
-<td class="clickable" onclick="copyToClipboard('2000001005872')">2000001005872</td>
-<td><a href="https://www.adfk.app/heroes/2000000611880/2000001005872/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>50.0</td>
-<td>2</td>
-<td>5</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -9701,6 +9505,26 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('1000000525455')">1000000525455</td>
+<td class="clickable" onclick="copyToClipboard('2000001005872')">2000001005872</td>
+<td><a href="https://www.adfk.app/heroes/1000000525455/2000001005872/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>50.0</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000611880')">2000000611880</td>
+<td class="clickable" onclick="copyToClipboard('2000001005872')">2000001005872</td>
+<td><a href="https://www.adfk.app/heroes/2000000611880/2000001005872/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>50.0</td>
+<td>2</td>
+<td>5</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000001030435')">2000001030435</td>
 <td class="clickable" onclick="copyToClipboard('2000000942525')">2000000942525</td>
 <td><a href="https://www.adfk.app/heroes/2000001030435/2000000942525/" class="herolink" target="_blank">View Hero</a></td>
@@ -9751,16 +9575,6 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000585065')">2000000585065</td>
-<td class="clickable" onclick="copyToClipboard('2000000282755')">2000000282755</td>
-<td><a href="https://www.adfk.app/heroes/2000000585065/2000000282755/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>54.99</td>
-<td>1</td>
-<td>3</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000664710')">2000000664710</td>
 <td class="clickable" onclick="copyToClipboard('2000000376437')">2000000376437</td>
 <td><a href="https://www.adfk.app/heroes/2000000664710/2000000376437/" class="herolink" target="_blank">View Hero</a></td>
@@ -9768,6 +9582,16 @@
 <td>54.99</td>
 <td>1</td>
 <td>3</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000526770')">2000000526770</td>
+<td class="clickable" onclick="copyToClipboard('2000000328060')">2000000328060</td>
+<td><a href="https://www.adfk.app/heroes/2000000526770/2000000328060/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>54.99</td>
+<td>2</td>
+<td>2</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -9791,13 +9615,13 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000526770')">2000000526770</td>
-<td class="clickable" onclick="copyToClipboard('2000000328060')">2000000328060</td>
-<td><a href="https://www.adfk.app/heroes/2000000526770/2000000328060/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000000585065')">2000000585065</td>
+<td class="clickable" onclick="copyToClipboard('2000000282755')">2000000282755</td>
+<td><a href="https://www.adfk.app/heroes/2000000585065/2000000282755/" class="herolink" target="_blank">View Hero</a></td>
 <td>135</td>
 <td>54.99</td>
-<td>2</td>
-<td>2</td>
+<td>1</td>
+<td>3</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -9831,16 +9655,6 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000752336')">2000000752336</td>
-<td class="clickable" onclick="copyToClipboard('2000000147356')">2000000147356</td>
-<td><a href="https://www.adfk.app/heroes/2000000752336/2000000147356/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>59.99</td>
-<td>4</td>
-<td>3</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('1000000477797')">1000000477797</td>
 <td class="clickable" onclick="copyToClipboard('2000000833723')">2000000833723</td>
 <td><a href="https://www.adfk.app/heroes/1000000477797/2000000833723/" class="herolink" target="_blank">View Hero</a></td>
@@ -9857,6 +9671,16 @@
 <td>135</td>
 <td>59.99</td>
 <td>1</td>
+<td>3</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000752336')">2000000752336</td>
+<td class="clickable" onclick="copyToClipboard('2000000147356')">2000000147356</td>
+<td><a href="https://www.adfk.app/heroes/2000000752336/2000000147356/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>59.99</td>
+<td>4</td>
 <td>3</td>
 </tr>
 <tr class="score-100-1000">
@@ -9891,6 +9715,16 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('1000000700135')">1000000700135</td>
+<td class="clickable" onclick="copyToClipboard('2000000317635')">2000000317635</td>
+<td><a href="https://www.adfk.app/heroes/1000000700135/2000000317635/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>62.5</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000914616')">2000000914616</td>
 <td class="clickable" onclick="copyToClipboard('2000000318188')">2000000318188</td>
 <td><a href="https://www.adfk.app/heroes/2000000914616/2000000318188/" class="herolink" target="_blank">View Hero</a></td>
@@ -9907,16 +9741,6 @@
 <td>135</td>
 <td>62.5</td>
 <td>4</td>
-<td>2</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000700135')">1000000700135</td>
-<td class="clickable" onclick="copyToClipboard('2000000317635')">2000000317635</td>
-<td><a href="https://www.adfk.app/heroes/1000000700135/2000000317635/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>62.5</td>
-<td>2</td>
 <td>2</td>
 </tr>
 <tr class="score-100-1000">
@@ -10031,16 +9855,6 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000001008689')">2000001008689</td>
-<td class="clickable" onclick="copyToClipboard('1000000273318')">1000000273318</td>
-<td><a href="https://www.adfk.app/heroes/2000001008689/1000000273318/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>75.0</td>
-<td>4</td>
-<td>3</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000710126')">2000000710126</td>
 <td class="clickable" onclick="copyToClipboard('297157')">297157</td>
 <td><a href="https://www.adfk.app/heroes/2000000710126/297157/" class="herolink" target="_blank">View Hero</a></td>
@@ -10058,6 +9872,16 @@
 <td>75.0</td>
 <td>2</td>
 <td>1</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001008689')">2000001008689</td>
+<td class="clickable" onclick="copyToClipboard('1000000273318')">1000000273318</td>
+<td><a href="https://www.adfk.app/heroes/2000001008689/1000000273318/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>75.0</td>
+<td>4</td>
+<td>3</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -10131,16 +9955,6 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000698047')">1000000698047</td>
-<td class="clickable" onclick="copyToClipboard('2000000235383')">2000000235383</td>
-<td><a href="https://www.adfk.app/heroes/1000000698047/2000000235383/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>94.0</td>
-<td>1</td>
-<td>3</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000001018241')">2000001018241</td>
 <td class="clickable" onclick="copyToClipboard('2000000449290')">2000000449290</td>
 <td><a href="https://www.adfk.app/heroes/2000001018241/2000000449290/" class="herolink" target="_blank">View Hero</a></td>
@@ -10151,16 +9965,6 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000001027943')">2000001027943</td>
-<td class="clickable" onclick="copyToClipboard('2000000305086')">2000000305086</td>
-<td><a href="https://www.adfk.app/heroes/2000001027943/2000000305086/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>94.0</td>
-<td>3</td>
-<td>4</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000001021738')">2000001021738</td>
 <td class="clickable" onclick="copyToClipboard('2000000245429')">2000000245429</td>
 <td><a href="https://www.adfk.app/heroes/2000001021738/2000000245429/" class="herolink" target="_blank">View Hero</a></td>
@@ -10168,6 +9972,16 @@
 <td>94.0</td>
 <td>1</td>
 <td>5</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001027943')">2000001027943</td>
+<td class="clickable" onclick="copyToClipboard('2000000305086')">2000000305086</td>
+<td><a href="https://www.adfk.app/heroes/2000001027943/2000000305086/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>94.0</td>
+<td>3</td>
+<td>4</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -10211,6 +10025,16 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('1000000698047')">1000000698047</td>
+<td class="clickable" onclick="copyToClipboard('2000000235383')">2000000235383</td>
+<td><a href="https://www.adfk.app/heroes/1000000698047/2000000235383/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>94.0</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('2000000724591')">2000000724591</td>
 <td class="clickable" onclick="copyToClipboard('1000000044731')">1000000044731</td>
 <td><a href="https://www.adfk.app/heroes/2000000724591/1000000044731/" class="herolink" target="_blank">View Hero</a></td>
@@ -10228,6 +10052,26 @@
 <td>99.0</td>
 <td>4</td>
 <td>6</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000883215')">2000000883215</td>
+<td class="clickable" onclick="copyToClipboard('1000000693540')">1000000693540</td>
+<td><a href="https://www.adfk.app/heroes/2000000883215/1000000693540/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>104.0</td>
+<td>3</td>
+<td>2</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('1000000473987')">1000000473987</td>
+<td class="clickable" onclick="copyToClipboard('2000000633352')">2000000633352</td>
+<td><a href="https://www.adfk.app/heroes/1000000473987/2000000633352/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>104.0</td>
+<td>3</td>
+<td>5</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -10257,26 +10101,6 @@
 <td>135</td>
 <td>104.0</td>
 <td>2</td>
-<td>2</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000473987')">1000000473987</td>
-<td class="clickable" onclick="copyToClipboard('2000000633352')">2000000633352</td>
-<td><a href="https://www.adfk.app/heroes/1000000473987/2000000633352/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>104.0</td>
-<td>3</td>
-<td>5</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000883215')">2000000883215</td>
-<td class="clickable" onclick="copyToClipboard('1000000693540')">1000000693540</td>
-<td><a href="https://www.adfk.app/heroes/2000000883215/1000000693540/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>104.0</td>
-<td>3</td>
 <td>2</td>
 </tr>
 <tr class="score-100-1000">
@@ -10321,16 +10145,6 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000414114')">2000000414114</td>
-<td class="clickable" onclick="copyToClipboard('1000000041292')">1000000041292</td>
-<td><a href="https://www.adfk.app/heroes/2000000414114/1000000041292/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>129.0</td>
-<td>5</td>
-<td>5</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('1000000703962')">1000000703962</td>
 <td class="clickable" onclick="copyToClipboard('1000000028920')">1000000028920</td>
 <td><a href="https://www.adfk.app/heroes/1000000703962/1000000028920/" class="herolink" target="_blank">View Hero</a></td>
@@ -10338,6 +10152,16 @@
 <td>129.0</td>
 <td>3</td>
 <td>6</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000414114')">2000000414114</td>
+<td class="clickable" onclick="copyToClipboard('1000000041292')">1000000041292</td>
+<td><a href="https://www.adfk.app/heroes/2000000414114/1000000041292/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>129.0</td>
+<td>5</td>
+<td>5</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -10431,12 +10255,42 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000001010410')">2000001010410</td>
-<td class="clickable" onclick="copyToClipboard('2000000378258')">2000000378258</td>
-<td><a href="https://www.adfk.app/heroes/2000001010410/2000000378258/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('1000000525455')">1000000525455</td>
+<td class="clickable" onclick="copyToClipboard('2000000933447')">2000000933447</td>
+<td><a href="https://www.adfk.app/heroes/1000000525455/2000000933447/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>156.0</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001015517')">2000001015517</td>
+<td class="clickable" onclick="copyToClipboard('2000000514180')">2000000514180</td>
+<td><a href="https://www.adfk.app/heroes/2000001015517/2000000514180/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>156.0</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000543726')">2000000543726</td>
+<td class="clickable" onclick="copyToClipboard('2000000160672')">2000000160672</td>
+<td><a href="https://www.adfk.app/heroes/2000000543726/2000000160672/" class="herolink" target="_blank">View Hero</a></td>
 <td>135</td>
 <td>156.0</td>
 <td>3</td>
+<td>2</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000000939947')">2000000939947</td>
+<td class="clickable" onclick="copyToClipboard('2000000289904')">2000000289904</td>
+<td><a href="https://www.adfk.app/heroes/2000000939947/2000000289904/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>156.0</td>
+<td>1</td>
 <td>5</td>
 </tr>
 <tr class="score-100-1000">
@@ -10451,43 +10305,13 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000939947')">2000000939947</td>
-<td class="clickable" onclick="copyToClipboard('2000000289904')">2000000289904</td>
-<td><a href="https://www.adfk.app/heroes/2000000939947/2000000289904/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>156.0</td>
-<td>1</td>
-<td>5</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000525455')">1000000525455</td>
-<td class="clickable" onclick="copyToClipboard('2000000933447')">2000000933447</td>
-<td><a href="https://www.adfk.app/heroes/1000000525455/2000000933447/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>156.0</td>
-<td>4</td>
-<td>4</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000543726')">2000000543726</td>
-<td class="clickable" onclick="copyToClipboard('2000000160672')">2000000160672</td>
-<td><a href="https://www.adfk.app/heroes/2000000543726/2000000160672/" class="herolink" target="_blank">View Hero</a></td>
+<td class="clickable" onclick="copyToClipboard('2000001010410')">2000001010410</td>
+<td class="clickable" onclick="copyToClipboard('2000000378258')">2000000378258</td>
+<td><a href="https://www.adfk.app/heroes/2000001010410/2000000378258/" class="herolink" target="_blank">View Hero</a></td>
 <td>135</td>
 <td>156.0</td>
 <td>3</td>
-<td>2</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000001015517')">2000001015517</td>
-<td class="clickable" onclick="copyToClipboard('2000000514180')">2000000514180</td>
-<td><a href="https://www.adfk.app/heroes/2000001015517/2000000514180/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>156.0</td>
-<td>2</td>
-<td>2</td>
+<td>5</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -10588,16 +10412,6 @@
 <td>210.38</td>
 <td>4</td>
 <td>4</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000651690')">2000000651690</td>
-<td class="clickable" onclick="copyToClipboard('1000000147497')">1000000147497</td>
-<td><a href="https://www.adfk.app/heroes/2000000651690/1000000147497/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>213.51</td>
-<td>1</td>
-<td>3</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -10757,16 +10571,6 @@
 <td>135</td>
 <td>400.0</td>
 <td>3</td>
-<td>3</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000651690')">2000000651690</td>
-<td class="clickable" onclick="copyToClipboard('2000000181905')">2000000181905</td>
-<td><a href="https://www.adfk.app/heroes/2000000651690/2000000181905/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>421.95</td>
-<td>1</td>
 <td>3</td>
 </tr>
 <tr class="score-100-1000">
@@ -11132,8 +10936,8 @@
 <td class="clickable" onclick="copyToClipboard('2000000883233')">2000000883233</td>
 <td><a href="https://www.adfk.app/heroes/1000000667527/2000000883233/" class="herolink" target="_blank">View Hero</a></td>
 <td>135</td>
-<td>3</td>
 <td>2</td>
+<td>1</td>
 <td>...0F16</td>
 <td>...0F16</td>
 <td>kla</td>
@@ -11340,8 +11144,8 @@
 <td class="clickable" onclick="copyToClipboard('1000000701194')">1000000701194</td>
 <td><a href="https://www.adfk.app/heroes/1000000695550/1000000701194/" class="herolink" target="_blank">View Hero</a></td>
 <td>125</td>
-<td>8</td>
-<td>8</td>
+<td>7</td>
+<td>7</td>
 <td>...0F16</td>
 <td>...0F16</td>
 <td>kla</td>
@@ -11462,6 +11266,19 @@
 <td>...975A</td>
 <td>...0F16</td>
 <td>dfk</td>
+<td>kla</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('2000001000759')">2000001000759</td>
+<td class="clickable" onclick="copyToClipboard('2000001033103')">2000001033103</td>
+<td><a href="https://www.adfk.app/heroes/2000001000759/2000001033103/" class="herolink" target="_blank">View Hero</a></td>
+<td>125</td>
+<td>2</td>
+<td>1</td>
+<td>...0F16</td>
+<td>...0F16</td>
+<td>kla</td>
 <td>kla</td>
 </tr>
 <tr class="score-100-1000">
@@ -11854,19 +11671,6 @@
 <tbody>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000709590')">1000000709590</td>
-<td class="clickable" onclick="copyToClipboard('1000000709598')">1000000709598</td>
-<td><a href="https://www.adfk.app/heroes/1000000709590/1000000709598/" class="herolink" target="_blank">View Hero</a></td>
-<td>185</td>
-<td>0</td>
-<td>0</td>
-<td>...975A</td>
-<td>...975A</td>
-<td>dfk</td>
-<td>dfk</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('1000000705579')">1000000705579</td>
 <td class="clickable" onclick="copyToClipboard('2000000679859')">2000000679859</td>
 <td><a href="https://www.adfk.app/heroes/1000000705579/2000000679859/" class="herolink" target="_blank">View Hero</a></td>
@@ -11971,32 +11775,6 @@
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000705695')">1000000705695</td>
-<td class="clickable" onclick="copyToClipboard('1000000709590')">1000000709590</td>
-<td><a href="https://www.adfk.app/heroes/1000000705695/1000000709590/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>0</td>
-<td>0</td>
-<td>...975A</td>
-<td>...975A</td>
-<td>dfk</td>
-<td>dfk</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000701727')">1000000701727</td>
-<td class="clickable" onclick="copyToClipboard('1000000709908')">1000000709908</td>
-<td><a href="https://www.adfk.app/heroes/1000000701727/1000000709908/" class="herolink" target="_blank">View Hero</a></td>
-<td>135</td>
-<td>0</td>
-<td>0</td>
-<td>...975A</td>
-<td>...975A</td>
-<td>dfk</td>
-<td>dfk</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
 <td class="clickable" onclick="copyToClipboard('1000000709595')">1000000709595</td>
 <td class="clickable" onclick="copyToClipboard('2000000394587')">2000000394587</td>
 <td><a href="https://www.adfk.app/heroes/1000000709595/2000000394587/" class="herolink" target="_blank">View Hero</a></td>
@@ -12020,6 +11798,45 @@
 <td>...0F16</td>
 <td>dfk</td>
 <td>kla</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('1000000699674')">1000000699674</td>
+<td class="clickable" onclick="copyToClipboard('1000000712122')">1000000712122</td>
+<td><a href="https://www.adfk.app/heroes/1000000699674/1000000712122/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>0</td>
+<td>0</td>
+<td>...975A</td>
+<td>...975A</td>
+<td>dfk</td>
+<td>dfk</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('1000000701727')">1000000701727</td>
+<td class="clickable" onclick="copyToClipboard('1000000709908')">1000000709908</td>
+<td><a href="https://www.adfk.app/heroes/1000000701727/1000000709908/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>0</td>
+<td>0</td>
+<td>...975A</td>
+<td>...975A</td>
+<td>dfk</td>
+<td>dfk</td>
+</tr>
+<tr class="score-100-1000">
+<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
+<td class="clickable" onclick="copyToClipboard('1000000712122')">1000000712122</td>
+<td class="clickable" onclick="copyToClipboard('2000000644152')">2000000644152</td>
+<td><a href="https://www.adfk.app/heroes/1000000712122/2000000644152/" class="herolink" target="_blank">View Hero</a></td>
+<td>135</td>
+<td>0</td>
+<td>0</td>
+<td>...975A</td>
+<td>...3a1C</td>
+<td>dfk</td>
+<td>met</td>
 </tr>
 <tr class="score-100-1000">
 <td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
@@ -12112,19 +11929,6 @@
 <td>dfk</td>
 <td>kla</td>
 </tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000705579')">1000000705579</td>
-<td class="clickable" onclick="copyToClipboard('1000000709590')">1000000709590</td>
-<td><a href="https://www.adfk.app/heroes/1000000705579/1000000709590/" class="herolink" target="_blank">View Hero</a></td>
-<td>120</td>
-<td>0</td>
-<td>0</td>
-<td>...975A</td>
-<td>...975A</td>
-<td>dfk</td>
-<td>dfk</td>
-</tr>
 </tbody>
 </table></div>
 </div>
@@ -12142,81 +11946,32 @@
 <a href="#wallettowallets-ds-section">WalletToWallets-DS</a> | 
 </div>
 <div class="card-body">
-<div class="table-controls">
-<button class="clear-table-btn" onclick="clearTable(this)">Clear Table</button>
-</div>
-<table>
-<thead>
-<tr>
-<th style="width: 60px">Hide</th>
-<th>Hero1ID</th>
-<th>Hero2ID</th>
-<th>URL</th>
-<th>TotalScore</th>
-<th>Summons1</th>
-<th>Summons2</th>
-<th>Hero1WalletID</th>
-<th>Hero2WalletID</th>
-<th>Hero1Network</th>
-<th>Hero2Network</th>
-</tr>
-</thead>
-<tbody>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('1000000540788')">1000000540788</td>
-<td class="clickable" onclick="copyToClipboard('2000000897810')">2000000897810</td>
-<td><a href="https://www.adfk.app/heroes/1000000540788/2000000897810/" class="herolink" target="_blank">View Hero</a></td>
-<td>100</td>
-<td>10</td>
-<td>10</td>
-<td>...0F16</td>
-<td>...0F16</td>
-<td>dfk</td>
-<td>kla</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000897810')">2000000897810</td>
-<td class="clickable" onclick="copyToClipboard('2000000986187')">2000000986187</td>
-<td><a href="https://www.adfk.app/heroes/2000000897810/2000000986187/" class="herolink" target="_blank">View Hero</a></td>
-<td>100</td>
-<td>10</td>
-<td>10</td>
-<td>...0F16</td>
-<td>...0F16</td>
-<td>kla</td>
-<td>kla</td>
-</tr>
-<tr class="score-100-1000">
-<td><button class="hide-btn" onclick="hideRow(this)">Hide</button></td>
-<td class="clickable" onclick="copyToClipboard('2000000897810')">2000000897810</td>
-<td class="clickable" onclick="copyToClipboard('2000001004435')">2000001004435</td>
-<td><a href="https://www.adfk.app/heroes/2000000897810/2000001004435/" class="herolink" target="_blank">View Hero</a></td>
-<td>85</td>
-<td>10</td>
-<td>10</td>
-<td>...0F16</td>
-<td>...0F16</td>
-<td>kla</td>
-<td>dfk</td>
-</tr>
-</tbody>
+<table border="1" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Message</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No matching heroes found</td>
+    </tr>
+  </tbody>
 </table></div>
 </div>
 
             <div class="stats-box">
                 <div class="stats-grid">
                     <div class="stat-item">
-                        <div class="stat-value">2741</div>
+                        <div class="stat-value">1854</div>
                         <div class="stat-label">Total User Heroes</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-value">36233</div>
+                        <div class="stat-value">35951</div>
                         <div class="stat-label">Total Tavern Heroes</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-value">11532</div>
+                        <div class="stat-value">11525</div>
                         <div class="stat-label">Total Rentals</div>
                     </div>
                 </div>
@@ -12225,7 +11980,7 @@
             </div> <!-- End container -->
             
             <footer>
-                Generated on 2025-03-20 at 19:18:09
+                Generated on 2025-03-21 at 10:44:48
             </footer>
             
             <script>
