@@ -51,7 +51,7 @@
     </style>
     <script>
         // Store events data for ICS generation
-        const eventsData = [{"id": "event_0", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 4-6, Anything", "start": "2025-05-21T01:00:00+00:00", "end": "2025-05-21T02:30:00+00:00", "description": "", "location": "", "level": "4-6", "notes": "Anything"}, {"id": "event_1", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 16-20, Melee Moshpit, No Precision Potion (Berserker, Knight, Warrior Only)", "start": "2025-05-19T18:00:00+00:00", "end": "2025-05-19T19:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "Melee Moshpit, No Precision Potion (Berserker, Knight, Warrior Only)"}, {"id": "event_2", "name": "Patrollers Limited", "fullName": "Patrollers Limited: Level 6-9, Max Team Stat Score 410, All Unique Classes, No Swiftness", "start": "2025-05-19T23:00:00+00:00", "end": "2025-05-20T00:30:00+00:00", "description": "", "location": "", "level": "6-9", "notes": "Max Team Stat Score 410, All Unique Classes, No Swiftness"}, {"id": "event_3", "name": "Patrollers Treasure Hunt", "fullName": "Patrollers Treasure Hunt: Level 3-5, Max Team Stat Score 290, No Swiftness Potion", "start": "2025-05-20T20:00:00+00:00", "end": "2025-05-20T21:30:00+00:00", "description": "", "location": "", "level": "3-5", "notes": "Max Team Stat Score 290, No Swiftness Potion"}, {"id": "event_4", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 11-15, No Triple Class, Max Team Stat Score 540", "start": "2025-05-22T03:00:00+00:00", "end": "2025-05-22T04:30:00+00:00", "description": "", "location": "", "level": "11-15", "notes": "No Triple Class, Max Team Stat Score 540"}, {"id": "event_5", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 11-15, No Triple Class, Max Team Stat Score 540", "start": "2025-05-21T20:00:00+00:00", "end": "2025-05-21T21:30:00+00:00", "description": "", "location": "", "level": "11-15", "notes": "No Triple Class, Max Team Stat Score 540"}, {"id": "event_6", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 16-20, Melee Moshpit, No Precision Potion (Berserker, Knight, Warrior Only)", "start": "2025-05-20T01:00:00+00:00", "end": "2025-05-20T02:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "Melee Moshpit, No Precision Potion (Berserker, Knight, Warrior Only)"}, {"id": "event_7", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 4-6, Anything", "start": "2025-05-20T18:00:00+00:00", "end": "2025-05-20T19:30:00+00:00", "description": "", "location": "", "level": "4-6", "notes": "Anything"}];
+        const eventsData = [{"id": "event_0", "name": "Revengers", "fullName": "Revengers: Level 7-10, Melee Moshpit, Must Include Berserker (Berserker, Knight, Warrior Only)", "start": "2025-06-08T19:00:00+00:00", "end": "2025-06-08T20:30:00+00:00", "description": "", "location": "", "level": "7-10", "notes": "Melee Moshpit, Must Include Berserker (Berserker, Knight, Warrior Only)"}, {"id": "event_1", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 16-20, Anything", "start": "2025-05-24T01:00:00+00:00", "end": "2025-05-24T02:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "Anything"}, {"id": "event_2", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 16-20, Must Include Wizard", "start": "2025-06-14T03:00:00+00:00", "end": "2025-06-14T04:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "Must Include Wizard"}, {"id": "event_3", "name": "Patrollers Limited", "fullName": "Patrollers Limited: Level 6-9, Max Team Stat Score 390, No Swiftness Potions", "start": "2025-06-09T03:00:00+00:00", "end": "2025-06-09T04:30:00+00:00", "description": "", "location": "", "level": "6-9", "notes": "Max Team Stat Score 390, No Swiftness Potions"}, {"id": "event_4", "name": "Revengers", "fullName": "Revengers: Level 11-15, No Triple Classes, Max Team Stat Score 540", "start": "2025-06-08T02:00:00+00:00", "end": "2025-06-08T03:30:00+00:00", "description": "", "location": "", "level": "11-15", "notes": "No Triple Classes, Max Team Stat Score 540"}, {"id": "event_5", "name": "Revengers", "fullName": "Revengers: Level 7-10, Must Include Wizard", "start": "2025-06-01T02:00:00+00:00", "end": "2025-06-01T03:30:00+00:00", "description": "", "location": "", "level": "7-10", "notes": "Must Include Wizard"}, {"id": "event_6", "name": "Patrollers Limited", "fullName": "Patrollers Limited: Level 3-5, Max Team Stat Score 290, No Swiftness Potions", "start": "2025-06-14T18:00:00+00:00", "end": "2025-06-14T19:30:00+00:00", "description": "", "location": "", "level": "3-5", "notes": "Max Team Stat Score 290, No Swiftness Potions"}, {"id": "event_7", "name": "Patrollers Limited", "fullName": "Patrollers Limited: Level 3-5, Max Team Stat Score 310, All Unique Classes, No Swiftness Potions", "start": "2025-06-13T03:00:00+00:00", "end": "2025-06-13T04:30:00+00:00", "description": "", "location": "", "level": "3-5", "notes": "Max Team Stat Score 310, All Unique Classes, No Swiftness Potions"}, {"id": "event_8", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 4-6, Anything", "start": "2025-06-10T18:00:00+00:00", "end": "2025-06-10T19:30:00+00:00", "description": "", "location": "", "level": "4-6", "notes": "Anything"}, {"id": "event_9", "name": "Weekend Warrior", "fullName": "Weekend Warrior: Level 16-20, Max Team Stat Score 750", "start": "2025-06-01T18:00:00+00:00", "end": "2025-06-01T19:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "Max Team Stat Score 750"}, {"id": "event_10", "name": "Champion Invitational!", "fullName": "Champion Invitational!: Level 16-20, All Unique Classes", "start": "2025-05-24T18:00:00+00:00", "end": "2025-05-24T19:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "All Unique Classes"}, {"id": "event_11", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 7-10, Must Include Wizard", "start": "2025-06-13T01:00:00+00:00", "end": "2025-06-13T02:30:00+00:00", "description": "", "location": "", "level": "7-10", "notes": "Must Include Wizard"}, {"id": "event_12", "name": "Revengers", "fullName": "Revengers: Level 4-6, Max Team Stat Score 310, No Swiftness Potions", "start": "2025-06-15T00:00:00+00:00", "end": "2025-06-15T01:30:00+00:00", "description": "", "location": "", "level": "4-6", "notes": "Max Team Stat Score 310, No Swiftness Potions"}, {"id": "event_13", "name": "Patrollers Limited", "fullName": "Patrollers Limited: Level 6-9, Max Team Stat Score 390, No Swiftness Potions", "start": "2025-06-16T01:00:00+00:00", "end": "2025-06-16T02:30:00+00:00", "description": "", "location": "", "level": "6-9", "notes": "Max Team Stat Score 390, No Swiftness Potions"}, {"id": "event_14", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 4-6, Must Include Wizard", "start": "2025-06-17T20:00:00+00:00", "end": "2025-06-17T21:30:00+00:00", "description": "", "location": "", "level": "4-6", "notes": "Must Include Wizard"}, {"id": "event_15", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 16-20, Melee Moshpit (Berserker, Knight, Warrior Only)", "start": "2025-06-02T18:00:00+00:00", "end": "2025-06-02T19:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "Melee Moshpit (Berserker, Knight, Warrior Only)"}, {"id": "event_16", "name": "Weekend Warrior", "fullName": "Weekend Warrior: Level 16-20, All Unique Classes", "start": "2025-05-25T18:00:00+00:00", "end": "2025-05-25T19:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "All Unique Classes"}, {"id": "event_17", "name": "Weekend Warrior", "fullName": "Weekend Warrior: Level 7-10, Max Team Stat Score 420", "start": "2025-05-25T01:00:00+00:00", "end": "2025-05-25T02:30:00+00:00", "description": "", "location": "", "level": "7-10", "notes": "Max Team Stat Score 420"}, {"id": "event_18", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 16-20, Must Include Wizard", "start": "2025-05-31T01:00:00+00:00", "end": "2025-05-31T02:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "Must Include Wizard"}, {"id": "event_19", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 16-20, Must Include Archer, No Swiftness Potions", "start": "2025-06-07T01:00:00+00:00", "end": "2025-06-07T02:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "Must Include Archer, No Swiftness Potions"}, {"id": "event_20", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 16-20, Anything", "start": "2025-05-23T18:00:00+00:00", "end": "2025-05-23T19:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "Anything"}, {"id": "event_21", "name": "Patrollers Limited", "fullName": "Patrollers Limited: Level 3-5, Max Team Stat Score 310, All Unique Classes, No Swiftness Potions", "start": "2025-06-19T20:00:00+00:00", "end": "2025-06-19T21:30:00+00:00", "description": "", "location": "", "level": "3-5", "notes": "Max Team Stat Score 310, All Unique Classes, No Swiftness Potions"}, {"id": "event_22", "name": "Patrollers Treasure Hunt", "fullName": "Patrollers Treasure Hunt: Level 6-9, Max Team Stat Score 410, No Swiftness Potions", "start": "2025-05-28T01:00:00+00:00", "end": "2025-05-28T02:30:00+00:00", "description": "", "location": "", "level": "6-9", "notes": "Max Team Stat Score 410, No Swiftness Potions"}, {"id": "event_23", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 16-20, Melee Moshpit (Berserker, Knight, Warrior Only)", "start": "2025-06-03T03:00:00+00:00", "end": "2025-06-03T04:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "Melee Moshpit (Berserker, Knight, Warrior Only)"}, {"id": "event_24", "name": "Patrollers Treasure Hunt", "fullName": "Patrollers Treasure Hunt: Level 6-9, Max Team Stat Score 410, All Unique Classes, No Swiftness Potions", "start": "2025-06-18T03:00:00+00:00", "end": "2025-06-18T04:30:00+00:00", "description": "", "location": "", "level": "6-9", "notes": "Max Team Stat Score 410, All Unique Classes, No Swiftness Potions"}, {"id": "event_25", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 4-6, Rare and Below, No Swiftness Potions", "start": "2025-05-27T20:00:00+00:00", "end": "2025-05-27T21:30:00+00:00", "description": "", "location": "", "level": "4-6", "notes": "Rare and Below, No Swiftness Potions"}, {"id": "event_26", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 11-15, Must Include Wizard", "start": "2025-06-05T01:00:00+00:00", "end": "2025-06-05T02:30:00+00:00", "description": "", "location": "", "level": "11-15", "notes": "Must Include Wizard"}, {"id": "event_27", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 11-15, No Healer, Must Include Knight (No Priest or Seer)", "start": "2025-06-19T01:00:00+00:00", "end": "2025-06-19T02:30:00+00:00", "description": "", "location": "", "level": "11-15", "notes": "No Healer, Must Include Knight (No Priest or Seer)"}, {"id": "event_28", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 11-15, Melee Moshpit (Berserker, Knight, Warrior Only)", "start": "2025-06-12T01:00:00+00:00", "end": "2025-06-12T02:30:00+00:00", "description": "", "location": "", "level": "11-15", "notes": "Melee Moshpit (Berserker, Knight, Warrior Only)"}, {"id": "event_29", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 11-15, Melee Moshpit (Berserker, Knight, Warrior Only)", "start": "2025-06-11T18:00:00+00:00", "end": "2025-06-11T19:30:00+00:00", "description": "", "location": "", "level": "11-15", "notes": "Melee Moshpit (Berserker, Knight, Warrior Only)"}, {"id": "event_30", "name": "Weekend Warrior", "fullName": "Weekend Warrior: Level 20, Anything", "start": "2025-06-08T01:00:00+00:00", "end": "2025-06-08T02:30:00+00:00", "description": "", "location": "", "level": "20", "notes": "Anything"}, {"id": "event_31", "name": "Weekend Warrior", "fullName": "Weekend Warrior: Level 7-10, Anything", "start": "2025-06-01T01:00:00+00:00", "end": "2025-06-01T02:30:00+00:00", "description": "", "location": "", "level": "7-10", "notes": "Anything"}, {"id": "event_32", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 11-15, Melee Moshpit, Must Include Warrior (Berserker, Knight, Warrior Only)", "start": "2025-05-29T03:00:00+00:00", "end": "2025-05-29T04:30:00+00:00", "description": "", "location": "", "level": "11-15", "notes": "Melee Moshpit, Must Include Warrior (Berserker, Knight, Warrior Only)"}, {"id": "event_33", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 4-6, Rare and Below, No Swiftness Potions", "start": "2025-05-28T03:00:00+00:00", "end": "2025-05-28T04:30:00+00:00", "description": "", "location": "", "level": "4-6", "notes": "Rare and Below, No Swiftness Potions"}, {"id": "event_34", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 7-10, No Healer (No Priest or Seer)", "start": "2025-06-20T01:00:00+00:00", "end": "2025-06-20T02:30:00+00:00", "description": "", "location": "", "level": "7-10", "notes": "No Healer (No Priest or Seer)"}, {"id": "event_35", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 7-10, Magical Menagerie (Priest, Seer, Wizard Only)", "start": "2025-05-30T01:00:00+00:00", "end": "2025-05-30T02:30:00+00:00", "description": "", "location": "", "level": "7-10", "notes": "Magical Menagerie (Priest, Seer, Wizard Only)"}, {"id": "event_36", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 7-10, Magical Menagerie (Priest, Seer, Wizard Only)", "start": "2025-05-22T20:00:00+00:00", "end": "2025-05-22T21:30:00+00:00", "description": "", "location": "", "level": "7-10", "notes": "Magical Menagerie (Priest, Seer, Wizard Only)"}, {"id": "event_37", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 4-6, Max Team Stat Score 310, No Swiftness Potions", "start": "2025-06-03T18:00:00+00:00", "end": "2025-06-03T19:30:00+00:00", "description": "", "location": "", "level": "4-6", "notes": "Max Team Stat Score 310, No Swiftness Potions"}, {"id": "event_38", "name": "Patrollers Limited", "fullName": "Patrollers Limited: Level 6-9, Max Team Stat Score 390, No Swiftness Potions", "start": "2025-06-02T01:00:00+00:00", "end": "2025-06-02T02:30:00+00:00", "description": "", "location": "", "level": "6-9", "notes": "Max Team Stat Score 390, No Swiftness Potions"}, {"id": "event_39", "name": "Revengers", "fullName": "Revengers: Level 16-20, Anything", "start": "2025-05-25T02:00:00+00:00", "end": "2025-05-25T03:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "Anything"}, {"id": "event_40", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 16-20, Anything", "start": "2025-06-09T18:00:00+00:00", "end": "2025-06-09T19:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "Anything"}, {"id": "event_41", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 16-20, Must Include Wizard", "start": "2025-06-13T20:00:00+00:00", "end": "2025-06-13T21:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "Must Include Wizard"}, {"id": "event_42", "name": "Patrollers Limited", "fullName": "Patrollers Limited: Level 3-5, Max Team Stat Score 310, All Unique Classes, No Swiftness Potion", "start": "2025-05-23T03:00:00+00:00", "end": "2025-05-23T04:30:00+00:00", "description": "", "location": "", "level": "3-5", "notes": "Max Team Stat Score 310, All Unique Classes, No Swiftness Potion"}, {"id": "event_43", "name": "Weekend Warrior", "fullName": "Weekend Warrior: Level 16-20, All Unique Classes", "start": "2025-06-08T18:00:00+00:00", "end": "2025-06-08T19:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "All Unique Classes"}, {"id": "event_44", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 11-15, Must Include Wizard", "start": "2025-06-04T18:00:00+00:00", "end": "2025-06-04T19:30:00+00:00", "description": "", "location": "", "level": "11-15", "notes": "Must Include Wizard"}, {"id": "event_45", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 4-6, Anything", "start": "2025-05-21T01:00:00+00:00", "end": "2025-05-21T02:30:00+00:00", "description": "", "location": "", "level": "4-6", "notes": "Anything"}, {"id": "event_46", "name": "Revengers", "fullName": "Revengers: Level 16-20, Must Include Archer, No Swiftness Potion", "start": "2025-05-25T19:00:00+00:00", "end": "2025-05-25T20:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "Must Include Archer, No Swiftness Potion"}, {"id": "event_47", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 16-20, Anything, No Health or Mana Vials", "start": "2025-06-16T18:00:00+00:00", "end": "2025-06-16T19:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "Anything, No Health or Mana Vials"}, {"id": "event_48", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 11-15, No Healer, Must Include Knight (No Priest or Seer)", "start": "2025-06-18T18:00:00+00:00", "end": "2025-06-18T19:30:00+00:00", "description": "", "location": "", "level": "11-15", "notes": "No Healer, Must Include Knight (No Priest or Seer)"}, {"id": "event_49", "name": "Patrollers Limited", "fullName": "Patrollers Limited: Level 6-9, Max Team Stat Score 410, All Unique Classes, No Swiftness", "start": "2025-05-26T20:00:00+00:00", "end": "2025-05-26T21:30:00+00:00", "description": "", "location": "", "level": "6-9", "notes": "Max Team Stat Score 410, All Unique Classes, No Swiftness"}, {"id": "event_50", "name": "Patrollers Limited", "fullName": "Patrollers Limited: Level 6-9, Max Team Stat Score 390, No Swiftness Potions", "start": "2025-05-26T01:00:00+00:00", "end": "2025-05-26T02:30:00+00:00", "description": "", "location": "", "level": "6-9", "notes": "Max Team Stat Score 390, No Swiftness Potions"}, {"id": "event_51", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 11-15, No Triple Class, Max Team Stat Score 540", "start": "2025-05-22T03:00:00+00:00", "end": "2025-05-22T04:30:00+00:00", "description": "", "location": "", "level": "11-15", "notes": "No Triple Class, Max Team Stat Score 540"}, {"id": "event_52", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 7-10, No Healer (No Priest or Seer)", "start": "2025-06-19T18:00:00+00:00", "end": "2025-06-19T19:30:00+00:00", "description": "", "location": "", "level": "7-10", "notes": "No Healer (No Priest or Seer)"}, {"id": "event_53", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 11-15, Melee Moshpit, Must Include Warrior (Berserker, Knight, Warrior Only)", "start": "2025-05-28T18:00:00+00:00", "end": "2025-05-28T19:30:00+00:00", "description": "", "location": "", "level": "11-15", "notes": "Melee Moshpit, Must Include Warrior (Berserker, Knight, Warrior Only)"}, {"id": "event_54", "name": "Revengers", "fullName": "Revengers: Level 16-20, Anything, No Health or Mana Vials", "start": "2025-06-15T19:00:00+00:00", "end": "2025-06-15T20:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "Anything, No Health or Mana Vials"}, {"id": "event_55", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 16-20, Must Include Archer, No Swiftness Potions", "start": "2025-06-06T18:00:00+00:00", "end": "2025-06-06T19:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "Must Include Archer, No Swiftness Potions"}, {"id": "event_56", "name": "Revengers", "fullName": "Revengers: Level 16-20, Anything", "start": "2025-06-01T19:00:00+00:00", "end": "2025-06-01T20:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "Anything"}, {"id": "event_57", "name": "Weekend Warrior", "fullName": "Weekend Warrior: Level 16-20, All Unique Classes", "start": "2025-06-15T18:00:00+00:00", "end": "2025-06-15T19:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "All Unique Classes"}, {"id": "event_58", "name": "Patrollers Limited", "fullName": "Patrollers Limited: Level 6-9, Max Team Stat Score 410, All Unique Classes, No Swiftness Potions", "start": "2025-06-17T01:00:00+00:00", "end": "2025-06-17T02:30:00+00:00", "description": "", "location": "", "level": "6-9", "notes": "Max Team Stat Score 410, All Unique Classes, No Swiftness Potions"}, {"id": "event_59", "name": "Patrollers Limited", "fullName": "Patrollers Limited: Level 6-9, Max Team Stat Score 410, All Unique Classes, No Swiftness Potions", "start": "2025-06-02T20:00:00+00:00", "end": "2025-06-02T21:30:00+00:00", "description": "", "location": "", "level": "6-9", "notes": "Max Team Stat Score 410, All Unique Classes, No Swiftness Potions"}, {"id": "event_60", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 16-20, Anything, No Health or Mana Vials", "start": "2025-05-27T01:00:00+00:00", "end": "2025-05-27T02:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "Anything, No Health or Mana Vials"}, {"id": "event_61", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 4-6, Must Include Wizard", "start": "2025-06-18T01:00:00+00:00", "end": "2025-06-18T02:30:00+00:00", "description": "", "location": "", "level": "4-6", "notes": "Must Include Wizard"}, {"id": "event_62", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 7-10, Magical Menagerie (Priest, Seer, Wizard Only)", "start": "2025-05-23T01:00:00+00:00", "end": "2025-05-23T02:30:00+00:00", "description": "", "location": "", "level": "7-10", "notes": "Magical Menagerie (Priest, Seer, Wizard Only)"}, {"id": "event_63", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 7-10, Magical Menagerie (Priest, Seer, Wizard Only)", "start": "2025-05-29T18:00:00+00:00", "end": "2025-05-29T19:30:00+00:00", "description": "", "location": "", "level": "7-10", "notes": "Magical Menagerie (Priest, Seer, Wizard Only)"}, {"id": "event_64", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 4-6, Anything", "start": "2025-06-11T01:00:00+00:00", "end": "2025-06-11T02:30:00+00:00", "description": "", "location": "", "level": "4-6", "notes": "Anything"}, {"id": "event_65", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 7-10, Must Include Seer", "start": "2025-06-06T01:00:00+00:00", "end": "2025-06-06T02:30:00+00:00", "description": "", "location": "", "level": "7-10", "notes": "Must Include Seer"}, {"id": "event_66", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 4-6, Max Team Stat Score 310, No Swiftness Potions", "start": "2025-06-04T01:00:00+00:00", "end": "2025-06-04T02:30:00+00:00", "description": "", "location": "", "level": "4-6", "notes": "Max Team Stat Score 310, No Swiftness Potions"}, {"id": "event_67", "name": "Revengers Champion!", "fullName": "Revengers Champion!: Level 16-20, All Unique Classes", "start": "2025-05-25T23:00:00+00:00", "end": "2025-05-26T00:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "All Unique Classes"}, {"id": "event_68", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 16-20, Anything, No Health or Mana Vials", "start": "2025-06-17T03:00:00+00:00", "end": "2025-06-17T04:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "Anything, No Health or Mana Vials"}, {"id": "event_69", "name": "Weekend Warrior", "fullName": "Weekend Warrior: Level 7-10, Max Team Stat Score 420", "start": "2025-06-14T23:00:00+00:00", "end": "2025-06-15T00:30:00+00:00", "description": "", "location": "", "level": "7-10", "notes": "Max Team Stat Score 420"}, {"id": "event_70", "name": "Patrollers Limited", "fullName": "Patrollers Limited: Level 3-5, Max Team Stat Score 310, All Unique Classes, No Swiftness Potions", "start": "2025-05-29T20:00:00+00:00", "end": "2025-05-29T21:30:00+00:00", "description": "", "location": "", "level": "3-5", "notes": "Max Team Stat Score 310, All Unique Classes, No Swiftness Potions"}, {"id": "event_71", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 7-10, Must Include Seer", "start": "2025-06-05T20:00:00+00:00", "end": "2025-06-05T21:30:00+00:00", "description": "", "location": "", "level": "7-10", "notes": "Must Include Seer"}, {"id": "event_72", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 11-15, No Triple Class, Max Team Stat Score 540", "start": "2025-05-21T20:00:00+00:00", "end": "2025-05-21T21:30:00+00:00", "description": "", "location": "", "level": "11-15", "notes": "No Triple Class, Max Team Stat Score 540"}, {"id": "event_73", "name": "Patrollers Limited", "fullName": "Patrollers Limited: Level 3-5, Max Team Stat Score 290, No Swiftness", "start": "2025-05-24T20:00:00+00:00", "end": "2025-05-24T21:30:00+00:00", "description": "", "location": "", "level": "3-5", "notes": "Max Team Stat Score 290, No Swiftness"}, {"id": "event_74", "name": "Patrollers Limited", "fullName": "Patrollers Limited: Level 6-9, Max Team Stat Score 410, All Unique Classes, No Swiftness Potions", "start": "2025-06-10T03:00:00+00:00", "end": "2025-06-10T04:30:00+00:00", "description": "", "location": "", "level": "6-9", "notes": "Max Team Stat Score 410, All Unique Classes, No Swiftness Potions"}, {"id": "event_75", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 16-20, Anything, No Health or Mana Vials", "start": "2025-05-26T18:00:00+00:00", "end": "2025-05-26T19:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "Anything, No Health or Mana Vials"}, {"id": "event_76", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 7-10, Must Include Wizard", "start": "2025-06-12T18:00:00+00:00", "end": "2025-06-12T19:30:00+00:00", "description": "", "location": "", "level": "7-10", "notes": "Must Include Wizard"}, {"id": "event_77", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 16-20, Must Include Wizard", "start": "2025-05-30T18:00:00+00:00", "end": "2025-05-30T19:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "Must Include Wizard"}, {"id": "event_78", "name": "Daily Skirmish", "fullName": "Daily Skirmish: Level 16-20, Anything", "start": "2025-06-10T01:00:00+00:00", "end": "2025-06-10T02:30:00+00:00", "description": "", "location": "", "level": "16-20", "notes": "Anything"}, {"id": "event_79", "name": "Patrollers Limited", "fullName": "Patrollers Limited: Level 3-5, Max Team Stat Score 290, No Swiftness Potions", "start": "2025-05-31T18:00:00+00:00", "end": "2025-05-31T19:30:00+00:00", "description": "", "location": "", "level": "3-5", "notes": "Max Team Stat Score 290, No Swiftness Potions"}, {"id": "event_80", "name": "Patrollers Treasure Hunt", "fullName": "Patrollers Treasure Hunt: Level 3-5, Max Team Stat Score 290, No Swiftness Potions", "start": "2025-06-10T20:00:00+00:00", "end": "2025-06-10T21:30:00+00:00", "description": "", "location": "", "level": "3-5", "notes": "Max Team Stat Score 290, No Swiftness Potions"}, {"id": "event_81", "name": "Patrollers Limited", "fullName": "Patrollers Limited: Level 3-5, Max Team Stat Score 290, No Swiftness Potions", "start": "2025-06-07T18:00:00+00:00", "end": "2025-06-07T19:30:00+00:00", "description": "", "location": "", "level": "3-5", "notes": "Max Team Stat Score 290, No Swiftness Potions"}, {"id": "event_82", "name": "Patrollers Limited", "fullName": "Patrollers Limited: Level 3-5, Max Team Stat Score 310, All Unique Classes, No Swiftness Potions", "start": "2025-06-06T03:00:00+00:00", "end": "2025-06-06T04:30:00+00:00", "description": "", "location": "", "level": "3-5", "notes": "Max Team Stat Score 310, All Unique Classes, No Swiftness Potions"}, {"id": "event_83", "name": "Patrollers Treasure Hunt", "fullName": "Patrollers Treasure Hunt: Level 3-5, Max Team Stat Score 310, All Unique Classes, No Swiftness Potions", "start": "2025-06-03T20:00:00+00:00", "end": "2025-06-03T21:30:00+00:00", "description": "", "location": "", "level": "3-5", "notes": "Max Team Stat Score 310, All Unique Classes, No Swiftness Potions"}];
 
         function updateCountdowns() {
             console.log("Updating countdowns at: " + new Date().toISOString());
@@ -294,66 +294,6 @@
             <th>Calendar</th>
         </tr>
 
-        <tr data-event-start="2025-05-19T18:00:00+00:00" data-event-end="2025-05-19T18:00:00+00:00">
-            <td class="start-time" data-iso="2025-05-19T18:00:00+00:00">2025-05-19 18:00:00</td>
-            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
-            <td>16-20</td>
-            <td>Melee Moshpit, No Precision Potion (Berserker, Knight, Warrior Only)</td>
-            <td class="countdown" data-start="2025-05-19T18:00:00+00:00">Initializing...</td>
-            <td>
-                <span class="ics-btn" onclick="downloadICS('event_1', false)">Original</span>
-                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_1', true)">Early (-10m)</span>
-            </td>
-        </tr>
-    
-        <tr data-event-start="2025-05-19T23:00:00+00:00" data-event-end="2025-05-19T23:00:00+00:00">
-            <td class="start-time" data-iso="2025-05-19T23:00:00+00:00">2025-05-19 23:00:00</td>
-            <td><span class="event-icon">🎮</span>Patrollers Limited</td>
-            <td>6-9</td>
-            <td>Max Team Stat Score 410, All Unique Classes, No Swiftness</td>
-            <td class="countdown" data-start="2025-05-19T23:00:00+00:00">Initializing...</td>
-            <td>
-                <span class="ics-btn" onclick="downloadICS('event_2', false)">Original</span>
-                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_2', true)">Early (-10m)</span>
-            </td>
-        </tr>
-    
-        <tr data-event-start="2025-05-20T01:00:00+00:00" data-event-end="2025-05-20T01:00:00+00:00">
-            <td class="start-time" data-iso="2025-05-20T01:00:00+00:00">2025-05-20 01:00:00</td>
-            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
-            <td>16-20</td>
-            <td>Melee Moshpit, No Precision Potion (Berserker, Knight, Warrior Only)</td>
-            <td class="countdown" data-start="2025-05-20T01:00:00+00:00">Initializing...</td>
-            <td>
-                <span class="ics-btn" onclick="downloadICS('event_6', false)">Original</span>
-                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_6', true)">Early (-10m)</span>
-            </td>
-        </tr>
-    
-        <tr data-event-start="2025-05-20T18:00:00+00:00" data-event-end="2025-05-20T18:00:00+00:00">
-            <td class="start-time" data-iso="2025-05-20T18:00:00+00:00">2025-05-20 18:00:00</td>
-            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
-            <td>4-6</td>
-            <td>Anything</td>
-            <td class="countdown" data-start="2025-05-20T18:00:00+00:00">Initializing...</td>
-            <td>
-                <span class="ics-btn" onclick="downloadICS('event_7', false)">Original</span>
-                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_7', true)">Early (-10m)</span>
-            </td>
-        </tr>
-    
-        <tr data-event-start="2025-05-20T20:00:00+00:00" data-event-end="2025-05-20T20:00:00+00:00">
-            <td class="start-time" data-iso="2025-05-20T20:00:00+00:00">2025-05-20 20:00:00</td>
-            <td><span class="event-icon">🎮</span>Patrollers Treasure Hunt</td>
-            <td>3-5</td>
-            <td>Max Team Stat Score 290, No Swiftness Potion</td>
-            <td class="countdown" data-start="2025-05-20T20:00:00+00:00">Initializing...</td>
-            <td>
-                <span class="ics-btn" onclick="downloadICS('event_3', false)">Original</span>
-                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_3', true)">Early (-10m)</span>
-            </td>
-        </tr>
-    
         <tr data-event-start="2025-05-21T01:00:00+00:00" data-event-end="2025-05-21T01:00:00+00:00">
             <td class="start-time" data-iso="2025-05-21T01:00:00+00:00">2025-05-21 01:00:00</td>
             <td><span class="event-icon">🎮</span>Daily Skirmish</td>
@@ -361,8 +301,8 @@
             <td>Anything</td>
             <td class="countdown" data-start="2025-05-21T01:00:00+00:00">Initializing...</td>
             <td>
-                <span class="ics-btn" onclick="downloadICS('event_0', false)">Original</span>
-                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_0', true)">Early (-10m)</span>
+                <span class="ics-btn" onclick="downloadICS('event_45', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_45', true)">Early (-10m)</span>
             </td>
         </tr>
     
@@ -373,8 +313,8 @@
             <td>No Triple Class, Max Team Stat Score 540</td>
             <td class="countdown" data-start="2025-05-21T20:00:00+00:00">Initializing...</td>
             <td>
-                <span class="ics-btn" onclick="downloadICS('event_5', false)">Original</span>
-                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_5', true)">Early (-10m)</span>
+                <span class="ics-btn" onclick="downloadICS('event_72', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_72', true)">Early (-10m)</span>
             </td>
         </tr>
     
@@ -385,8 +325,980 @@
             <td>No Triple Class, Max Team Stat Score 540</td>
             <td class="countdown" data-start="2025-05-22T03:00:00+00:00">Initializing...</td>
             <td>
+                <span class="ics-btn" onclick="downloadICS('event_51', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_51', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-22T20:00:00+00:00" data-event-end="2025-05-22T20:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-22T20:00:00+00:00">2025-05-22 20:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>7-10</td>
+            <td>Magical Menagerie (Priest, Seer, Wizard Only)</td>
+            <td class="countdown" data-start="2025-05-22T20:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_36', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_36', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-23T01:00:00+00:00" data-event-end="2025-05-23T01:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-23T01:00:00+00:00">2025-05-23 01:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>7-10</td>
+            <td>Magical Menagerie (Priest, Seer, Wizard Only)</td>
+            <td class="countdown" data-start="2025-05-23T01:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_62', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_62', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-23T03:00:00+00:00" data-event-end="2025-05-23T03:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-23T03:00:00+00:00">2025-05-23 03:00:00</td>
+            <td><span class="event-icon">🎮</span>Patrollers Limited</td>
+            <td>3-5</td>
+            <td>Max Team Stat Score 310, All Unique Classes, No Swiftness Potion</td>
+            <td class="countdown" data-start="2025-05-23T03:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_42', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_42', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-23T18:00:00+00:00" data-event-end="2025-05-23T18:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-23T18:00:00+00:00">2025-05-23 18:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>Anything</td>
+            <td class="countdown" data-start="2025-05-23T18:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_20', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_20', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-24T01:00:00+00:00" data-event-end="2025-05-24T01:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-24T01:00:00+00:00">2025-05-24 01:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>Anything</td>
+            <td class="countdown" data-start="2025-05-24T01:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_1', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_1', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-24T18:00:00+00:00" data-event-end="2025-05-24T18:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-24T18:00:00+00:00">2025-05-24 18:00:00</td>
+            <td><span class="event-icon">🎮</span>Champion Invitational!</td>
+            <td>16-20</td>
+            <td>All Unique Classes</td>
+            <td class="countdown" data-start="2025-05-24T18:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_10', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_10', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-24T20:00:00+00:00" data-event-end="2025-05-24T20:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-24T20:00:00+00:00">2025-05-24 20:00:00</td>
+            <td><span class="event-icon">🎮</span>Patrollers Limited</td>
+            <td>3-5</td>
+            <td>Max Team Stat Score 290, No Swiftness</td>
+            <td class="countdown" data-start="2025-05-24T20:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_73', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_73', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-25T01:00:00+00:00" data-event-end="2025-05-25T01:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-25T01:00:00+00:00">2025-05-25 01:00:00</td>
+            <td><span class="event-icon">🍺</span>Weekend Warrior</td>
+            <td>7-10</td>
+            <td>Max Team Stat Score 420</td>
+            <td class="countdown" data-start="2025-05-25T01:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_17', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_17', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-25T02:00:00+00:00" data-event-end="2025-05-25T02:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-25T02:00:00+00:00">2025-05-25 02:00:00</td>
+            <td><span class="event-icon">🗡️</span>Revengers</td>
+            <td>16-20</td>
+            <td>Anything</td>
+            <td class="countdown" data-start="2025-05-25T02:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_39', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_39', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-25T18:00:00+00:00" data-event-end="2025-05-25T18:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-25T18:00:00+00:00">2025-05-25 18:00:00</td>
+            <td><span class="event-icon">🍺</span>Weekend Warrior</td>
+            <td>16-20</td>
+            <td>All Unique Classes</td>
+            <td class="countdown" data-start="2025-05-25T18:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_16', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_16', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-25T19:00:00+00:00" data-event-end="2025-05-25T19:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-25T19:00:00+00:00">2025-05-25 19:00:00</td>
+            <td><span class="event-icon">🗡️</span>Revengers</td>
+            <td>16-20</td>
+            <td>Must Include Archer, No Swiftness Potion</td>
+            <td class="countdown" data-start="2025-05-25T19:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_46', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_46', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-25T23:00:00+00:00" data-event-end="2025-05-25T23:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-25T23:00:00+00:00">2025-05-25 23:00:00</td>
+            <td><span class="event-icon">🗡️</span>Revengers Champion!</td>
+            <td>16-20</td>
+            <td>All Unique Classes</td>
+            <td class="countdown" data-start="2025-05-25T23:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_67', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_67', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-26T01:00:00+00:00" data-event-end="2025-05-26T01:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-26T01:00:00+00:00">2025-05-26 01:00:00</td>
+            <td><span class="event-icon">🎮</span>Patrollers Limited</td>
+            <td>6-9</td>
+            <td>Max Team Stat Score 390, No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-05-26T01:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_50', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_50', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-26T18:00:00+00:00" data-event-end="2025-05-26T18:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-26T18:00:00+00:00">2025-05-26 18:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>Anything, No Health or Mana Vials</td>
+            <td class="countdown" data-start="2025-05-26T18:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_75', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_75', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-26T20:00:00+00:00" data-event-end="2025-05-26T20:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-26T20:00:00+00:00">2025-05-26 20:00:00</td>
+            <td><span class="event-icon">🎮</span>Patrollers Limited</td>
+            <td>6-9</td>
+            <td>Max Team Stat Score 410, All Unique Classes, No Swiftness</td>
+            <td class="countdown" data-start="2025-05-26T20:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_49', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_49', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-27T01:00:00+00:00" data-event-end="2025-05-27T01:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-27T01:00:00+00:00">2025-05-27 01:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>Anything, No Health or Mana Vials</td>
+            <td class="countdown" data-start="2025-05-27T01:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_60', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_60', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-27T20:00:00+00:00" data-event-end="2025-05-27T20:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-27T20:00:00+00:00">2025-05-27 20:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>4-6</td>
+            <td>Rare and Below, No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-05-27T20:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_25', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_25', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-28T01:00:00+00:00" data-event-end="2025-05-28T01:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-28T01:00:00+00:00">2025-05-28 01:00:00</td>
+            <td><span class="event-icon">🎮</span>Patrollers Treasure Hunt</td>
+            <td>6-9</td>
+            <td>Max Team Stat Score 410, No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-05-28T01:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_22', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_22', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-28T03:00:00+00:00" data-event-end="2025-05-28T03:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-28T03:00:00+00:00">2025-05-28 03:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>4-6</td>
+            <td>Rare and Below, No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-05-28T03:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_33', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_33', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-28T18:00:00+00:00" data-event-end="2025-05-28T18:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-28T18:00:00+00:00">2025-05-28 18:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>11-15</td>
+            <td>Melee Moshpit, Must Include Warrior (Berserker, Knight, Warrior Only)</td>
+            <td class="countdown" data-start="2025-05-28T18:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_53', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_53', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-29T03:00:00+00:00" data-event-end="2025-05-29T03:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-29T03:00:00+00:00">2025-05-29 03:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>11-15</td>
+            <td>Melee Moshpit, Must Include Warrior (Berserker, Knight, Warrior Only)</td>
+            <td class="countdown" data-start="2025-05-29T03:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_32', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_32', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-29T18:00:00+00:00" data-event-end="2025-05-29T18:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-29T18:00:00+00:00">2025-05-29 18:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>7-10</td>
+            <td>Magical Menagerie (Priest, Seer, Wizard Only)</td>
+            <td class="countdown" data-start="2025-05-29T18:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_63', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_63', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-29T20:00:00+00:00" data-event-end="2025-05-29T20:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-29T20:00:00+00:00">2025-05-29 20:00:00</td>
+            <td><span class="event-icon">🎮</span>Patrollers Limited</td>
+            <td>3-5</td>
+            <td>Max Team Stat Score 310, All Unique Classes, No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-05-29T20:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_70', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_70', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-30T01:00:00+00:00" data-event-end="2025-05-30T01:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-30T01:00:00+00:00">2025-05-30 01:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>7-10</td>
+            <td>Magical Menagerie (Priest, Seer, Wizard Only)</td>
+            <td class="countdown" data-start="2025-05-30T01:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_35', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_35', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-30T18:00:00+00:00" data-event-end="2025-05-30T18:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-30T18:00:00+00:00">2025-05-30 18:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>Must Include Wizard</td>
+            <td class="countdown" data-start="2025-05-30T18:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_77', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_77', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-31T01:00:00+00:00" data-event-end="2025-05-31T01:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-31T01:00:00+00:00">2025-05-31 01:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>Must Include Wizard</td>
+            <td class="countdown" data-start="2025-05-31T01:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_18', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_18', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-05-31T18:00:00+00:00" data-event-end="2025-05-31T18:00:00+00:00">
+            <td class="start-time" data-iso="2025-05-31T18:00:00+00:00">2025-05-31 18:00:00</td>
+            <td><span class="event-icon">🎮</span>Patrollers Limited</td>
+            <td>3-5</td>
+            <td>Max Team Stat Score 290, No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-05-31T18:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_79', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_79', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-01T01:00:00+00:00" data-event-end="2025-06-01T01:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-01T01:00:00+00:00">2025-06-01 01:00:00</td>
+            <td><span class="event-icon">🍺</span>Weekend Warrior</td>
+            <td>7-10</td>
+            <td>Anything</td>
+            <td class="countdown" data-start="2025-06-01T01:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_31', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_31', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-01T02:00:00+00:00" data-event-end="2025-06-01T02:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-01T02:00:00+00:00">2025-06-01 02:00:00</td>
+            <td><span class="event-icon">🗡️</span>Revengers</td>
+            <td>7-10</td>
+            <td>Must Include Wizard</td>
+            <td class="countdown" data-start="2025-06-01T02:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_5', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_5', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-01T18:00:00+00:00" data-event-end="2025-06-01T18:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-01T18:00:00+00:00">2025-06-01 18:00:00</td>
+            <td><span class="event-icon">🍺</span>Weekend Warrior</td>
+            <td>16-20</td>
+            <td>Max Team Stat Score 750</td>
+            <td class="countdown" data-start="2025-06-01T18:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_9', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_9', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-01T19:00:00+00:00" data-event-end="2025-06-01T19:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-01T19:00:00+00:00">2025-06-01 19:00:00</td>
+            <td><span class="event-icon">🗡️</span>Revengers</td>
+            <td>16-20</td>
+            <td>Anything</td>
+            <td class="countdown" data-start="2025-06-01T19:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_56', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_56', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-02T01:00:00+00:00" data-event-end="2025-06-02T01:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-02T01:00:00+00:00">2025-06-02 01:00:00</td>
+            <td><span class="event-icon">🎮</span>Patrollers Limited</td>
+            <td>6-9</td>
+            <td>Max Team Stat Score 390, No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-06-02T01:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_38', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_38', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-02T18:00:00+00:00" data-event-end="2025-06-02T18:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-02T18:00:00+00:00">2025-06-02 18:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>Melee Moshpit (Berserker, Knight, Warrior Only)</td>
+            <td class="countdown" data-start="2025-06-02T18:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_15', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_15', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-02T20:00:00+00:00" data-event-end="2025-06-02T20:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-02T20:00:00+00:00">2025-06-02 20:00:00</td>
+            <td><span class="event-icon">🎮</span>Patrollers Limited</td>
+            <td>6-9</td>
+            <td>Max Team Stat Score 410, All Unique Classes, No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-06-02T20:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_59', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_59', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-03T03:00:00+00:00" data-event-end="2025-06-03T03:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-03T03:00:00+00:00">2025-06-03 03:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>Melee Moshpit (Berserker, Knight, Warrior Only)</td>
+            <td class="countdown" data-start="2025-06-03T03:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_23', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_23', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-03T18:00:00+00:00" data-event-end="2025-06-03T18:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-03T18:00:00+00:00">2025-06-03 18:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>4-6</td>
+            <td>Max Team Stat Score 310, No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-06-03T18:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_37', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_37', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-03T20:00:00+00:00" data-event-end="2025-06-03T20:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-03T20:00:00+00:00">2025-06-03 20:00:00</td>
+            <td><span class="event-icon">🎮</span>Patrollers Treasure Hunt</td>
+            <td>3-5</td>
+            <td>Max Team Stat Score 310, All Unique Classes, No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-06-03T20:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_83', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_83', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-04T01:00:00+00:00" data-event-end="2025-06-04T01:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-04T01:00:00+00:00">2025-06-04 01:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>4-6</td>
+            <td>Max Team Stat Score 310, No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-06-04T01:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_66', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_66', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-04T18:00:00+00:00" data-event-end="2025-06-04T18:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-04T18:00:00+00:00">2025-06-04 18:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>11-15</td>
+            <td>Must Include Wizard</td>
+            <td class="countdown" data-start="2025-06-04T18:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_44', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_44', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-05T01:00:00+00:00" data-event-end="2025-06-05T01:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-05T01:00:00+00:00">2025-06-05 01:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>11-15</td>
+            <td>Must Include Wizard</td>
+            <td class="countdown" data-start="2025-06-05T01:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_26', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_26', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-05T20:00:00+00:00" data-event-end="2025-06-05T20:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-05T20:00:00+00:00">2025-06-05 20:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>7-10</td>
+            <td>Must Include Seer</td>
+            <td class="countdown" data-start="2025-06-05T20:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_71', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_71', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-06T01:00:00+00:00" data-event-end="2025-06-06T01:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-06T01:00:00+00:00">2025-06-06 01:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>7-10</td>
+            <td>Must Include Seer</td>
+            <td class="countdown" data-start="2025-06-06T01:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_65', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_65', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-06T03:00:00+00:00" data-event-end="2025-06-06T03:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-06T03:00:00+00:00">2025-06-06 03:00:00</td>
+            <td><span class="event-icon">🎮</span>Patrollers Limited</td>
+            <td>3-5</td>
+            <td>Max Team Stat Score 310, All Unique Classes, No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-06-06T03:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_82', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_82', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-06T18:00:00+00:00" data-event-end="2025-06-06T18:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-06T18:00:00+00:00">2025-06-06 18:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>Must Include Archer, No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-06-06T18:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_55', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_55', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-07T01:00:00+00:00" data-event-end="2025-06-07T01:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-07T01:00:00+00:00">2025-06-07 01:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>Must Include Archer, No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-06-07T01:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_19', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_19', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-07T18:00:00+00:00" data-event-end="2025-06-07T18:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-07T18:00:00+00:00">2025-06-07 18:00:00</td>
+            <td><span class="event-icon">🎮</span>Patrollers Limited</td>
+            <td>3-5</td>
+            <td>Max Team Stat Score 290, No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-06-07T18:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_81', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_81', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-08T01:00:00+00:00" data-event-end="2025-06-08T01:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-08T01:00:00+00:00">2025-06-08 01:00:00</td>
+            <td><span class="event-icon">🍺</span>Weekend Warrior</td>
+            <td>20</td>
+            <td>Anything</td>
+            <td class="countdown" data-start="2025-06-08T01:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_30', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_30', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-08T02:00:00+00:00" data-event-end="2025-06-08T02:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-08T02:00:00+00:00">2025-06-08 02:00:00</td>
+            <td><span class="event-icon">🗡️</span>Revengers</td>
+            <td>11-15</td>
+            <td>No Triple Classes, Max Team Stat Score 540</td>
+            <td class="countdown" data-start="2025-06-08T02:00:00+00:00">Initializing...</td>
+            <td>
                 <span class="ics-btn" onclick="downloadICS('event_4', false)">Original</span>
                 <span class="ics-btn ics-btn-early" onclick="downloadICS('event_4', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-08T18:00:00+00:00" data-event-end="2025-06-08T18:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-08T18:00:00+00:00">2025-06-08 18:00:00</td>
+            <td><span class="event-icon">🍺</span>Weekend Warrior</td>
+            <td>16-20</td>
+            <td>All Unique Classes</td>
+            <td class="countdown" data-start="2025-06-08T18:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_43', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_43', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-08T19:00:00+00:00" data-event-end="2025-06-08T19:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-08T19:00:00+00:00">2025-06-08 19:00:00</td>
+            <td><span class="event-icon">🗡️</span>Revengers</td>
+            <td>7-10</td>
+            <td>Melee Moshpit, Must Include Berserker (Berserker, Knight, Warrior Only)</td>
+            <td class="countdown" data-start="2025-06-08T19:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_0', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_0', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-09T03:00:00+00:00" data-event-end="2025-06-09T03:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-09T03:00:00+00:00">2025-06-09 03:00:00</td>
+            <td><span class="event-icon">🎮</span>Patrollers Limited</td>
+            <td>6-9</td>
+            <td>Max Team Stat Score 390, No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-06-09T03:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_3', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_3', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-09T18:00:00+00:00" data-event-end="2025-06-09T18:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-09T18:00:00+00:00">2025-06-09 18:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>Anything</td>
+            <td class="countdown" data-start="2025-06-09T18:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_40', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_40', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-10T01:00:00+00:00" data-event-end="2025-06-10T01:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-10T01:00:00+00:00">2025-06-10 01:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>Anything</td>
+            <td class="countdown" data-start="2025-06-10T01:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_78', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_78', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-10T03:00:00+00:00" data-event-end="2025-06-10T03:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-10T03:00:00+00:00">2025-06-10 03:00:00</td>
+            <td><span class="event-icon">🎮</span>Patrollers Limited</td>
+            <td>6-9</td>
+            <td>Max Team Stat Score 410, All Unique Classes, No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-06-10T03:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_74', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_74', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-10T18:00:00+00:00" data-event-end="2025-06-10T18:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-10T18:00:00+00:00">2025-06-10 18:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>4-6</td>
+            <td>Anything</td>
+            <td class="countdown" data-start="2025-06-10T18:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_8', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_8', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-10T20:00:00+00:00" data-event-end="2025-06-10T20:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-10T20:00:00+00:00">2025-06-10 20:00:00</td>
+            <td><span class="event-icon">🎮</span>Patrollers Treasure Hunt</td>
+            <td>3-5</td>
+            <td>Max Team Stat Score 290, No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-06-10T20:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_80', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_80', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-11T01:00:00+00:00" data-event-end="2025-06-11T01:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-11T01:00:00+00:00">2025-06-11 01:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>4-6</td>
+            <td>Anything</td>
+            <td class="countdown" data-start="2025-06-11T01:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_64', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_64', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-11T18:00:00+00:00" data-event-end="2025-06-11T18:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-11T18:00:00+00:00">2025-06-11 18:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>11-15</td>
+            <td>Melee Moshpit (Berserker, Knight, Warrior Only)</td>
+            <td class="countdown" data-start="2025-06-11T18:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_29', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_29', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-12T01:00:00+00:00" data-event-end="2025-06-12T01:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-12T01:00:00+00:00">2025-06-12 01:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>11-15</td>
+            <td>Melee Moshpit (Berserker, Knight, Warrior Only)</td>
+            <td class="countdown" data-start="2025-06-12T01:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_28', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_28', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-12T18:00:00+00:00" data-event-end="2025-06-12T18:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-12T18:00:00+00:00">2025-06-12 18:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>7-10</td>
+            <td>Must Include Wizard</td>
+            <td class="countdown" data-start="2025-06-12T18:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_76', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_76', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-13T01:00:00+00:00" data-event-end="2025-06-13T01:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-13T01:00:00+00:00">2025-06-13 01:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>7-10</td>
+            <td>Must Include Wizard</td>
+            <td class="countdown" data-start="2025-06-13T01:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_11', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_11', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-13T03:00:00+00:00" data-event-end="2025-06-13T03:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-13T03:00:00+00:00">2025-06-13 03:00:00</td>
+            <td><span class="event-icon">🎮</span>Patrollers Limited</td>
+            <td>3-5</td>
+            <td>Max Team Stat Score 310, All Unique Classes, No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-06-13T03:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_7', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_7', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-13T20:00:00+00:00" data-event-end="2025-06-13T20:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-13T20:00:00+00:00">2025-06-13 20:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>Must Include Wizard</td>
+            <td class="countdown" data-start="2025-06-13T20:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_41', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_41', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-14T03:00:00+00:00" data-event-end="2025-06-14T03:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-14T03:00:00+00:00">2025-06-14 03:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>Must Include Wizard</td>
+            <td class="countdown" data-start="2025-06-14T03:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_2', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_2', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-14T18:00:00+00:00" data-event-end="2025-06-14T18:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-14T18:00:00+00:00">2025-06-14 18:00:00</td>
+            <td><span class="event-icon">🎮</span>Patrollers Limited</td>
+            <td>3-5</td>
+            <td>Max Team Stat Score 290, No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-06-14T18:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_6', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_6', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-14T23:00:00+00:00" data-event-end="2025-06-14T23:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-14T23:00:00+00:00">2025-06-14 23:00:00</td>
+            <td><span class="event-icon">🍺</span>Weekend Warrior</td>
+            <td>7-10</td>
+            <td>Max Team Stat Score 420</td>
+            <td class="countdown" data-start="2025-06-14T23:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_69', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_69', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-15T00:00:00+00:00" data-event-end="2025-06-15T00:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-15T00:00:00+00:00">2025-06-15 00:00:00</td>
+            <td><span class="event-icon">🗡️</span>Revengers</td>
+            <td>4-6</td>
+            <td>Max Team Stat Score 310, No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-06-15T00:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_12', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_12', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-15T18:00:00+00:00" data-event-end="2025-06-15T18:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-15T18:00:00+00:00">2025-06-15 18:00:00</td>
+            <td><span class="event-icon">🍺</span>Weekend Warrior</td>
+            <td>16-20</td>
+            <td>All Unique Classes</td>
+            <td class="countdown" data-start="2025-06-15T18:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_57', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_57', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-15T19:00:00+00:00" data-event-end="2025-06-15T19:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-15T19:00:00+00:00">2025-06-15 19:00:00</td>
+            <td><span class="event-icon">🗡️</span>Revengers</td>
+            <td>16-20</td>
+            <td>Anything, No Health or Mana Vials</td>
+            <td class="countdown" data-start="2025-06-15T19:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_54', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_54', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-16T01:00:00+00:00" data-event-end="2025-06-16T01:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-16T01:00:00+00:00">2025-06-16 01:00:00</td>
+            <td><span class="event-icon">🎮</span>Patrollers Limited</td>
+            <td>6-9</td>
+            <td>Max Team Stat Score 390, No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-06-16T01:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_13', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_13', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-16T18:00:00+00:00" data-event-end="2025-06-16T18:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-16T18:00:00+00:00">2025-06-16 18:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>Anything, No Health or Mana Vials</td>
+            <td class="countdown" data-start="2025-06-16T18:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_47', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_47', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-17T01:00:00+00:00" data-event-end="2025-06-17T01:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-17T01:00:00+00:00">2025-06-17 01:00:00</td>
+            <td><span class="event-icon">🎮</span>Patrollers Limited</td>
+            <td>6-9</td>
+            <td>Max Team Stat Score 410, All Unique Classes, No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-06-17T01:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_58', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_58', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-17T03:00:00+00:00" data-event-end="2025-06-17T03:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-17T03:00:00+00:00">2025-06-17 03:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>16-20</td>
+            <td>Anything, No Health or Mana Vials</td>
+            <td class="countdown" data-start="2025-06-17T03:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_68', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_68', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-17T20:00:00+00:00" data-event-end="2025-06-17T20:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-17T20:00:00+00:00">2025-06-17 20:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>4-6</td>
+            <td>Must Include Wizard</td>
+            <td class="countdown" data-start="2025-06-17T20:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_14', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_14', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-18T01:00:00+00:00" data-event-end="2025-06-18T01:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-18T01:00:00+00:00">2025-06-18 01:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>4-6</td>
+            <td>Must Include Wizard</td>
+            <td class="countdown" data-start="2025-06-18T01:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_61', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_61', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-18T03:00:00+00:00" data-event-end="2025-06-18T03:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-18T03:00:00+00:00">2025-06-18 03:00:00</td>
+            <td><span class="event-icon">🎮</span>Patrollers Treasure Hunt</td>
+            <td>6-9</td>
+            <td>Max Team Stat Score 410, All Unique Classes, No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-06-18T03:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_24', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_24', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-18T18:00:00+00:00" data-event-end="2025-06-18T18:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-18T18:00:00+00:00">2025-06-18 18:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>11-15</td>
+            <td>No Healer, Must Include Knight (No Priest or Seer)</td>
+            <td class="countdown" data-start="2025-06-18T18:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_48', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_48', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-19T01:00:00+00:00" data-event-end="2025-06-19T01:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-19T01:00:00+00:00">2025-06-19 01:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>11-15</td>
+            <td>No Healer, Must Include Knight (No Priest or Seer)</td>
+            <td class="countdown" data-start="2025-06-19T01:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_27', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_27', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-19T18:00:00+00:00" data-event-end="2025-06-19T18:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-19T18:00:00+00:00">2025-06-19 18:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>7-10</td>
+            <td>No Healer (No Priest or Seer)</td>
+            <td class="countdown" data-start="2025-06-19T18:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_52', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_52', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-19T20:00:00+00:00" data-event-end="2025-06-19T20:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-19T20:00:00+00:00">2025-06-19 20:00:00</td>
+            <td><span class="event-icon">🎮</span>Patrollers Limited</td>
+            <td>3-5</td>
+            <td>Max Team Stat Score 310, All Unique Classes, No Swiftness Potions</td>
+            <td class="countdown" data-start="2025-06-19T20:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_21', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_21', true)">Early (-10m)</span>
+            </td>
+        </tr>
+    
+        <tr data-event-start="2025-06-20T01:00:00+00:00" data-event-end="2025-06-20T01:00:00+00:00">
+            <td class="start-time" data-iso="2025-06-20T01:00:00+00:00">2025-06-20 01:00:00</td>
+            <td><span class="event-icon">🎮</span>Daily Skirmish</td>
+            <td>7-10</td>
+            <td>No Healer (No Priest or Seer)</td>
+            <td class="countdown" data-start="2025-06-20T01:00:00+00:00">Initializing...</td>
+            <td>
+                <span class="ics-btn" onclick="downloadICS('event_34', false)">Original</span>
+                <span class="ics-btn ics-btn-early" onclick="downloadICS('event_34', true)">Early (-10m)</span>
             </td>
         </tr>
     
